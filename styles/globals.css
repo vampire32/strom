@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    overflow-x: none;
+}
+.collapse {
+    visibility: visible!important;
+}
+.bgimage{
+background-image: linear-gradient(0deg, rgba(0,  0, 0, 0.9), rgba(0,0,0, 0.9)), url("../img/carousel-2.jpg");
+           
+  background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+            
+}
+.bgimageMain{
+    background-image: linear-gradient(0deg, rgba(0,  0, 0, 0.9), rgba(0,0,0, 0.9)), url("../img/bgmain.jpg");
+               
+      background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+                
+    }
+
+.bgimage1{
+    background-image: linear-gradient(0deg,#0c143bde,#0c143bde), url("../img/carousel-2.jpg");
+               
+      background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+                
+    }
+
+
+.bgimage2{
+    background-image:linear-gradient(0deg, rgba(0,  0, 0,0.9), rgba(0,0,0,0.9)), url("../img/stript.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: right;
+   
+
+}
+
+.contact_section {
+    position: relative;
+}
+
+.contact_section .design-box {
+    position: absolute;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    right: 0;
+    width: 75px;
+}
+
+.contact_section .design-box img {
+    width: 100%;
+}
+
+.contact_section h2 {
+    margin-bottom: 65px;
+}
+
+.contact_section form {
+    padding-right: 35px;
+}
+.contact_section input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    background-color: transparent;
+    outline: none;
+    color: #101010;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16);
+}
+
+.contact_section input::-webkit-input-placeholder {
+    color: #131313;
+}
+
+.contact_section input:-ms-input-placeholder {
+    color: #131313;
+}
+
+.contact_section input::-ms-input-placeholder {
+    color: #131313;
+}
+
+.contact_section input::placeholder {
+    color: #131313;
+}
+
+.contact_section input.message-box {
+    height: 120px;
+}
+.contact_section button {
+    display: inline-block;
+    padding: 12px 45px;
+    background-color: #d9c7a4;
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    border-radius: 30px;
+    color: #fff;
+    margin-top: 35px;
+}
+
+.contact_section button:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+.contact_section .map_container {
+    height: 100%;
+    padding-bottom: 110px;
+}
+
+.contact_section .map_container .map-responsive {
+    height: 100%;
+}
+.bg-storm
+{
+    background-color: #0c143b !important;
+/*
+background: linear-gradient(90deg,#2CD9FF,#7EFFB2);
+ animation: anim 2.5s infinte ease-in-out;
+
+}
+@keyframes anim 
+{
+    0%
+    {
+        background-position: 0 50%;
+    }
+    
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    
+    100%
+    {
+        background-position: 0 50%;
+    }
+    */
+}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+@media screen and (max-width:567px){
+    .hide {
+            display: none;
+        }
+        .gop{
+            margin-left: 22px!important;
+        }
+        .gbbb{
+            margin-bottom: 11px;
+        }
+}
+@media screen and (max-width:375px){
+    .gapp{
+        margin-top: 30px;
+    }
+        #header-carousel .carousel-item {
+            min-height: 740px;
+        }
+}
