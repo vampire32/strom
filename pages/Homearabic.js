@@ -18,7 +18,7 @@ import { BsShieldCheck, BsPeople } from "react-icons/bs";
 import { GrUserWorker, GrUnorderedList, GrDeliver } from "react-icons/gr";
 import { TbTruckDelivery } from "react-icons/tb";
 
-import A1 from "../img/about-1.jpg";
+import A1 from "../img/A1.jpg";
 import A2 from "../img/about-2.jpg";
 import A3 from "../img/about-3.jpg";
 import A4 from "../img/about-4.jpg";
@@ -29,7 +29,7 @@ import Feature from "../img/mec.jpg";
 import Feature2 from "../img/mec2.gif";
 import S1 from "../img/service-1.jpg";
 import S2 from "../img/service-2.jpg";
-import S3 from "../img/service-3.jpg";
+import S3 from "../img/S1.jpeg";
 import S4 from "../img/image.jpg";
 import S5 from "../img/image2.jpg";
 import S6 from "../img/image3.jpg";
@@ -51,6 +51,7 @@ import Footer from "@/Components/Footer";
 import ContactFormAr from "@/Components/ContactFormAr";
 import FooterAr from "@/Components/FooterAr";
 import TopbarAr from "@/Components/TopbarAr";
+import Floating from "@/Components/Floating";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home2() {
@@ -62,25 +63,31 @@ export default function Home2() {
 	return (
 		<>
 			<Head>
-				<title>Car Tinting Dubai | 3M Car Window Tinting | 3M Auto Care - Safa</title>
-				<meta name="description" content="Car Tinting Dubai - Window Tinting And Paint Protection Film Offers In Dubai, Superior Quality 3M Authorized Car Tinting In Dubai & Window Tint Solution." />
+				<title>
+					Car Tinting Dubai | 3M Car Window Tinting | 3M Auto Care - Safa
+				</title>
+				<meta
+					name="description"
+					content="Car Tinting Dubai - Window Tinting And Paint Protection Film Offers In Dubai, Superior Quality 3M Authorized Car Tinting In Dubai & Window Tint Solution."
+				/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/whitelogo.png" sizes="32x32"/>
-				<meta name="author" content="Storm"/>
-				<meta name="Language" content="English"/>
-			<meta name="Copyright" content="Storm"/>
-			<meta name="Expires" content="Never"/>
-			<meta name="Robots" content="Index, Follow"></meta>
-			<meta property="og:image" content="" />
-	<meta property="og:type" content="website"/>
-		<meta property="og:description" content="Car Tinting Dubai - Window Tinting And Paint Protection Film Offers In Dubai, Superior Quality 3M Authorized Car Tinting In Dubai & Window Tint Solution. "/>
-	
-	
-		<link rel="alternate" href="https://www.safa.ae/" hreflang="en" />
-    <link rel="canonical" href="https://www.safa.ae/" />
+				<link rel="icon" href="/whitelogo.png" sizes="32x32" />
+				<meta name="author" content="Storm" />
+				<meta name="Language" content="English" />
+				<meta name="Copyright" content="Storm" />
+				<meta name="Expires" content="Never" />
+				<meta name="Robots" content="Index, Follow"></meta>
+				<meta property="og:image" content="" />
+				<meta property="og:type" content="website" />
+				<meta
+					property="og:description"
+					content="Car Tinting Dubai - Window Tinting And Paint Protection Film Offers In Dubai, Superior Quality 3M Authorized Car Tinting In Dubai & Window Tint Solution. "
+				/>
 
+				<link rel="alternate" href="https://www.safa.ae/" hreflang="en" />
+				<link rel="canonical" href="https://www.safa.ae/" />
 			</Head>
-			<TopbarAr/>
+			<TopbarAr />
 			<Transition.Root show={open2} as={Fragment}>
 				<Dialog
 					as="div"
@@ -153,15 +160,16 @@ export default function Home2() {
 												style={{ color: "#FFD700", fontSize: "20px" }}
 												className="mb-4"
 											>
-											طلاء سيراميك | PPF | المكتب و نافذة المنزل |
-فيلم عن السلامة والأمان
+												طلاء سيراميك | PPF | المكتب و نافذة المنزل | فيلم عن
+												السلامة والأمان
 											</h2>
 											<p class=" mb-4 pb-2 mx-sm-5 text-white text-[18px] leading-8 ">
-											لأفلام النوافذ عالية الجودة التي تأتي في نطاق واسع
-من الأساليب والتصميمات لتوفير الخصوصية والأمان والشمس
-الحماية ، Storm Automotive LLC هو اسم حسن السمعة في
-دولة الإمارات العربية المتحدة. وفقًا لحركة المرور الفيدرالية لدولة الإمارات العربية المتحدة
-القانون ، الذي يسمح بتلوين نوافذ السيارة بنسبة تصل إلى 50٪
+												لأفلام النوافذ عالية الجودة التي تأتي في نطاق واسع من
+												الأساليب والتصميمات لتوفير الخصوصية والأمان والشمس
+												الحماية ، Storm Automotive LLC هو اسم حسن السمعة في دولة
+												الإمارات العربية المتحدة. وفقًا لحركة المرور الفيدرالية
+												لدولة الإمارات العربية المتحدة القانون ، الذي يسمح
+												بتلوين نوافذ السيارة بنسبة تصل إلى 50٪
 											</p>
 											<button
 												style={{
@@ -215,16 +223,16 @@ export default function Home2() {
 																leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
 															>
 																<Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-dark text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-																
 																	<form className="px-12 py-12">
-																	<p className="text-white text-center text-[18px] font-bold">احجز حجزك الآن</p>
+																		<p className="text-white text-center text-[18px] font-bold">
+																			احجز حجزك الآن
+																		</p>
 																		<div class="mb-6">
-																	
 																			<label
 																				for="text"
 																				class="block mb-2 text-sm font-medium text-[#FFD700]"
 																			>
-																			اسم
+																				اسم
 																			</label>
 																			<input
 																				type="text"
@@ -286,9 +294,9 @@ export default function Home2() {
 																				class="btn btn-primary py-3 px-5 animated slideInDown ml-5"
 																				onClick={() => setOpen(false)}
 																			>
-																			إرسال
+																				إرسال
 																			</button>
-																		
+
 																			<button
 																				type="button"
 																				className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
@@ -345,9 +353,7 @@ export default function Home2() {
 							>
 								+۳۸٥
 							</h4>
-							<p style={{ color: "red", textAlign: "center" }}>
-							مشروع مستمر
-							</p>
+							<p style={{ color: "red", textAlign: "center" }}>مشروع مستمر</p>
 						</div>
 					</div>
 				</div>
@@ -359,30 +365,29 @@ export default function Home2() {
 						<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
 							<div class="h-100">
 								<h2 style={{ color: "red" }} class="display-6 mb-5 ">
-								أفضل مركز ستورم لاكسسوارات السيارات في دبي
+									أفضل مركز ستورم لاكسسوارات السيارات في دبي
 								</h2>
 
 								<p class="mb-4 text-justify ">
-																		الأشعة فوق البنفسجية الزائدة ، والأشعة تحت الحمراء ، والحرارة الشديدة ، و
-										الوهج من خلال توفير مجموعة واسعة من تظليل السيارات في دبي.
-										يمكن أن تقدم أفلام النوافذ الحديثة من Auto Storm منا تحسينًا
-										الراحة والأمان والخصوصية. كونها واحدة من أفضل السيارات
-										مركز العاصفة المعتمد في دولة الإمارات العربية المتحدة ، نحن على دراية واسعة
-										مجموعة من احتياجات عملائنا ونقدم لهم أحدث السيارات
-										أفلام نافذة العاصفة التي تلبي متطلباتهم الفريدة من نوعها
-										الحماية من الشمس ، بيئة العمل للإضاءة ، ودرجة الحرارة
-										اللوائح.<br></br>
-																			<br></br> سيساعدك تظليل السيارة المتميز في عاصفة السيارات
-										إعطاء سيارتك المظهر والفائدة المطلوبين.
-										بالإضافة إلى ذلك ، كل عنصر من العناصر لدينا مقاوم للخدش
-										طلاء يضمن المتانة ولمسة نهائية خالية من العيوب. تستطيع
-										الاستفادة من المزايا الصحية الرائعة الطبيعية
-										تضيء وتحمي منزلك من درجات الحرارة المرتفعة
-										يتغير بمساعدة حل الصبغ المنزلي الخاص بنا.
-										بالإضافة إلى ذلك ، يمكن أن يعزز لون السيارة العاصفة من الراحة
-										ورفاهية السيارة. بالإضافة إلى ذلك ، فإنها توفر خزنة
-										تجربة القيادة عن طريق تقليل الوهج المفرط الناتج
-										بواسطة الشمس أو مصادر الضوء الأخرى من صنع الإنسان.
+									الأشعة فوق البنفسجية الزائدة ، والأشعة تحت الحمراء ، والحرارة
+									الشديدة ، و الوهج من خلال توفير مجموعة واسعة من تظليل السيارات
+									في دبي. يمكن أن تقدم أفلام النوافذ الحديثة من Auto Storm منا
+									تحسينًا الراحة والأمان والخصوصية. كونها واحدة من أفضل السيارات
+									مركز العاصفة المعتمد في دولة الإمارات العربية المتحدة ، نحن
+									على دراية واسعة مجموعة من احتياجات عملائنا ونقدم لهم أحدث
+									السيارات أفلام نافذة العاصفة التي تلبي متطلباتهم الفريدة من
+									نوعها الحماية من الشمس ، بيئة العمل للإضاءة ، ودرجة الحرارة
+									اللوائح.<br></br>
+									<br></br> سيساعدك تظليل السيارة المتميز في عاصفة السيارات
+									إعطاء سيارتك المظهر والفائدة المطلوبين. بالإضافة إلى ذلك ، كل
+									عنصر من العناصر لدينا مقاوم للخدش طلاء يضمن المتانة ولمسة
+									نهائية خالية من العيوب. تستطيع الاستفادة من المزايا الصحية
+									الرائعة الطبيعية تضيء وتحمي منزلك من درجات الحرارة المرتفعة
+									يتغير بمساعدة حل الصبغ المنزلي الخاص بنا. بالإضافة إلى ذلك ،
+									يمكن أن يعزز لون السيارة العاصفة من الراحة ورفاهية السيارة.
+									بالإضافة إلى ذلك ، فإنها توفر خزنة تجربة القيادة عن طريق تقليل
+									الوهج المفرط الناتج بواسطة الشمس أو مصادر الضوء الأخرى من صنع
+									الإنسان.
 								</p>
 								<div class="border-top mt-4 pt-4">
 									<div class="row">
@@ -414,12 +419,16 @@ export default function Home2() {
 						</div>
 						<div class="col-lg-6">
 							<div class="row g-3">
-								<div class="col-6 text-end">
+								<div class="col-lg-12 text-end">
 									<div class="img-fluid w-100 wow zoomIn">
-										<Image src={A1} alt="Car Tinting Service Dubai" />
+										<Image
+											src={A1}
+											alt="Car Tinting Service Dubai"
+											style={{ borderRadius: 20, marginLeft: 10 }}
+										/>
 									</div>
 								</div>
-								<div class="col-6 text-start">
+								{/* <div class="col-6 text-start">
 									<div class="img-fluid w-80 wow zoomIn">
 										<Image src={A2}  alt="Car Tinting Service Dubai" />
 									</div>
@@ -433,7 +442,7 @@ export default function Home2() {
 									<div class="img-fluid w-100 wow zoomIn">
 										<Image src={A4}  alt="Car Tinting Service Dubai" />
 									</div>
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>
@@ -456,14 +465,13 @@ export default function Home2() {
 							style={{ color: "#FF7276", fontWeight: "normal" }}
 							class="display-4 mb-3 "
 						>
-						خدماتنا
+							خدماتنا
 						</span>
 						<p className=" leading-6 mb-5">
-												Storm Automotive ، شركة معروفة بمجموعتها من AUTO STORM
-						تلتزم خدمات تظليل السيارات في دبي بشدة
-						الاستدامة. نعتمد نهجا شاملا للشمس
-						الحماية وتجنب الضرر وتقليل الوهج مع
-						خدمات تظليل النوافذ والأفلام المتطورة.
+							Storm Automotive ، شركة معروفة بمجموعتها من AUTO STORM تلتزم خدمات
+							تظليل السيارات في دبي بشدة الاستدامة. نعتمد نهجا شاملا للشمس
+							الحماية وتجنب الضرر وتقليل الوهج مع خدمات تظليل النوافذ والأفلام
+							المتطورة.
 						</p>
 					</div>
 					<div class="row g-4 m-auto ">
@@ -476,13 +484,12 @@ export default function Home2() {
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
 										}}
-										src={S1}  alt="Car Tinting Service Dubai"
+										src={S1}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>
-									السيارات
-									</a>
+									<a style={{ fontSize: "20px" }}>السيارات</a>
 								</div>
 							</div>
 						</div>
@@ -495,12 +502,13 @@ export default function Home2() {
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
 										}}
-										src={S2}  alt="Car Tinting Service Dubai"
+										src={S2}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }} >
-									أفلام تظليل النوافذ التجارية
+									<a style={{ fontSize: "20px" }}>
+										أفلام تظليل النوافذ التجارية
 									</a>
 								</div>
 							</div>
@@ -513,14 +521,15 @@ export default function Home2() {
 											border: "5px solid black",
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
+											width: "70%",
+											height: "70%",
 										}}
-										src={S3}  alt="Car Tinting Service Dubai"
+										src={S3}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>
-									فاسارا
-									</a>
+									<a style={{ fontSize: "20px" }}>فاسارا</a>
 								</div>
 							</div>
 						</div>
@@ -532,8 +541,11 @@ export default function Home2() {
 											border: "5px solid black",
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
+											width: "70%",
+											height: "50%",
 										}}
-										src={S4} alt="Car Tinting Service Dubai"
+										src={S4}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
@@ -550,13 +562,12 @@ export default function Home2() {
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
 										}}
-										src={S5}  alt="Car Tinting Service Dubai"
+										src={S5}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>
-									سكني
-									</a>
+									<a style={{ fontSize: "20px" }}>سكني</a>
 								</div>
 							</div>
 						</div>
@@ -569,280 +580,612 @@ export default function Home2() {
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
 										}}
-										src={S6}  alt="Car Tinting Service Dubai"
+										src={S6}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>
-									سلامة الامن
-									</a>
+									<a style={{ fontSize: "20px" }}>سلامة الامن</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<br></br><br></br>
+			<br></br>
+			<br></br>
+			<div>
+				<section class=" container body-font">
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
+							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								Automotive
+							</h1>
+							<p class="mb-8 leading-relaxed text-justify">
+								Searching for the finest automobile protection options? We
+								provide a wide selection of top-notch automobile protection
+								equipment to assist you to protect your vehicle from numerous
+								exterior factors, like the sun, dust, and dirt, and weather. We
+								at storm auto accessories offer everything you need to make your
+								automobile appear like new, including detailing services, nano
+								ceramic coating, car polishing, sun control films, and detailing
+								services. We have a lot of knowledge and skill in giving your
+								automobile all-around protection since we are the authorised
+								car-care centre in Dubai. We are accountable for the safety of
+								your car.
+							</p>
+						</div>
+
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+							<div class="object-cover object-center rounded">
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: 20 }}
+								/>
+							</div>
+						</div>
+					</div>
+					<div className="row m-auto">
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Cartint} alt="..." />
+								</div>
+
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Car Window Tinting Dubai
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										We provide an exceptional selection of storm auto
+										accessories and sun protection window films that are fitted
+										on your cars windows to make you conformable and save the
+										inside of your vehicle from being damaged by excessive heat
+										and sunshine.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Carmic} alt="..." />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Ceramic Coating
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										We provide the best nano ceramic coating to protect your
+										automobile from dents and other exterior damage. It is used
+										on the paint, bumpers, and plastic trim to provide
+										long-lasting general protection.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Mechnic} alt="..." />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Mechanical Service
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										Safa Automotive LLC has been in the automotive industry
+										since 2003. We are Dubais experts in luxury automobile
+										repairs. Repairing Rolls Royce, Mercedes, Porsche, Land
+										Rover, Bentley, and Audi is our area of competence.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class=" container body-font">
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+							<div class="object-cover object-center rounded">
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: 20 }}
+								/>
+							</div>
+						</div>
+						<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								Commercial Window Films
+							</h1>
+							<h2 className="text-[22px] mb-3 font-semibold">
+								WINDOW FILMS INSTALLATION SERVICES IN SHARJAH - COMMERCIAL USAGE
+							</h2>
+							<p class="mb-8 leading-relaxed text-justify">
+								In the present, commercial window films in Dubai are essential
+								for offering a high degree of privacy, heat protection, and of
+								course a pleasant working environment. It may be quite difficult
+								to work in a hot, unpleasant workplace, and if you cant provide
+								your workers appropriate working circumstances, your brand value
+								will undoubtedly suffer. Storm auto accessories has world-class
+								Storm auto accessories window film solutions for your commercial
+								spaces to help you create the perfect working environment. Storm
+								auto accessories recognises the necessity for the best-quality
+								heat protection and safety window films in the commercial
+								buildings.
+							</p>
+						</div>
+					</div>
+					<div className="row m-auto ">
+						<div className="col-md-6">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Cartint} alt="..." />
+								</div>
+
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Building Window Tinting
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										As the name implies, the primary function of these films is
+										to cover the windows of commercial buildings to block the
+										entry of sunshine and heat. The many tints of sun protection
+										films
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-6">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Carmic} alt="..." />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Commercial Blackout Window Film
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										The blackout window films are for you if you want to achieve
+										total seclusion in your business space and dont want the
+										outside elements to impact the inside of your establishment.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class=" container body-font">
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
+							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								Residential
+							</h1>
+							<h2 className="text-[22px] mb-3 font-semibold">
+								RESIDENTIAL WINDOW FILM - PROVIDING COMPLETE PROTECTION
+							</h2>
+							<p class="mb-8 leading-relaxed text-justify">
+								such things in your living quarters, adjustments need to be
+								made. Glass in windows and doors of homes let in natural light,
+								but the night also brings with it an excessive amount of heat
+								that saps energy. With the top-of-the-line window film, its time
+								to rethink your homes interior. The variety of window films
+								offered by Storm Auto Accessories will not only help you protect
+								the inside of your home but also improve the spaces
+								attractiveness and décor in a classy way.
+							</p>
+						</div>
+
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+							<div class="object-cover object-center rounded">
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: 20 }}
+								/>
+							</div>
+						</div>
+					</div>
+					<div className="row m-auto">
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Cartint} alt="..." />
+								</div>
+
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Home Window Tinting
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										Sun control windows come in various colours to assist you
+										regulate the amount of heat and light that enters your home
+										via the windows and doors.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Carmic} alt="..." />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Residential Blackout Window Film
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										The blackout window films are without a doubt the answer if
+										you want to keep your valuables inside the home out of sight
+										and need maximum seclusion. The glass door and window are
+										opaque to light.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Mechnic} alt="..." />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Residential Privacy Film
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										Our aim is to assist you in obtaining a private area in your
+										home. There are areas in the home that may use a little more
+										privacy, and for such, we offer premium privacy window films
+										that are simple to apply.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class=" container body-font">
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+							<div class="object-cover object-center rounded">
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: 20 }}
+								/>
+							</div>
+						</div>
+						<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								Safety & Security
+							</h1>
+							<h2 className="text-[22px] mb-3 font-semibold">
+								SAFEGUARDING COMMERCIAL & RESIDENTIAL GLASS WINDOWS
+							</h2>
+							<p class="mb-8 leading-relaxed text-justify">
+								Its always crucial to take all necessary precautions to provide
+								the areas where we reside or spend the majority of our time the
+								highest degree of safety. The goal of our premium selection of
+								safety and security films is to keep your personal and business
+								environments secure. With this, we want to safeguard you against
+								unforeseen events that might seriously harm your life or
+								property. The business complexes glass windows, doors, and
+								towering glass-structured walls all have safety and security
+								films put on them to safeguard them from physical harm and other
+								environmental problems. To ensure that your style is not
+								compromised while placing safety films on the windows, the whole
+								line of commercial and residential safety windows offers unique
+								colours and patterns to coordinate with the styling and décor of
+								your area.
+							</p>
+						</div>
+					</div>
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								WHY DO YOU NEED TO INSTALL SAFETY & SECURITY WINDOW FILMS IN
+								DUBAI?
+							</h1>
+							<p class="mb-8 leading-relaxed text-justify">
+								It goes without saying that you must make your household or
+								business place safe and secure. In Dubai, there are unfavourable
+								weather patterns and extreme climate changes, which have a
+								significant negative influence on the buildings and structures.
+								In certain disaster-prone places, other natural catastrophes
+								like earthquakes and fast-blow wind bursts like hurricanes are
+								also rather prevalent. Installing protective shields on glass
+								windows and doors is necessary since they are vulnerable to
+								breaking, which may result in many forms of property and life
+								harm. Additionally, there are unforeseen incidental damages
+								brought on by theft and other criminal activity, therefore you
+								should maintain tight security to prevent them. The safety and
+								security window films may provide you excellent protection in
+								this regard. These films are intended to prevent window and door
+								glass from breaking as a result of different outside pressures
+								or accidents.
+							</p>
+						</div>
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+							<div class="object-cover object-center rounded">
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: 20 }}
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
 			<div className="bgimage1 ">
-			<div class="container-fluid py-5 ">
-				<div class="">
-					<div class="row ">
-						<div class=" wow fadeInUp" data-wow-delay="0.1s">
-							<div
-								class="text-center mx-auto wow fadeInUp"
-								data-wow-delay="0.1s"
-								style={{ maxWidth: "900px" }}
-							>
-								<h2
-									style={{ color: "#FF7276", fontWeight: "normal" }}
-									class="display-4 mb-3 "
+				<div class="container-fluid py-5 ">
+					<div class="">
+						<div class="row ">
+							<div class=" wow fadeInUp" data-wow-delay="0.1s">
+								<div
+									class="text-center mx-auto wow fadeInUp"
+									data-wow-delay="0.1s"
+									style={{ maxWidth: "900px" }}
 								>
-									لماذا تختار Storm Automative ?
-								</h2>
-								<h3
-									style={{ color: "#FFD700", fontWeight: "normal" }}
-									className="font-bold text-[24px]"
-								>
-									عازل حراري في دبي
-								</h3>
-								<p class="mt-3 text-center text-white ">
-								مع تظليل سيارات العاصفة بجودة ممتازة في دبي ،
-								فيلم تظليل النوافذ ، تم تحسين Storm Automotive LLC وتحويلها
-								العديد من المركبات والهياكل منذ تأسيسها في عام 2010. إلى
-								تحسين كفاءة الطاقة والسلامة والخصوصية العامة لدينا
-								يمكن لفريق من المهنيين المؤهلين تأهيلا عاليا أن يقدموا خدمات فعالة
-								خدمات تظليل نوافذ السيارات والمنازل. العملاء لديهم
-								أعلى إيمان بنا لعدد من الأسباب. العديد منهم
-								هي واردة ادناه.
-								</p>
-							</div>
-							<br></br>
-							<br></br>
-							<br></br>
-							<div className="row">
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
-											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
-											}}
-										>
-											<div class="img-fluid">
-												<GiShakingHands size={40} color="#ffff" />
+									<h2
+										style={{ color: "#FF7276", fontWeight: "normal" }}
+										class="display-4 mb-3 "
+									>
+										لماذا تختار Storm Automative ?
+									</h2>
+									<h3
+										style={{ color: "#FFD700", fontWeight: "normal" }}
+										className="font-bold text-[24px]"
+									>
+										عازل حراري في دبي
+									</h3>
+									<p class="mt-3 text-center text-white ">
+										مع تظليل سيارات العاصفة بجودة ممتازة في دبي ، فيلم تظليل
+										النوافذ ، تم تحسين Storm Automotive LLC وتحويلها العديد من
+										المركبات والهياكل منذ تأسيسها في عام 2010. إلى تحسين كفاءة
+										الطاقة والسلامة والخصوصية العامة لدينا يمكن لفريق من
+										المهنيين المؤهلين تأهيلا عاليا أن يقدموا خدمات فعالة خدمات
+										تظليل نوافذ السيارات والمنازل. العملاء لديهم أعلى إيمان بنا
+										لعدد من الأسباب. العديد منهم هي واردة ادناه.
+									</p>
+								</div>
+								<br></br>
+								<br></br>
+								<br></br>
+								<div className="row">
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
+											>
+												<div class="img-fluid">
+													<GiShakingHands size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-3 "
+												>
+													منتجات ذات مستوى عالمي
+												</h5>
+												<p className="text-justify text-white ">
+													تقدم Storm Automotive مجموعة واسعة من أفلام تظليل
+													النوافذ كمركز تظليل معتمد لملحقات Storm في دبي. جميع
+													بضائعنا تأتي من شركة عالية الجودة هي الشركة الرائدة في
+													إنتاج أفلام تظليل النوافذ. بالإضافة إلى ذلك ، لقد
+													أكملوا عددًا من الجودة إجراءات التحليل لضمان جودة لا
+													مثيل لها. تسعى خيارات تظليل النوافذ هذه إلى توفير أكثر
+													أمانًا بيئة القيادة عن طريق تقليل الوهج. بالإضافة إلى
+													ذلك، يمكنهم تقديم المستوى المطلوب من السلامة والدفاع
+													ضد أشعة الشمس الضارة عند استخدامها على النافذة.
+												</p>
 											</div>
 										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-3 "
-											>
-											منتجات ذات مستوى عالمي
-											</h5>
-											<p className="text-justify text-white ">
-											تقدم Storm Automotive مجموعة واسعة من أفلام تظليل النوافذ
-												كمركز تظليل معتمد لملحقات Storm في
-												دبي. جميع بضائعنا تأتي من شركة عالية الجودة
-												هي الشركة الرائدة في إنتاج أفلام تظليل النوافذ.
-												بالإضافة إلى ذلك ، لقد أكملوا عددًا من الجودة
-												إجراءات التحليل لضمان جودة لا مثيل لها.
-												تسعى خيارات تظليل النوافذ هذه إلى توفير أكثر أمانًا
-												بيئة القيادة عن طريق تقليل الوهج. بالإضافة إلى ذلك،
-												يمكنهم تقديم المستوى المطلوب من السلامة والدفاع
-												ضد أشعة الشمس الضارة عند استخدامها على النافذة.
-											</p>
-										</div>
 									</div>
-								</div>
-								<div className="col-md-6"></div>
+									<div className="col-md-6"></div>
 
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
-											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
-											}}
-										>
-											<div class="img-fluid">
-												<GiAchievement size={40} color="#ffff" />
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
+											>
+												<div class="img-fluid">
+													<GiAchievement size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-3 "
+												>
+													خبرة صناعة واسعة
+												</h5>
+												<p className="text-justify text-white ">
+													مع ما يقرب من 20 عامًا من الخبرة في تظليل السيارات في
+													دبي ، نحن نهدف إلى تقديم الكمال باستمرار. كل النافذة
+													يمكن تنفيذ خدمات التلوين من قبل المهرة لدينا أفراد
+													بأقصى درجات الدقة. هؤلاء المهنيين يمكن تلميع وتفصيل أي
+													مركبة بمستوى عالٍ و خلال الوقت المخصص بفضل اهتمامهم به
+													التفاصيل. بالإضافة إلى ذلك ، استمروا في توسيع نطاق
+													المعرفة والمهارات كتكنولوجيا تظليل السيارات التقدم.
+												</p>
 											</div>
 										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-3 "
-											>
-												خبرة صناعة واسعة
-											</h5>
-											<p className="text-justify text-white ">
-											مع ما يقرب من 20 عامًا من الخبرة في تظليل السيارات في دبي ،
-											نحن نهدف إلى تقديم الكمال باستمرار. كل النافذة
-											يمكن تنفيذ خدمات التلوين من قبل المهرة لدينا
-											أفراد بأقصى درجات الدقة. هؤلاء المهنيين
-											يمكن تلميع وتفصيل أي مركبة بمستوى عالٍ و
-											خلال الوقت المخصص بفضل اهتمامهم به
-											التفاصيل. بالإضافة إلى ذلك ، استمروا في توسيع نطاق
-											المعرفة والمهارات كتكنولوجيا تظليل السيارات
-											التقدم.
-											</p>
-										</div>
 									</div>
-								</div>
-								<div className="col-md-6">
-									<Image
-										style={{ width: "60%", margin: "auto",border:"2px solid black",borderRadius:"15px" }}
-										src={Feature}  alt="Car Tinting Service Dubai"
-									/>
-								</div>
+									<div className="col-md-6">
+										<Image
+											style={{
+												width: "60%",
+												margin: "auto",
+												border: "2px solid black",
+												borderRadius: "15px",
+											}}
+											src={Feature}
+											alt="Car Tinting Service Dubai"
+										/>
+									</div>
 
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
-											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
-											}}
-										>
-											<div class="img-fluid">
-												<GiCombinationLock size={40} color="#ffff" />
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
+											>
+												<div class="img-fluid">
+													<GiCombinationLock size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-3"
+												>
+													تفويض
+												</h5>
+												<p className="text-justify text-white">
+													تعتمد Storm Automotive على ممارسات العمل الأخلاقية
+													والمعايير لأنها شريك معتمد لـ أكبر مُصنِّع لأفلام
+													نوافذ التحكم في أشعة الشمس في الشرق الأوسط العالمية.
+													نذهب إلى ما فوق لإنشاء اتصال الثقة مع عملائنا. لذلك ،
+													عازل كل سيارة تتضمن الخدمة أو المنتج المقدم من خلال
+													أعمالنا أ شهادة الأصالة.
+												</p>
 											</div>
 										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-3"
-											>
-											تفويض
-											</h5>
-											<p className="text-justify text-white">
-											تعتمد Storm Automotive على ممارسات العمل الأخلاقية
-											والمعايير لأنها شريك معتمد لـ
-											أكبر مُصنِّع لأفلام نوافذ التحكم في أشعة الشمس في الشرق الأوسط
-											العالمية. نذهب إلى ما فوق لإنشاء اتصال
-											الثقة مع عملائنا. لذلك ، عازل كل سيارة
-											تتضمن الخدمة أو المنتج المقدم من خلال أعمالنا أ
-											شهادة الأصالة.
-											</p>
-										</div>
 									</div>
-								</div>
-								<div className="col-md-6"></div>
+									<div className="col-md-6"></div>
 
-								<div className="col-md-6"></div>
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
-											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
-											}}
-										>
-											<div class="img-fluid">
-												<FcApproval size={40} color="#ffff" />
-											</div>
-										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-3 "
+									<div className="col-md-6"></div>
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
 											>
-												أفلام تظليل النوافذ المعتمدة علميًا
-											</h5>
-											<p className="text-justify text-white">
-											بصفتها تاجر أفلام تظليل نوافذ مرخص ، ستورم أوتوموتيف
-										تقدم منتجات تظليل السيارات الممتازة مع بعضها
-										الفوائد الصحية المعروفة. هذه السيارة العاصفة المتطورة
-										تم التحقق من صحة الصبغات عن طريق العلم ويمكن أن تمنع ما يصل إلى
-										99٪ من الأشعة فوق البنفسجية والأشعة تحت الحمراء. نتيجة لهم
-										التعرض لأشعة الشمس لفترات طويلة ، فإنها تحمي نفسها من
-										الأمراض السائدة.
-											</p>
+												<div class="img-fluid">
+													<FcApproval size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-3 "
+												>
+													أفلام تظليل النوافذ المعتمدة علميًا
+												</h5>
+												<p className="text-justify text-white">
+													بصفتها تاجر أفلام تظليل نوافذ مرخص ، ستورم أوتوموتيف
+													تقدم منتجات تظليل السيارات الممتازة مع بعضها الفوائد
+													الصحية المعروفة. هذه السيارة العاصفة المتطورة تم
+													التحقق من صحة الصبغات عن طريق العلم ويمكن أن تمنع ما
+													يصل إلى 99٪ من الأشعة فوق البنفسجية والأشعة تحت
+													الحمراء. نتيجة لهم التعرض لأشعة الشمس لفترات طويلة ،
+													فإنها تحمي نفسها من الأمراض السائدة.
+												</p>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div className="col-md-6">
-									<Image
-										style={{ width: "60%", margin: "auto",border:"2px solid black",borderRadius:"15px" }}
-										src={Feature2}  alt="Car Tinting Service Dubai"
-									/>
-								</div>
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
+									<div className="col-md-6">
+										<Image
 											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
+												width: "60%",
+												margin: "auto",
+												border: "2px solid black",
+												borderRadius: "15px",
 											}}
-										>
-											<div class="img-fluid">
-												<GiThreeFriends size={40} color="#ffff" />
-											</div>
-										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-3 "
+											src={Feature2}
+											alt="Car Tinting Service Dubai"
+										/>
+									</div>
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
 											>
-												صديقة للميزانية
-											</h5>
-											<p className="text-justify text-white">
-											نحن لا نطلب منك أن تنفق ثروة لحماية
-											السيارة من الأشعة فوق البنفسجية والأشعة تحت الحمراء الخطرة. بدلا من ذلك ، نحن
-											توفير تظليل تلقائي للسيارة ونافذة للتحكم في أشعة الشمس بأسعار معقولة
-											أفلام لتحسين الراحة. كما نقدم مجموعة متنوعة من
-											حلول لتظليل المنزل والسماح لعملائنا بالاختيار
-											أفضل ما يناسب احتياجاتهم وميزانيتهم.
-											بالإضافة إلى ذلك ، يمكن أن تتيح لك خيارات تظليل النوافذ لدينا
-											لتقليل الإضاءة وتكييف الهواء على المدى الطويل
-											نفقات.
-											</p>
+												<div class="img-fluid">
+													<GiThreeFriends size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-3 "
+												>
+													صديقة للميزانية
+												</h5>
+												<p className="text-justify text-white">
+													نحن لا نطلب منك أن تنفق ثروة لحماية السيارة من الأشعة
+													فوق البنفسجية والأشعة تحت الحمراء الخطرة. بدلا من ذلك
+													، نحن توفير تظليل تلقائي للسيارة ونافذة للتحكم في أشعة
+													الشمس بأسعار معقولة أفلام لتحسين الراحة. كما نقدم
+													مجموعة متنوعة من حلول لتظليل المنزل والسماح لعملائنا
+													بالاختيار أفضل ما يناسب احتياجاتهم وميزانيتهم.
+													بالإضافة إلى ذلك ، يمكن أن تتيح لك خيارات تظليل
+													النوافذ لدينا لتقليل الإضاءة وتكييف الهواء على المدى
+													الطويل نفقات.
+												</p>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div className="col-md-6"></div>
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
-											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
-											}}
-										>
-											<div class="img-fluid">
-												<GiShakingHands size={40} color="#ffff" />
-											</div>
-										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-"
+									<div className="col-md-6"></div>
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
 											>
-												إرضاء 100٪
-											</h5>
-											<p className="text-justify text-white ">
-											في Storm Automotive ، نقوم بأداء سيارات العاصفة المتفوقة
-														خدمات التظليل في دبي وحول الإمارات العربية المتحدة مع
-														الهدف المتمثل في تحقيق رضا العملاء لا مثيل له. نحن
-														نضمن أن بضائعنا سوف تلبي توقعاتك
-														الجودة والأداء. بالإضافة إلى ذلك ، فإنهم يحافظون على
-														مظهرها ولونها على مر الزمن.
-														بالإضافة إلى ذلك ، كونها شركة ذات سمعة طيبة لتلوين النوافذ
-														في الإمارات العربية المتحدة ، نتكيف باستمرار لمواكبة التغيير
-														احتياجات وتفضيلات عملائنا.
-											</p>
+												<div class="img-fluid">
+													<GiShakingHands size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-"
+												>
+													إرضاء 100٪
+												</h5>
+												<p className="text-justify text-white ">
+													في Storm Automotive ، نقوم بأداء سيارات العاصفة
+													المتفوقة خدمات التظليل في دبي وحول الإمارات العربية
+													المتحدة مع الهدف المتمثل في تحقيق رضا العملاء لا مثيل
+													له. نحن نضمن أن بضائعنا سوف تلبي توقعاتك الجودة
+													والأداء. بالإضافة إلى ذلك ، فإنهم يحافظون على مظهرها
+													ولونها على مر الزمن. بالإضافة إلى ذلك ، كونها شركة ذات
+													سمعة طيبة لتلوين النوافذ في الإمارات العربية المتحدة ،
+													نتكيف باستمرار لمواكبة التغيير احتياجات وتفضيلات
+													عملائنا.
+												</p>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -850,7 +1193,6 @@ export default function Home2() {
 						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 
 			<div
@@ -858,7 +1200,7 @@ export default function Home2() {
 				className="container-fluid bg-storm mt-1"
 			>
 				<div
-					style={{ color: "#FF7276", fontWeight: "bold",textAlign:"center" }}
+					style={{ color: "#FF7276", fontWeight: "bold", textAlign: "center" }}
 					className="text-center text-[44px] pt-5 "
 				>
 					ضمانات
@@ -867,14 +1209,14 @@ export default function Home2() {
 					style={{ color: "#FFD700" }}
 					className="text-center  m-auto text-[20px] mb-2 w-50"
 				>
-					في دولة الإمارات العربية المتحدة ، تعتبر شركة ستورم أوتوموتيف مصدرًا موثوقًا للظلال وتوفرها
-بعض من أفضل الضمانات المتاحة.
+					في دولة الإمارات العربية المتحدة ، تعتبر شركة ستورم أوتوموتيف مصدرًا
+					موثوقًا للظلال وتوفرها بعض من أفضل الضمانات المتاحة.
 				</h2>
 				<br></br>
 				<p className="text-center w-50 m-auto text-white text-[18px] mt-5 ">
-				حماية ضد بهتان اللون نحن نضمن أن كل نافذة لدينا
-لن تتلاشى الأفلام لسنوات ، وأن الرياح الشديدة والمباشرة
-لن يخفت ضوء الشمس لمعانها اللامع.
+					حماية ضد بهتان اللون نحن نضمن أن كل نافذة لدينا لن تتلاشى الأفلام
+					لسنوات ، وأن الرياح الشديدة والمباشرة لن يخفت ضوء الشمس لمعانها
+					اللامع.
 				</p>
 			</div>
 			<div className="container mt-5">
@@ -883,24 +1225,23 @@ export default function Home2() {
 					className=" text-justify m-4 text-[18px]"
 				>
 					<li>
-					بالإضافة إلى الالتزام بالعديد من معايير الجودة التي وضعتها
-قانون المرور الفيدرالي الجديد الذي دخل حيز التنفيذ في 1 يوليو.
+						بالإضافة إلى الالتزام بالعديد من معايير الجودة التي وضعتها قانون
+						المرور الفيدرالي الجديد الذي دخل حيز التنفيذ في 1 يوليو.
 					</li>
 					<li>
-					نتبع أيضًا إرشادات التثبيت العالمية. نقوم بعمل نسخة احتياطية من ملفات
-نفس الشيء مع بعض الضمانات التي تأتي مع كل فيلم تظليل
+						نتبع أيضًا إرشادات التثبيت العالمية. نقوم بعمل نسخة احتياطية من
+						ملفات نفس الشيء مع بعض الضمانات التي تأتي مع كل فيلم تظليل
 					</li>
-					نقوم بعمل نسخة احتياطية من نفس الشيء مع بعض الضمانات التي تأتي مع كل نافذة
-فيلم.
+					نقوم بعمل نسخة احتياطية من نفس الشيء مع بعض الضمانات التي تأتي مع كل
+					نافذة فيلم.
 					<li>
-					إذا اتضح أن منتجنا به عيوب ، فسنقوم باستبداله بسعر لا
-تكلفة إضافية. سوف تحتاج إلى تقديم إيصال الشراء ،
-الذي يتضمن معلومات عن نوع الفيلم و
-تاريخ التركيب وذلك للاستفادة من الضمان.
+						إذا اتضح أن منتجنا به عيوب ، فسنقوم باستبداله بسعر لا تكلفة إضافية.
+						سوف تحتاج إلى تقديم إيصال الشراء ، الذي يتضمن معلومات عن نوع الفيلم
+						و تاريخ التركيب وذلك للاستفادة من الضمان.
 					</li>
 					<li>
-					قد يختلف طول الضمان اعتمادًا على المعين
-لون السيارة أو النافذة الذي حددته.
+						قد يختلف طول الضمان اعتمادًا على المعين لون السيارة أو النافذة الذي
+						حددته.
 					</li>
 				</ul>
 				<p
@@ -934,10 +1275,10 @@ export default function Home2() {
 									ضمان انسداد الأشعة فوق البنفسجية
 								</h5>
 								<p class="card-text text-[14px] text-white text-justify">
-								توفر صبغات النوافذ / السيارة من Storm Automotive بعض الأشعة فوق البنفسجية و
-الحماية من الأشعة تحت الحمراء. لذلك سوف يسمحون لك بذلك
-تمتع بأشعة الشمس الطبيعية دون الحاجة إلى التعامل معها
-عواقب سلبية.
+									توفر صبغات النوافذ / السيارة من Storm Automotive بعض الأشعة
+									فوق البنفسجية و الحماية من الأشعة تحت الحمراء. لذلك سوف يسمحون
+									لك بذلك تمتع بأشعة الشمس الطبيعية دون الحاجة إلى التعامل معها
+									عواقب سلبية.
 								</p>
 							</div>
 						</div>
@@ -966,11 +1307,11 @@ export default function Home2() {
 									الضمانات الرائدة في الصناعة
 								</h5>
 								<p class="card-text text-white text-[14px] text-justify">
-								تقدم أفلام النوافذ المعاصرة الخاصة بنا جميع المزايا
-التي حددتها معايير الصناعة. بالإضافة إلى ذلك ، تأتي مع ملف
-الضمان ضد التفريغ ، التقشير ، التقرح ، و
-محتدما. إنها غير معدنية ، لذا فهي لا تؤثر على الطريقة
-تعمل الأجهزة المحمولة والاتصالات عبر الأقمار الصناعية بشكل طبيعي.
+									تقدم أفلام النوافذ المعاصرة الخاصة بنا جميع المزايا التي
+									حددتها معايير الصناعة. بالإضافة إلى ذلك ، تأتي مع ملف الضمان
+									ضد التفريغ ، التقشير ، التقرح ، و محتدما. إنها غير معدنية ،
+									لذا فهي لا تؤثر على الطريقة تعمل الأجهزة المحمولة والاتصالات
+									عبر الأقمار الصناعية بشكل طبيعي.
 								</p>
 							</div>
 						</div>
@@ -996,13 +1337,13 @@ export default function Home2() {
 									style={{ color: "#FFD700" }}
 									class="card-title text-[20px] "
 								>
-								الضمان لأفلام النوافذ غير المعدنية
+									الضمان لأفلام النوافذ غير المعدنية
 								</h5>
 								<p class="card-text text-white text-[14px] text-justify">
-								لا تتضمن أفلام تظليل نوافذ السيارات المعاصرة الخاصة بنا أيًا منها
-المكونات المعدنية ، على عكس التقليدية
-مرادف. نتيجة لذلك ، لا يمنعون الأجهزة المحمولة و
-إشارات الأقمار الصناعية من العمل بشكل طبيعي.
+									لا تتضمن أفلام تظليل نوافذ السيارات المعاصرة الخاصة بنا أيًا
+									منها المكونات المعدنية ، على عكس التقليدية مرادف. نتيجة لذلك ،
+									لا يمنعون الأجهزة المحمولة و إشارات الأقمار الصناعية من العمل
+									بشكل طبيعي.
 								</p>
 							</div>
 						</div>
@@ -1012,7 +1353,7 @@ export default function Home2() {
 			<br></br>
 			<div className=" bgimage">
 				<div className="text-center pt-5 text-[#FF7276] text-[32px] font-bold  ">
-				كيف تعمل
+					كيف تعمل
 				</div>
 				<div className="row container py-20  m-auto">
 					<div className="col-lg-3 col-md-5 gbbb">
@@ -1020,8 +1361,8 @@ export default function Home2() {
 							class="card"
 							style={{
 								width: "18rem",
-							
-								backgroundColor:"rgba(0,0,0,0.1)",
+
+								backgroundColor: "rgba(0,0,0,0.1)",
 							}}
 						>
 							<div class="card-img-top   mt-5">
@@ -1033,7 +1374,7 @@ export default function Home2() {
 
 							<div class="card-body">
 								<h5 class="card-title text-[16px] text-[white] text-center ">
-								قابل العميل
+									قابل العميل
 								</h5>
 							</div>
 						</div>
@@ -1044,19 +1385,18 @@ export default function Home2() {
 							style={{
 								width: "18rem",
 								backgroundColor: "rgba(0,0,0,0.1)",
-								
 							}}
 						>
 							<div class="card-img-top  mt-5">
 								<AiOutlineSolution
 									size={100}
-									style={{ marginLeft: "35%",color: "#FFD700" }}
+									style={{ marginLeft: "35%", color: "#FFD700" }}
 								/>
 							</div>
 
 							<div class="card-body">
 								<h5 class="card-title text-[16px] text-center text-[white] ">
-								تخصيص الحل
+									تخصيص الحل
 								</h5>
 							</div>
 						</div>
@@ -1067,7 +1407,6 @@ export default function Home2() {
 							style={{
 								width: "18rem",
 								backgroundColor: "rgba(0,0,0,0.1)",
-								
 							}}
 						>
 							<div class="card-img-top  mt-5">
@@ -1079,7 +1418,7 @@ export default function Home2() {
 
 							<div class="card-body">
 								<h5 class="card-title text-[16px] text-center text-[white]  ">
-								أكد الطلب
+									أكد الطلب
 								</h5>
 							</div>
 						</div>
@@ -1090,7 +1429,6 @@ export default function Home2() {
 							style={{
 								width: "18rem",
 								backgroundColor: "rgba(0,0,0,0.1)",
-								
 							}}
 						>
 							<div class="card-img-top  mt-5">
@@ -1102,7 +1440,7 @@ export default function Home2() {
 
 							<div class="card-body">
 								<h5 class="card-title text-[16px] text-center text-[white] ">
-								التسليم والتركيب
+									التسليم والتركيب
 								</h5>
 							</div>
 						</div>
@@ -1110,23 +1448,24 @@ export default function Home2() {
 				</div>
 			</div>
 			<div className="bgimage ">
-				<div style={{height:"530px"}} className="container m-auto">
-					
+				<div style={{ height: "530px" }} className="container m-auto">
 					<div class="accordion" id="accordionExample">
-
-					<div class="accordion-item">
-							<h2 style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-header" id="headingzero">
-								<button style={{color:"#FF7276"}}
-								    
+						<div class="accordion-item">
+							<h2
+								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								class="accordion-header"
+								id="headingzero"
+							>
+								<button
+									style={{ color: "#FF7276" }}
 									class="accordion-button collapsed"
 									type="button"
 									data-bs-toggle="collapse"
 									data-bs-target="#collapsezero"
 									aria-expanded="false"
 									aria-controls="collapsezero"
-
 								>
-								نافذة ستورم أوتوماتيكية وتلميع السيارات بالشارقة
+									نافذة ستورم أوتوماتيكية وتلميع السيارات بالشارقة
 								</button>
 							</h2>
 							<div
@@ -1135,22 +1474,30 @@ export default function Home2() {
 								aria-labelledby="headingzero"
 								data-bs-parent="#accordionExample"
 							>
-								<p style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-body text-[15px] text-white text-justify">
-								يمكن أن يوفر تظليل النوافذ مزايا عملية طويلة الأمد ، مثل
-الخصوصية والحماية من أشعة الشمس والأمان ، بالإضافة إلى التحسين
-جماليات. ستورم للسيارات هي شركة ذات سمعة طيبة لتظليل السيارات
-هذا يعمل معك لتثبيت فيلم شفاف بصريًا
-سيارات الأداء والمظهر الذي تريده. كل منا
-المواد تحمي من الأشعة فوق البنفسجية وتلتصق بالسيارات الإماراتية
-لوائح التظليل. بالإضافة إلى ذلك ، فهي تشمل حماية للأشعة فوق البنفسجية
-الشهادة التي يمكنك أن تشهد عليها.
+								<p
+									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									class="accordion-body text-[15px] text-white text-justify"
+								>
+									يمكن أن يوفر تظليل النوافذ مزايا عملية طويلة الأمد ، مثل
+									الخصوصية والحماية من أشعة الشمس والأمان ، بالإضافة إلى التحسين
+									جماليات. ستورم للسيارات هي شركة ذات سمعة طيبة لتظليل السيارات
+									هذا يعمل معك لتثبيت فيلم شفاف بصريًا سيارات الأداء والمظهر
+									الذي تريده. كل منا المواد تحمي من الأشعة فوق البنفسجية وتلتصق
+									بالسيارات الإماراتية لوائح التظليل. بالإضافة إلى ذلك ، فهي
+									تشمل حماية للأشعة فوق البنفسجية الشهادة التي يمكنك أن تشهد
+									عليها.
 								</p>
 							</div>
 						</div>
 
 						<div class="accordion-item">
-							<h2 style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-header" id="headingOne">
-								<button style={{color:"#FF7276"}}
+							<h2
+								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								class="accordion-header"
+								id="headingOne"
+							>
+								<button
+									style={{ color: "#FF7276" }}
 									class="accordion-button"
 									type="button"
 									data-bs-toggle="collapse"
@@ -1167,29 +1514,37 @@ export default function Home2() {
 								aria-labelledby="headingOne"
 								data-bs-parent="#accordionExample"
 							>
-								<p style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion text-[15px] text-white text-justify">
-								تعتبر أفلام تظليل النوافذ استثمارًا ممتازًا لأنها تقدم
-كل شيء من التحكم في درجة الحرارة إلى الحماية من أشعة الشمس. بصري
-قد يتم تثبيت الأفلام الشفافة بواسطة Storm Automotive ، ذات السمعة الطيبة
-تظليل النوافذ لحماية سيارتك وتوفيرها لك
-مع رحلة أكثر أمانًا ومتعة. لدينا مجموعة متنوعة من
-مظلات السيارات للامتثال للوائح المرور الجديدة في
-دبي ، والتي تسمح لأصحاب السيارات بالحصول على نسبة تظليل تصل إلى 50٪.
+								<p
+									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									class="accordion text-[15px] text-white text-justify"
+								>
+									تعتبر أفلام تظليل النوافذ استثمارًا ممتازًا لأنها تقدم كل شيء
+									من التحكم في درجة الحرارة إلى الحماية من أشعة الشمس. بصري قد
+									يتم تثبيت الأفلام الشفافة بواسطة Storm Automotive ، ذات السمعة
+									الطيبة تظليل النوافذ لحماية سيارتك وتوفيرها لك مع رحلة أكثر
+									أمانًا ومتعة. لدينا مجموعة متنوعة من مظلات السيارات للامتثال
+									للوائح المرور الجديدة في دبي ، والتي تسمح لأصحاب السيارات
+									بالحصول على نسبة تظليل تصل إلى 50٪.
 									<br />
 									<br />
-									قد يكون لسيارتك مظهر جديد تمامًا بفضل
-خدمات تظليل النوافذ عالية الجودة. يمكننا أن نوفر لك
-الحل المثالي لتظليل النوافذ / السيارة ، بغض النظر عما إذا كان
-أنت بحاجة إلى كمية محددة من الحماية من الأشعة فوق البنفسجية ، وتصفية الضوء ،
-الترقية الداخلية أو الخصوصية أو الأمان أو تخفيف الوهج. ملكنا
-يعتبر الموظفون كل عميل احتياجات خاصة ويقدمون
-أفضل مواد تظليل النوافذ لتناسبها.
+									قد يكون لسيارتك مظهر جديد تمامًا بفضل خدمات تظليل النوافذ
+									عالية الجودة. يمكننا أن نوفر لك الحل المثالي لتظليل النوافذ /
+									السيارة ، بغض النظر عما إذا كان أنت بحاجة إلى كمية محددة من
+									الحماية من الأشعة فوق البنفسجية ، وتصفية الضوء ، الترقية
+									الداخلية أو الخصوصية أو الأمان أو تخفيف الوهج. ملكنا يعتبر
+									الموظفون كل عميل احتياجات خاصة ويقدمون أفضل مواد تظليل النوافذ
+									لتناسبها.
 								</p>
 							</div>
 						</div>
 						<div class="accordion-item">
-							<h2 style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-header" id="headingTwo">
-								<button style={{color:"#FF7276"}}
+							<h2
+								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								class="accordion-header"
+								id="headingTwo"
+							>
+								<button
+									style={{ color: "#FF7276" }}
 									class="accordion-button collapsed"
 									type="button"
 									data-bs-toggle="collapse"
@@ -1197,8 +1552,7 @@ export default function Home2() {
 									aria-expanded="false"
 									aria-controls="collapseTwo"
 								>
-									قم بترقية طراز وراحة سيارتك مع العاصفة
-تظليل النوافذ
+									قم بترقية طراز وراحة سيارتك مع العاصفة تظليل النوافذ
 								</button>
 							</h2>
 							<div
@@ -1207,21 +1561,28 @@ export default function Home2() {
 								aria-labelledby="headingTwo"
 								data-bs-parent="#accordionExample"
 							>
-								<p style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-body text-[15px] text-white text-justify">
-								نحاول تلبية المطالب المختلفة لأصحاب السيارات في
-الإمارات العربية المتحدة من خلال تظليل نوافذ السيارات المتميز ، والذي
-ينضح بامتياز لا مثيل له. نحن نقدم لك مجموعة واسعة
-خيارات تظليل السيارات التي تمكنك من قيادة المزيد
-بسهولة ، بما في ذلك الطلاء البلوري والسيراميك وسلسلة FX.
-ما عليك سوى إبلاغنا بمشاكلك ، وتظليل النوافذ لدينا
-سوف يستجيب المتخصصون بالنصيحة المناسبة. سنقوم
-تنفيذ منتج أو خدمة عند الموافقة عليها.
+								<p
+									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									class="accordion-body text-[15px] text-white text-justify"
+								>
+									نحاول تلبية المطالب المختلفة لأصحاب السيارات في الإمارات
+									العربية المتحدة من خلال تظليل نوافذ السيارات المتميز ، والذي
+									ينضح بامتياز لا مثيل له. نحن نقدم لك مجموعة واسعة خيارات تظليل
+									السيارات التي تمكنك من قيادة المزيد بسهولة ، بما في ذلك الطلاء
+									البلوري والسيراميك وسلسلة FX. ما عليك سوى إبلاغنا بمشاكلك ،
+									وتظليل النوافذ لدينا سوف يستجيب المتخصصون بالنصيحة المناسبة.
+									سنقوم تنفيذ منتج أو خدمة عند الموافقة عليها.
 								</p>
 							</div>
 						</div>
 						<div class="accordion-item">
-							<h2 style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-header" id="headingThree">
-								<button style={{color:"#FF7276"}}
+							<h2
+								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								class="accordion-header"
+								id="headingThree"
+							>
+								<button
+									style={{ color: "#FF7276" }}
 									class="accordion-button collapsed"
 									type="button"
 									data-bs-toggle="collapse"
@@ -1238,44 +1599,43 @@ export default function Home2() {
 								aria-labelledby="headingThree"
 								data-bs-parent="#accordionExample"
 							>
-								<p style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-body text-white text-[15px]">
-								ستورم للسيارات ، شركة لتظليل النوافذ منذ سنوات
-الخبرة ، تقدم مجموعة واسعة من السيارات والنوافذ
-خيارات الصبغ في دبي. لذلك ، يمكنك اختيار نافذة
-فيلم يناسب احتياجاتك هنا ، سواء كنت تريد الخصوصية و
-الحماية أو نظرة أفضل. نتأكد من أن كل من
-المنتجات مصنوعة لتوفير الحماية من الأشعة فوق البنفسجية ، وتقليل ارتفاع درجة الحرارة ،
-والمقدار المطلوب من الخصوصية لأننا معتمدين
-منشأة تظليل لسيارات العاصفة في دبي.
-									<br /> بالإضافة إلى تقديم منتجات من أعلى المستويات
-العيار ، يركز عملنا بشكل كبير على المناسب
-التركيب والتشطيب. بالإضافة إلى ذلك ، كما تمت الموافقة عليها
-متجر تظليل السيارات ، نحن نقدم مجموعة واسعة من الخدمات ،
-بما فيها
+								<p
+									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									class="accordion-body text-white text-[15px]"
+								>
+									ستورم للسيارات ، شركة لتظليل النوافذ منذ سنوات الخبرة ، تقدم
+									مجموعة واسعة من السيارات والنوافذ خيارات الصبغ في دبي. لذلك ،
+									يمكنك اختيار نافذة فيلم يناسب احتياجاتك هنا ، سواء كنت تريد
+									الخصوصية و الحماية أو نظرة أفضل. نتأكد من أن كل من المنتجات
+									مصنوعة لتوفير الحماية من الأشعة فوق البنفسجية ، وتقليل ارتفاع
+									درجة الحرارة ، والمقدار المطلوب من الخصوصية لأننا معتمدين
+									منشأة تظليل لسيارات العاصفة في دبي.
+									<br /> بالإضافة إلى تقديم منتجات من أعلى المستويات العيار ،
+									يركز عملنا بشكل كبير على المناسب التركيب والتشطيب. بالإضافة
+									إلى ذلك ، كما تمت الموافقة عليها متجر تظليل السيارات ، نحن
+									نقدم مجموعة واسعة من الخدمات ، بما فيها
 									<br />
 									<span className="text-red-600">تظليل نوافذ السيارة </span>
 									<br />
-									يمنح اختيارنا المتميز لأفلام التحكم في أشعة الشمس العاصفة
-داخل سيارتك الدرجة اللازمة من الخصوصية و
-الأمان.
+									يمنح اختيارنا المتميز لأفلام التحكم في أشعة الشمس العاصفة داخل
+									سيارتك الدرجة اللازمة من الخصوصية و الأمان.
 									<br />
 									<span className="text-red-600">
-									رسومات السيارة الإبداعية{" "}
+										رسومات السيارة الإبداعية{" "}
 									</span>
 									<br />
-									بصفتنا متجر تظليل سيارات معتمد من العاصفة في دبي ، نقدم لك
-فرص لا حصر لها للتعبير عن إبداعك عبر السيارة
-يلف.
+									بصفتنا متجر تظليل سيارات معتمد من العاصفة في دبي ، نقدم لك فرص
+									لا حصر لها للتعبير عن إبداعك عبر السيارة يلف.
 									<br />
 									<span className="text-red-600">فيلم حماية الطلاء </span>
 									<br />
-									عند استخدامها على الأسطح المطلية للسيارات ، فهذه السيارة الراقية
-يساعد التلوين في تجنب التلاشي أو التآكل.
+									عند استخدامها على الأسطح المطلية للسيارات ، فهذه السيارة
+									الراقية يساعد التلوين في تجنب التلاشي أو التآكل.
 									<br />
 									<span className="text-red-600">تفاصيل السيارة </span>
 									<br />
 									من خلال مجموعة من الخدمات ، يمكننا تقديم مظهر جديد تمامًا لـ
-داخل وخارج سيارتك.
+									داخل وخارج سيارتك.
 									<br />
 								</p>
 							</div>
@@ -1291,10 +1651,11 @@ export default function Home2() {
 							style={{ color: "#FFD700" }}
 							className="text-center text-[44px] font-bold"
 						>
-						اتصل بنا للحصول على مساعدة مباشرة
+							اتصل بنا للحصول على مساعدة مباشرة
 						</div>
 						<p className="text-center text-[20px] text-white">
-						كل ما عليك فعله هو الهاتف أو مراسلتنا عبر البريد الإلكتروني لتحديد موعد ، وسيقوم أخصائي التقييم لدينا بالاتصال بك.
+							كل ما عليك فعله هو الهاتف أو مراسلتنا عبر البريد الإلكتروني لتحديد
+							موعد ، وسيقوم أخصائي التقييم لدينا بالاتصال بك.
 						</p>
 					</div>
 					<div className="col-md-2">
@@ -1312,8 +1673,9 @@ export default function Home2() {
 					</div>
 				</div>
 			</div>
-			<ContactFormAr/>
-			<FooterAr/>
+			<ContactFormAr />
+			<Floating/>
+			<FooterAr />
 		</>
 	);
 }

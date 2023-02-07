@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import C1 from "../img/window-tinting-2.jpg";
 import C2 from "../img/carousel-2.jpg";
+import Cartint from '../img/car-window-shield-060220210503.jpg'
 
 import {
 	GiShakingHands,
@@ -18,7 +19,7 @@ import { BsShieldCheck, BsPeople } from "react-icons/bs";
 import { GrUserWorker, GrUnorderedList, GrDeliver } from "react-icons/gr";
 import { TbTruckDelivery } from "react-icons/tb";
 
-import A1 from "../img/about-1.jpg";
+import A1 from "../img/A1.jpg";
 import A2 from "../img/about-2.jpg";
 import A3 from "../img/about-3.jpg";
 import A4 from "../img/about-4.jpg";
@@ -29,7 +30,7 @@ import Feature from "../img/mec.jpg";
 import Feature2 from "../img/mec2.gif";
 import S1 from "../img/service-1.jpg";
 import S2 from "../img/service-2.jpg";
-import S3 from "../img/service-3.jpg";
+import S3 from "../img/S1.jpeg";
 import S4 from "../img/image.jpg";
 import S5 from "../img/image2.jpg";
 import S6 from "../img/image3.jpg";
@@ -40,6 +41,7 @@ import T4 from "../img/team-4.jpg";
 import R1 from "../img/testimonial-1.jpg";
 import R2 from "../img/testimonial-2.jpg";
 import R3 from "../img/testimonial-3.jpg";
+import Automotive from "../img/automotive-industry.jpg";
 import ContactForm from "@/Components/ContactForm";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -48,6 +50,9 @@ import Poster from "../img/poster.jpg";
 import { RxCross2 } from "react-icons/rx";
 import Topbar from "@/Components/Topbar";
 import Footer from "@/Components/Footer";
+import Carmic from '../img/carmeic.webp'
+import Mechnic from '../img/mechnic.jpg'
+import Floating from "@/Components/Floating";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,25 +65,31 @@ export default function Home2() {
 	return (
 		<>
 			<Head>
-				<title>Car Tinting Dubai | 3M Car Window Tinting | 3M Auto Care - Safa</title>
-				<meta name="description" content="Car Tinting Dubai - Window Tinting And Paint Protection Film Offers In Dubai, Superior Quality 3M Authorized Car Tinting In Dubai & Window Tint Solution." />
+				<title>
+					Car Tinting Dubai | 3M Car Window Tinting | 3M Auto Care - Safa
+				</title>
+				<meta
+					name="description"
+					content="Car Tinting Dubai - Window Tinting And Paint Protection Film Offers In Dubai, Superior Quality 3M Authorized Car Tinting In Dubai & Window Tint Solution."
+				/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon"href="/whitelogo.png"   sizes="32x32"/>
-				<meta name="author" content="Storm"/>
-				<meta name="Language" content="English"/>
-			<meta name="Copyright" content="Storm"/>
-			<meta name="Expires" content="Never"/>
-			<meta name="Robots" content="Index, Follow"></meta>
-			<meta property="og:image" content="" />
-	<meta property="og:type" content="website"/>
-		<meta property="og:description" content="Car Tinting Dubai - Window Tinting And Paint Protection Film Offers In Dubai, Superior Quality 3M Authorized Car Tinting In Dubai & Window Tint Solution. "/>
-	
-	
-		<link rel="alternate" href="https://www.safa.ae/" hreflang="en" />
-    <link rel="canonical" href="https://www.safa.ae/" />
+				<link rel="icon" href="/whitelogo.png" sizes="32x32" />
+				<meta name="author" content="Storm" />
+				<meta name="Language" content="English" />
+				<meta name="Copyright" content="Storm" />
+				<meta name="Expires" content="Never" />
+				<meta name="Robots" content="Index, Follow"></meta>
+				<meta property="og:image" content="" />
+				<meta property="og:type" content="website" />
+				<meta
+					property="og:description"
+					content="Car Tinting Dubai - Window Tinting And Paint Protection Film Offers In Dubai, Superior Quality 3M Authorized Car Tinting In Dubai & Window Tint Solution. "
+				/>
 
+				<link rel="alternate" href="https://www.safa.ae/" hreflang="en" />
+				<link rel="canonical" href="https://www.safa.ae/" />
 			</Head>
-			<Topbar/>
+			<Topbar />
 			<Transition.Root show={open2} as={Fragment}>
 				<Dialog
 					as="div"
@@ -213,11 +224,11 @@ export default function Home2() {
 																leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
 															>
 																<Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-dark text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-																
 																	<form className="px-12 py-12">
-																	<p className="text-white text-center text-[18px] font-bold">BOOK YOUR RESERVATION NOW</p>
+																		<p className="text-white text-center text-[18px] font-bold">
+																			BOOK YOUR RESERVATION NOW
+																		</p>
 																		<div class="mb-6">
-																	
 																			<label
 																				for="text"
 																				class="block mb-2 text-sm font-medium text-[#FFD700]"
@@ -286,7 +297,7 @@ export default function Home2() {
 																			>
 																				Send
 																			</button>
-																		
+
 																			<button
 																				type="button"
 																				className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
@@ -412,12 +423,16 @@ export default function Home2() {
 						</div>
 						<div class="col-lg-6">
 							<div class="row g-3">
-								<div class="col-6 text-end">
-									<div class="img-fluid w-100 wow zoomIn">
-										<Image src={A1} alt="Car Tinting Service Dubai" />
+								<div class="col-lg-12 text-end">
+									<div class="">
+										<Image
+											src={A1}
+											alt="Car Tinting Service Dubai"
+											style={{ borderRadius: 20, marginLeft: 10 }}
+										/>
 									</div>
 								</div>
-								<div class="col-6 text-start">
+								{/* <div class="col-6 text-start">
 									<div class="img-fluid w-80 wow zoomIn">
 										<Image src={A2}  alt="Car Tinting Service Dubai" />
 									</div>
@@ -431,7 +446,7 @@ export default function Home2() {
 									<div class="img-fluid w-100 wow zoomIn">
 										<Image src={A4}  alt="Car Tinting Service Dubai" />
 									</div>
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>
@@ -474,13 +489,12 @@ export default function Home2() {
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
 										}}
-										src={S1}  alt="Car Tinting Service Dubai"
+										src={S1}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>
-										Automotive
-									</a>
+									<a style={{ fontSize: "20px" }}>Automotive</a>
 								</div>
 							</div>
 						</div>
@@ -493,13 +507,12 @@ export default function Home2() {
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
 										}}
-										src={S2}  alt="Car Tinting Service Dubai"
+										src={S2}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }} >
-										Commercial Window Films
-									</a>
+									<a style={{ fontSize: "20px" }}>Commercial Window Films</a>
 								</div>
 							</div>
 						</div>
@@ -511,14 +524,15 @@ export default function Home2() {
 											border: "5px solid black",
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
+											width: "70%",
+											height: "70%",
 										}}
-										src={S3}  alt="Car Tinting Service Dubai"
+										src={S3}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>
-										Fasara
-									</a>
+									<a style={{ fontSize: "20px" }}>Seat UpHolstery</a>
 								</div>
 							</div>
 						</div>
@@ -530,12 +544,15 @@ export default function Home2() {
 											border: "5px solid black",
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
+											width: "70%",
+											height: "50%",
 										}}
-										src={S4} alt="Car Tinting Service Dubai"
+										src={S4}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a>Di-Noc</a>
+									<a style={{ fontSize: "20px" }}>School buses</a>
 								</div>
 							</div>
 						</div>
@@ -548,13 +565,12 @@ export default function Home2() {
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
 										}}
-										src={S5}  alt="Car Tinting Service Dubai"
+										src={S5}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>
-										Residential
-									</a>
+									<a style={{ fontSize: "20px" }}>Residential</a>
 								</div>
 							</div>
 						</div>
@@ -567,280 +583,618 @@ export default function Home2() {
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
 										}}
-										src={S6}  alt="Car Tinting Service Dubai"
+										src={S6}
+										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>
-										Safety & Security
-									</a>
+									<a style={{ fontSize: "20px" }}>Safety & Security</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<br></br><br></br>
+			<br></br>
+			<br></br>
+			<div>
+				<section class=" container body-font">
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
+							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								Automotive
+							</h1>
+							<p class="mb-8 leading-relaxed text-justify">
+								Searching for the finest automobile protection options? We
+								provide a wide selection of top-notch automobile protection
+								equipment to assist you to protect your vehicle from numerous
+								exterior factors, like the sun, dust, and dirt, and weather. We
+								at storm auto accessories offer everything you need to make your
+								automobile appear like new, including detailing services, nano
+								ceramic coating, car polishing, sun control films, and detailing
+								services. We have a lot of knowledge and skill in giving your
+								automobile all-around protection since we are the authorised
+								car-care centre in Dubai. We are accountable for the safety of
+								your car.
+							</p>
+						</div>
+
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+							<div class="object-cover object-center rounded">
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: 20 }}
+								/>
+							</div>
+						</div>
+					</div>
+					<div className="row m-auto">
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Cartint} alt="..." />
+								</div>
+
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Car Window Tinting Dubai
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										We provide an exceptional selection of storm auto
+										accessories and sun protection window films that are fitted
+										on your cars windows to make you conformable and save the
+										inside of your vehicle from being damaged by excessive heat
+										and sunshine.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Carmic} alt="..." />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Ceramic Coating
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										We provide the best nano ceramic coating to protect your
+										automobile from dents and other exterior damage. It is used
+										on the paint, bumpers, and plastic trim to provide
+										long-lasting general protection.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Mechnic} alt="..." />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Mechanical Service
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										Safa Automotive LLC has been in the automotive industry
+										since 2003. We are Dubais experts in luxury automobile
+										repairs. Repairing Rolls Royce, Mercedes, Porsche, Land
+										Rover, Bentley, and Audi is our area of competence.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class=" container body-font">
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+							<div class="object-cover object-center rounded">
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: 20 }}
+								/>
+							</div>
+						</div>
+						<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								Commercial Window Films
+							</h1>
+							<h2 className="text-[22px] mb-3 font-semibold">
+								WINDOW FILMS INSTALLATION SERVICES IN SHARJAH - COMMERCIAL USAGE
+							</h2>
+							<p class="mb-8 leading-relaxed text-justify">
+								In the present, commercial window films in Dubai are essential
+								for offering a high degree of privacy, heat protection, and of
+								course a pleasant working environment. It may be quite difficult
+								to work in a hot, unpleasant workplace, and if you cant provide
+								your workers appropriate working circumstances, your brand value
+								will undoubtedly suffer. Storm auto accessories has world-class
+								Storm auto accessories window film solutions for your commercial
+								spaces to help you create the perfect working environment. Storm
+								auto accessories recognises the necessity for the best-quality
+								heat protection and safety window films in the commercial
+								buildings.
+							</p>
+						</div>
+					</div>
+					<div className="row m-auto ">
+						<div className="col-md-6">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Cartint} alt="..." />
+								</div>
+
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Building Window Tinting
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										As the name implies, the primary function of these films is
+										to cover the windows of commercial buildings to block the
+										entry of sunshine and heat. The many tints of sun protection
+										films
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-6">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Carmic} alt="..." />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Commercial Blackout Window Film
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										The blackout window films are for you if you want to achieve
+										total seclusion in your business space and dont want the
+										outside elements to impact the inside of your establishment.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class=" container body-font">
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
+							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								Residential
+							</h1>
+							<h2 className="text-[22px] mb-3 font-semibold">
+								RESIDENTIAL WINDOW FILM - PROVIDING COMPLETE PROTECTION
+							</h2>
+							<p class="mb-8 leading-relaxed text-justify">
+								such things in your living quarters, adjustments need to be
+								made. Glass in windows and doors of homes let in natural light,
+								but the night also brings with it an excessive amount of heat
+								that saps energy. With the top-of-the-line window film, its time
+								to rethink your homes interior. The variety of window films
+								offered by Storm Auto Accessories will not only help you protect
+								the inside of your home but also improve the spaces
+								attractiveness and décor in a classy way.
+							</p>
+						</div>
+
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+							<div class="object-cover object-center rounded">
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: 20 }}
+								/>
+							</div>
+						</div>
+					</div>
+					<div className="row m-auto">
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Cartint} alt="..." />
+								</div>
+
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Home Window Tinting
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										Sun control windows come in various colours to assist you
+										regulate the amount of heat and light that enters your home
+										via the windows and doors.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Carmic} alt="..." />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Residential Blackout Window Film
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										The blackout window films are without a doubt the answer if
+										you want to keep your valuables inside the home out of sight
+										and need maximum seclusion. The glass door and window are
+										opaque to light.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-4">
+							<div class="card" style={{ width: "18rem" }}>
+								<div class="card-img-top">
+									<Image src={Mechnic} alt="..." />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-[18px] font-bold">
+										Residential Privacy Film
+									</h5>
+									<p class="card-text text-justify font-semibold">
+										Our aim is to assist you in obtaining a private area in your
+										home. There are areas in the home that may use a little more
+										privacy, and for such, we offer premium privacy window films
+										that are simple to apply.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class=" container body-font">
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+							<div class="object-cover object-center rounded">
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: 20 }}
+								/>
+							</div>
+						</div>
+						<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								Safety & Security
+							</h1>
+							<h2 className="text-[22px] mb-3 font-semibold">
+								SAFEGUARDING COMMERCIAL & RESIDENTIAL GLASS WINDOWS
+							</h2>
+							<p class="mb-8 leading-relaxed text-justify">
+								Its always crucial to take all necessary precautions to provide
+								the areas where we reside or spend the majority of our time the
+								highest degree of safety. The goal of our premium selection of
+								safety and security films is to keep your personal and business
+								environments secure. With this, we want to safeguard you against
+								unforeseen events that might seriously harm your life or
+								property. The business complexes glass windows, doors, and
+								towering glass-structured walls all have safety and security
+								films put on them to safeguard them from physical harm and other
+								environmental problems. To ensure that your style is not
+								compromised while placing safety films on the windows, the whole
+								line of commercial and residential safety windows offers unique
+								colours and patterns to coordinate with the styling and décor of
+								your area.
+							</p>
+						</div>
+					</div>
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								WHY DO YOU NEED TO INSTALL SAFETY & SECURITY WINDOW FILMS IN
+								DUBAI?
+							</h1>
+							<p class="mb-8 leading-relaxed text-justify">
+								It goes without saying that you must make your household or
+								business place safe and secure. In Dubai, there are unfavourable
+								weather patterns and extreme climate changes, which have a
+								significant negative influence on the buildings and structures.
+								In certain disaster-prone places, other natural catastrophes
+								like earthquakes and fast-blow wind bursts like hurricanes are
+								also rather prevalent. Installing protective shields on glass
+								windows and doors is necessary since they are vulnerable to
+								breaking, which may result in many forms of property and life
+								harm. Additionally, there are unforeseen incidental damages
+								brought on by theft and other criminal activity, therefore you
+								should maintain tight security to prevent them. The safety and
+								security window films may provide you excellent protection in
+								this regard. These films are intended to prevent window and door
+								glass from breaking as a result of different outside pressures
+								or accidents.
+							</p>
+						</div>
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+							<div class="object-cover object-center rounded">
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: 20 }}
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
 			<div className="bgimage1 ">
-			<div class="container-fluid py-5 ">
-				<div class="">
-					<div class="row ">
-						<div class=" wow fadeInUp" data-wow-delay="0.1s">
-							<div
-								class="text-center mx-auto wow fadeInUp"
-								data-wow-delay="0.1s"
-								style={{ maxWidth: "900px" }}
-							>
-								<h2
-									style={{ color: "#FF7276", fontWeight: "normal" }}
-									class="display-4 mb-3 "
+				<div class="container-fluid py-5 ">
+					<div class="">
+						<div class="row ">
+							<div class=" wow fadeInUp" data-wow-delay="0.1s">
+								<div
+									class="text-center mx-auto wow fadeInUp"
+									data-wow-delay="0.1s"
+									style={{ maxWidth: "900px" }}
 								>
-									Why To Choose Storm AUTOMOTIVE ?
-								</h2>
-								<h3
-									style={{ color: "#FFD700", fontWeight: "normal" }}
-									className="font-bold text-[24px]"
-								>
-									CAR TINTING IN DUBAI
-								</h3>
-								<p class="mt-3 text-center text-white ">
-									With its excellent quality auto storm car tinting in Dubai,
-									window film, Storm Automotive LLC has improved and transformed
-									many vehicles and structures since its founding in 2010. To
-									improve energy efficiency, safety, and general privacy, our
-									highly qualified team of professionals can offer efficient
-									window tinting services for cars and homes. Customers have the
-									highest faith in us for a number of reasons. Several of them
-									are listed below.
-								</p>
-							</div>
-							<br></br>
-							<br></br>
-							<br></br>
-							<div className="row">
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
-											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
-											}}
-										>
-											<div class="img-fluid">
-												<GiShakingHands size={40} color="#ffff" />
+									<h2
+										style={{ color: "#FF7276", fontWeight: "normal" }}
+										class="display-4 mb-3 "
+									>
+										Why To Choose Storm AUTOMOTIVE ?
+									</h2>
+									<h3
+										style={{ color: "#FFD700", fontWeight: "normal" }}
+										className="font-bold text-[24px]"
+									>
+										CAR TINTING IN DUBAI
+									</h3>
+									<p class="mt-3 text-center text-white ">
+										With its excellent quality auto storm car tinting in Dubai,
+										window film, Storm Automotive LLC has improved and
+										transformed many vehicles and structures since its founding
+										in 2010. To improve energy efficiency, safety, and general
+										privacy, our highly qualified team of professionals can
+										offer efficient window tinting services for cars and homes.
+										Customers have the highest faith in us for a number of
+										reasons. Several of them are listed below.
+									</p>
+								</div>
+								<br></br>
+								<br></br>
+								<br></br>
+								<div className="row">
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
+											>
+												<div class="img-fluid">
+													<GiShakingHands size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-3 "
+												>
+													World-class products
+												</h5>
+												<p className="text-justify text-white ">
+													Storm Automotive offers a wide selection of window
+													films as an authorised Storm accessories tinting
+													centre in Dubai. All of our goods come from a
+													high-quality company that is the industry leader in
+													window film production. Additionally, they have
+													completed a number of quality analysis procedures to
+													guarantee unrivalled quality. These window tinting
+													options seek to provide a safer driving environment by
+													minimising glare. Additionally, they can offer the
+													required level of safety and defence against damaging
+													sunrays when used on a window.
+												</p>
 											</div>
 										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-3 "
-											>
-												World-class products
-											</h5>
-											<p className="text-justify text-white ">
-												Storm Automotive offers a wide selection of window films
-												as an authorised Storm accessories tinting centre in
-												Dubai. All of our goods come from a high-quality company
-												that is the industry leader in window film production.
-												Additionally, they have completed a number of quality
-												analysis procedures to guarantee unrivalled quality.
-												These window tinting options seek to provide a safer
-												driving environment by minimising glare. Additionally,
-												they can offer the required level of safety and defence
-												against damaging sunrays when used on a window.
-											</p>
-										</div>
 									</div>
-								</div>
-								<div className="col-md-6"></div>
+									<div className="col-md-6"></div>
 
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
-											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
-											}}
-										>
-											<div class="img-fluid">
-												<GiAchievement size={40} color="#ffff" />
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
+											>
+												<div class="img-fluid">
+													<GiAchievement size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-3 "
+												>
+													Extensive Industry Experience
+												</h5>
+												<p className="text-justify text-white ">
+													With around 20 years of car-tinting experience in
+													Dubai, we aim to continually provide perfection. All
+													window tinting services can be performed by our
+													skilled personnel with the utmost precision. These
+													professionals can polish and detail any vehicle to a
+													high standard and within the allotted time thanks to
+													their attention to detail. Additionally, they continue
+													to expand their knowledge and skills as automobile
+													tinting technology advances.
+												</p>
 											</div>
 										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-3 "
-											>
-												Extensive Industry Experience
-											</h5>
-											<p className="text-justify text-white ">
-												With around 20 years of car-tinting experience in Dubai,
-												we aim to continually provide perfection. All window
-												tinting services can be performed by our skilled
-												personnel with the utmost precision. These professionals
-												can polish and detail any vehicle to a high standard and
-												within the allotted time thanks to their attention to
-												detail. Additionally, they continue to expand their
-												knowledge and skills as automobile tinting technology
-												advances.
-											</p>
-										</div>
 									</div>
-								</div>
-								<div className="col-md-6">
-									<Image
-										style={{ width: "60%", margin: "auto",border:"2px solid black",borderRadius:"15px" }}
-										src={Feature}  alt="Car Tinting Service Dubai"
-									/>
-								</div>
+									<div className="col-md-6">
+										<Image
+											style={{
+												width: "60%",
+												margin: "auto",
+												border: "2px solid black",
+												borderRadius: "15px",
+											}}
+											src={Feature}
+											alt="Car Tinting Service Dubai"
+										/>
+									</div>
 
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
-											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
-											}}
-										>
-											<div class="img-fluid">
-												<GiCombinationLock size={40} color="#ffff" />
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
+											>
+												<div class="img-fluid">
+													<GiCombinationLock size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-3"
+												>
+													Authorization
+												</h5>
+												<p className="text-justify text-white">
+													Storm Automotive relies on ethical business practises
+													and standards because it is an authorised partner of
+													the top manufacturer of sun control window films in
+													the world. We go above and above to establish a
+													connection of trust with our customers. Therefore,
+													each car tinting service or product provided by our
+													business includes an authenticity certificate.
+												</p>
 											</div>
 										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-3"
-											>
-												Authorization
-											</h5>
-											<p className="text-justify text-white">
-												Storm Automotive relies on ethical business practises
-												and standards because it is an authorised partner of the
-												top manufacturer of sun control window films in the
-												world. We go above and above to establish a connection
-												of trust with our customers. Therefore, each car tinting
-												service or product provided by our business includes an
-												authenticity certificate.
-											</p>
-										</div>
 									</div>
-								</div>
-								<div className="col-md-6"></div>
+									<div className="col-md-6"></div>
 
-								<div className="col-md-6"></div>
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
-											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
-											}}
-										>
-											<div class="img-fluid">
-												<FcApproval size={40} color="#ffff" />
-											</div>
-										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-3 "
+									<div className="col-md-6"></div>
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
 											>
-												Scientifically-approved window films
-											</h5>
-											<p className="text-justify text-white">
-												As a licenced window film dealer, storm Automotive
-												offers premium automobile tinting products with some
-												known health advantages. These cutting-edge storm car
-												tints have been validated by science and can block up to
-												99% of UV and infrared rays. As a result of their
-												prolonged sun exposure, they shield themselves from
-												prevalent ailments.
-											</p>
+												<div class="img-fluid">
+													<FcApproval size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-3 "
+												>
+													Scientifically-approved window films
+												</h5>
+												<p className="text-justify text-white">
+													As a licenced window film dealer, storm Automotive
+													offers premium automobile tinting products with some
+													known health advantages. These cutting-edge storm car
+													tints have been validated by science and can block up
+													to 99% of UV and infrared rays. As a result of their
+													prolonged sun exposure, they shield themselves from
+													prevalent ailments.
+												</p>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div className="col-md-6">
-									<Image
-										style={{ width: "60%", margin: "auto",border:"2px solid black",borderRadius:"15px" }}
-										src={Feature2}  alt="Car Tinting Service Dubai"
-									/>
-								</div>
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
+									<div className="col-md-6">
+										<Image
 											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
+												width: "60%",
+												margin: "auto",
+												border: "2px solid black",
+												borderRadius: "15px",
 											}}
-										>
-											<div class="img-fluid">
-												<GiThreeFriends size={40} color="#ffff" />
-											</div>
-										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-3 "
+											src={Feature2}
+											alt="Car Tinting Service Dubai"
+										/>
+									</div>
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
 											>
-												Budget-friendly
-											</h5>
-											<p className="text-justify text-white">
-												We dont demand that you spend a fortune protecting your
-												car from dangerous UV and infrared rays. Instead, we
-												provide affordable auto tinting and sun control window
-												films to improve comfort. We also offer a variety of
-												solutions for home tinting and let our customers select
-												the one that best suits their needs and their budget.
-												Additionally, our window tinting options can enable you
-												to reduce your long-term lighting and air conditioning
-												expenses.
-											</p>
+												<div class="img-fluid">
+													<GiThreeFriends size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-3 "
+												>
+													Budget-friendly
+												</h5>
+												<p className="text-justify text-white">
+													We dont demand that you spend a fortune protecting
+													your car from dangerous UV and infrared rays. Instead,
+													we provide affordable auto tinting and sun control
+													window films to improve comfort. We also offer a
+													variety of solutions for home tinting and let our
+													customers select the one that best suits their needs
+													and their budget. Additionally, our window tinting
+													options can enable you to reduce your long-term
+													lighting and air conditioning expenses.
+												</p>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div className="col-md-6"></div>
-								<div className="col-md-6">
-									<div class="d-flex mb-5">
-										<div
-											class="flex-shrink-0 btn-square  rounded-circle"
-											style={{
-												width: "90px",
-												height: "90px",
-												background: "#FF7276",
-											}}
-										>
-											<div class="img-fluid">
-												<GiShakingHands size={40} color="#ffff" />
-											</div>
-										</div>
-										<div class="ms-4">
-											<h5
-												style={{ color: "#FFD700", fontWeight: "normal" }}
-												class="mb-"
+									<div className="col-md-6"></div>
+									<div className="col-md-6">
+										<div class="d-flex mb-5">
+											<div
+												class="flex-shrink-0 btn-square  rounded-circle"
+												style={{
+													width: "90px",
+													height: "90px",
+													background: "#FF7276",
+												}}
 											>
-												100% Satisfaction
-											</h5>
-											<p className="text-justify text-white ">
-												At Storm Automotive, we perform superior storm auto
-												tinting services in Dubai and around the UAE with the
-												goal of achieving unmatched client satisfaction. We
-												guarantee that our goods will meet your expectations for
-												quality and performance. Additionally, they maintain
-												their appearance and colour throughout time.
-												Additionally, being a reputable window tinting business
-												in the UAE, we continuously adapt to meet the shifting
-												needs and preferences of our clients.
-											</p>
+												<div class="img-fluid">
+													<GiShakingHands size={40} color="#ffff" />
+												</div>
+											</div>
+											<div class="ms-4">
+												<h5
+													style={{ color: "#FFD700", fontWeight: "normal" }}
+													class="mb-"
+												>
+													100% Satisfaction
+												</h5>
+												<p className="text-justify text-white ">
+													At Storm Automotive, we perform superior storm auto
+													tinting services in Dubai and around the UAE with the
+													goal of achieving unmatched client satisfaction. We
+													guarantee that our goods will meet your expectations
+													for quality and performance. Additionally, they
+													maintain their appearance and colour throughout time.
+													Additionally, being a reputable window tinting
+													business in the UAE, we continuously adapt to meet the
+													shifting needs and preferences of our clients.
+												</p>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -848,7 +1202,6 @@ export default function Home2() {
 						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 
 			<div
@@ -856,7 +1209,7 @@ export default function Home2() {
 				className="container-fluid bg-storm mt-1"
 			>
 				<div
-					style={{ color: "#FF7276", fontWeight: "bold",textAlign:"center" }}
+					style={{ color: "#FF7276", fontWeight: "bold", textAlign: "center" }}
 					className="text-center text-[44px] pt-5 "
 				>
 					GUARANTEES
@@ -1018,8 +1371,8 @@ export default function Home2() {
 							class="card"
 							style={{
 								width: "18rem",
-							
-								backgroundColor:"rgba(0,0,0,0.1)",
+
+								backgroundColor: "rgba(0,0,0,0.1)",
 							}}
 						>
 							<div class="card-img-top   mt-5">
@@ -1042,13 +1395,12 @@ export default function Home2() {
 							style={{
 								width: "18rem",
 								backgroundColor: "rgba(0,0,0,0.1)",
-								
 							}}
 						>
 							<div class="card-img-top  mt-5">
 								<AiOutlineSolution
 									size={100}
-									style={{ marginLeft: "35%",color: "#FFD700" }}
+									style={{ marginLeft: "35%", color: "#FFD700" }}
 								/>
 							</div>
 
@@ -1065,7 +1417,6 @@ export default function Home2() {
 							style={{
 								width: "18rem",
 								backgroundColor: "rgba(0,0,0,0.1)",
-								
 							}}
 						>
 							<div class="card-img-top  mt-5">
@@ -1088,7 +1439,6 @@ export default function Home2() {
 							style={{
 								width: "18rem",
 								backgroundColor: "rgba(0,0,0,0.1)",
-								
 							}}
 						>
 							<div class="card-img-top  mt-5">
@@ -1108,23 +1458,24 @@ export default function Home2() {
 				</div>
 			</div>
 			<div className="bgimage ">
-				<div style={{height:"530px"}} className="container m-auto">
-					
+				<div style={{ height: "530px" }} className="container m-auto">
 					<div class="accordion" id="accordionExample">
-
-					<div class="accordion-item">
-							<h2 style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-header" id="headingzero">
-								<button style={{color:"#FF7276"}}
-								    
+						<div class="accordion-item">
+							<h2
+								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								class="accordion-header"
+								id="headingzero"
+							>
+								<button
+									style={{ color: "#FF7276" }}
 									class="accordion-button collapsed"
 									type="button"
 									data-bs-toggle="collapse"
 									data-bs-target="#collapsezero"
 									aria-expanded="false"
 									aria-controls="collapsezero"
-
 								>
-								STORM AUTOMATIVE WINDOW FILM AND CAR TINTING CENTER SHARJAH
+									STORM AUTOMATIVE WINDOW FILM AND CAR TINTING CENTER SHARJAH
 								</button>
 							</h2>
 							<div
@@ -1133,22 +1484,31 @@ export default function Home2() {
 								aria-labelledby="headingzero"
 								data-bs-parent="#accordionExample"
 							>
-								<p style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-body text-[15px] text-white text-justify">
-								Window tinting can offer long-lasting practical advantages, such as
-						Privacy, sun protection, and safety, in addition to improving
-						Aesthetics. Storm automotive is a reputable auto tinting business
-						That works with you to install an optically transparent film to give
-						Vehicles the performance and appearance you want. All of our
-						Materials protect against uv radiation and adhere to uae automobile
-						Tinting regulations. Additionally, they include a uv protection
-						Certification that you can attest to.
+								<p
+									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									class="accordion-body text-[15px] text-white text-justify"
+								>
+									Window tinting can offer long-lasting practical advantages,
+									such as Privacy, sun protection, and safety, in addition to
+									improving Aesthetics. Storm automotive is a reputable auto
+									tinting business That works with you to install an optically
+									transparent film to give Vehicles the performance and
+									appearance you want. All of our Materials protect against uv
+									radiation and adhere to uae automobile Tinting regulations.
+									Additionally, they include a uv protection Certification that
+									you can attest to.
 								</p>
 							</div>
 						</div>
 
 						<div class="accordion-item">
-							<h2 style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-header" id="headingOne">
-								<button style={{color:"#FF7276"}}
+							<h2
+								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								class="accordion-header"
+								id="headingOne"
+							>
+								<button
+									style={{ color: "#FF7276" }}
 									class="accordion-button"
 									type="button"
 									data-bs-toggle="collapse"
@@ -1165,7 +1525,10 @@ export default function Home2() {
 								aria-labelledby="headingOne"
 								data-bs-parent="#accordionExample"
 							>
-								<p style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion text-[15px] text-white text-justify">
+								<p
+									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									class="accordion text-[15px] text-white text-justify"
+								>
 									Window films are an excellent investment since they offer
 									everything from temperature control to sun protection. Optical
 									clear films may be installed by Storm Automotive, a reputable
@@ -1186,8 +1549,13 @@ export default function Home2() {
 							</div>
 						</div>
 						<div class="accordion-item">
-							<h2 style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-header" id="headingTwo">
-								<button style={{color:"#FF7276"}}
+							<h2
+								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								class="accordion-header"
+								id="headingTwo"
+							>
+								<button
+									style={{ color: "#FF7276" }}
 									class="accordion-button collapsed"
 									type="button"
 									data-bs-toggle="collapse"
@@ -1205,7 +1573,10 @@ export default function Home2() {
 								aria-labelledby="headingTwo"
 								data-bs-parent="#accordionExample"
 							>
-								<p style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-body text-[15px] text-white text-justify">
+								<p
+									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									class="accordion-body text-[15px] text-white text-justify"
+								>
 									We try to satisfy the various demands of automobile owners in
 									the UAE with our premium automotive window tinting, which
 									exudes unrivalled excellence. We provide you with a wide range
@@ -1218,8 +1589,13 @@ export default function Home2() {
 							</div>
 						</div>
 						<div class="accordion-item">
-							<h2 style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-header" id="headingThree">
-								<button style={{color:"#FF7276"}}
+							<h2
+								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								class="accordion-header"
+								id="headingThree"
+							>
+								<button
+									style={{ color: "#FF7276" }}
 									class="accordion-button collapsed"
 									type="button"
 									data-bs-toggle="collapse"
@@ -1236,7 +1612,10 @@ export default function Home2() {
 								aria-labelledby="headingThree"
 								data-bs-parent="#accordionExample"
 							>
-								<p style={{backgroundColor:"rgb(0,0,0,1)"}} class="accordion-body text-white text-[15px]">
+								<p
+									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									class="accordion-body text-white text-[15px]"
+								>
 									Storm automotive, a window tinting company with years of
 									expertise, offers a wide range of automobile and window
 									tinting choices in dubai. Therefore, you may choose a window
@@ -1292,7 +1671,8 @@ export default function Home2() {
 							CALL US FOR LIVE ASSISTANCE
 						</div>
 						<p className="text-center text-[20px] text-white">
-						All you have to do is phone or email us for an appointment, and our assessment specialist will contact you.
+							All you have to do is phone or email us for an appointment, and
+							our assessment specialist will contact you.
 						</p>
 					</div>
 					<div className="col-md-2">
@@ -1311,7 +1691,8 @@ export default function Home2() {
 				</div>
 			</div>
 			<ContactForm />
-			<Footer/>
+			<Floating/>
+			<Footer />
 		</>
 	);
 }

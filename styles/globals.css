@@ -17,7 +17,7 @@ background-image: linear-gradient(0deg, rgba(0,  0, 0, 0.9), rgba(0,0,0, 0.9)), 
             
 }
 .bgimageMain{
-    background-image: linear-gradient(0deg, rgba(0,  0, 0, 0.9), rgba(0,0,0, 0.9)), url("../img/bgmain.jpg");
+    background-image: linear-gradient(0deg, rgba(3, 24, 141, 0.7), rgba(3,24,141, 0.7)), url("../img/bgvideo.gif");
                
       background-size: cover;
         background-position: center;
@@ -35,7 +35,38 @@ background-image: linear-gradient(0deg, rgba(0,  0, 0, 0.9), rgba(0,0,0, 0.9)), 
         background-repeat: no-repeat;
                 
     }
+.float {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #FFD700;
+    color: rgb(43, 132, 248);
+    border-radius: 50px;
+    text-align: center;
+   
+}
 
+.float2 {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    bottom: 130px;
+    right: 40px;
+    background-color: #FFD700;
+    color: green;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+
+.my-float {
+    margin-top: 26px;
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;
+}
 
 .bgimage2{
     background-image:linear-gradient(0deg, rgba(0,  0, 0,0.9), rgba(0,0,0,0.9)), url("../img/stript.jpeg");
@@ -212,6 +243,35 @@ background: linear-gradient(90deg,#2CD9FF,#7EFFB2);
         .gbbb{
             margin-bottom: 11px;
         }
+                 .float {
+                     position: fixed;
+                     width: 60px;
+                     height: 60px;
+                     bottom: 40px;
+                     right: 40px;
+                     background-color: #FFD700;
+                     color: #FFF;
+                     border-radius: 50px;
+                     text-align: center;
+                     box-shadow: 2px 2px 3px #999;
+                 }
+        
+                 .float2 {
+                     position: fixed;
+                     width: 60px;
+                     height: 60px;
+                     bottom: 120px;
+                     right: 40px;
+                     background-color: #FFD700;
+                     color: #FFF;
+                     border-radius: 50px;
+                     text-align: center;
+                     box-shadow: 2px 2px 3px #999;
+                 }
+        
+                 .my-float {
+                     margin-top: 22px;
+                 }
 }
 @media screen and (max-width:375px){
     .gapp{
