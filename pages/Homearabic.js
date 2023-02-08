@@ -1,9 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import C1 from "../img/window-tinting-2.jpg";
 import C2 from "../img/carousel-2.jpg";
+import Cartint from "../img/car-window-shield-060220210503.jpg";
 
 import {
 	GiShakingHands,
@@ -40,6 +39,7 @@ import T4 from "../img/team-4.jpg";
 import R1 from "../img/testimonial-1.jpg";
 import R2 from "../img/testimonial-2.jpg";
 import R3 from "../img/testimonial-3.jpg";
+import Automotive from "../img/automotive-industry.jpg";
 import ContactForm from "@/Components/ContactForm";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -48,13 +48,16 @@ import Poster from "../img/poster.jpg";
 import { RxCross2 } from "react-icons/rx";
 import Topbar from "@/Components/Topbar";
 import Footer from "@/Components/Footer";
+import Carmic from "../img/carmeic.webp";
+import Mechnic from "../img/mechnic.jpg";
+import Floating from "@/Components/Floating";
+import Head from "next/head";
+import Image from "next/image";
+import TopbarAr from "@/Components/TopbarAr";
 import ContactFormAr from "@/Components/ContactFormAr";
 import FooterAr from "@/Components/FooterAr";
-import TopbarAr from "@/Components/TopbarAr";
-import Floating from "@/Components/Floating";
-const inter = Inter({ subsets: ["latin"] });
 
-export default function Home2() {
+export default function Homearabic() {
 	const [open, setOpen] = useState(false);
 	const [open2, setOpen2] = useState(true);
 
@@ -1674,7 +1677,7 @@ export default function Home2() {
 				</div>
 			</div>
 			<ContactFormAr />
-			<Floating/>
+			<Floating />
 			<FooterAr />
 		</>
 	);

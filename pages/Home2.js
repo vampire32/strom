@@ -1,10 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
+
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import C1 from "../img/window-tinting-2.jpg";
 import C2 from "../img/carousel-2.jpg";
-import Cartint from '../img/car-window-shield-060220210503.jpg'
+import Cartint from "../img/car-window-shield-060220210503.jpg";
 
 import {
 	GiShakingHands,
@@ -50,9 +49,12 @@ import Poster from "../img/poster.jpg";
 import { RxCross2 } from "react-icons/rx";
 import Topbar from "@/Components/Topbar";
 import Footer from "@/Components/Footer";
-import Carmic from '../img/carmeic.webp'
-import Mechnic from '../img/mechnic.jpg'
+import Carmic from "../img/carmeic.webp";
+import Mechnic from "../img/mechnic.jpg";
 import Floating from "@/Components/Floating";
+import Head from "next/head";
+import Image from "next/image";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -1691,7 +1693,7 @@ export default function Home2() {
 				</div>
 			</div>
 			<ContactForm />
-			<Floating/>
+			<Floating />
 			<Footer />
 		</>
 	);
