@@ -12,6 +12,9 @@ import {
 	GiFactory,
 	GiMetalDisc,
 } from "react-icons/gi";
+
+import { BsWhatsapp } from "react-icons/bs";
+import { MdOutlineLanguage } from "react-icons/md";
 import { FcApproval } from "react-icons/fc";
 import { BsShieldCheck, BsPeople } from "react-icons/bs";
 import { GrUserWorker, GrUnorderedList, GrDeliver } from "react-icons/gr";
@@ -29,8 +32,8 @@ import Feature2 from "../img/mec2.gif";
 import S1 from "../img/service-1.jpg";
 import S2 from "../img/service-2.jpg";
 import S3 from "../img/S1.jpeg";
-import S4 from "../img/image.jpg";
-import S5 from "../img/image2.jpg";
+import S4 from "../img/SchoolBuss.jpg";
+import S5 from "../img/porch11.webp";
 import S6 from "../img/image3.jpg";
 import T1 from "../img/team-1.jpg";
 import T2 from "../img/team-2.jpg";
@@ -39,7 +42,9 @@ import T4 from "../img/team-4.jpg";
 import R1 from "../img/testimonial-1.jpg";
 import R2 from "../img/testimonial-2.jpg";
 import R3 from "../img/testimonial-3.jpg";
-import Automotive from "../img/automotive-industry.jpg";
+import Automotive from "../img/commercial.jpg";
+import Res from "../img/res.jpg";
+import sec from "../img/seeec.webp";
 import ContactForm from "@/Components/ContactForm";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -56,6 +61,10 @@ import Image from "next/image";
 import TopbarAr from "@/Components/TopbarAr";
 import ContactFormAr from "@/Components/ContactFormAr";
 import FooterAr from "@/Components/FooterAr";
+import Link from "next/link";
+import F1 from "../img/c1-removebg-preview.png";
+import F2 from "../img/c2-removebg-preview.png";
+import F3 from "../img/c3-removebg-preview.png";
 
 export default function Homearabic() {
 	const [open, setOpen] = useState(false);
@@ -91,238 +100,602 @@ export default function Homearabic() {
 				<link rel="canonical" href="https://www.safa.ae/" />
 			</Head>
 			<TopbarAr />
-			<Transition.Root show={open2} as={Fragment}>
-				<Dialog
-					as="div"
-					className="relative z-10"
-					initialFocus={cancelButtonRef}
-					onClose={setOpen}
-				>
-					<Transition.Child
-						as={Fragment}
-						enter="ease-out duration-300"
-						enterFrom="opacity-0"
-						enterTo="opacity-100"
-						leave="ease-in duration-200"
-						leaveFrom="opacity-100"
-						leaveTo="opacity-0"
-					>
-						<div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
-					</Transition.Child>
 
-					<div className="fixed inset-0 z-10 overflow-y-auto">
-						<div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-							<Transition.Child
-								as={Fragment}
-								enter="ease-out duration-300"
-								enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-								enterTo="opacity-100 translate-y-0 sm:scale-100"
-								leave="ease-in duration-200"
-								leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-								leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-							>
-								<Dialog.Panel className="">
-									<button
-										type="button"
-										className=""
-										onClick={() => setOpen2(false)}
-										ref={cancelButtonRef}
-									>
-										<RxCross2 color="#fff" size={20} />
-									</button>
-									<Image
-										src={Poster}
-										style={{ width: "200%", height: "200%" }}
-									/>
-								</Dialog.Panel>
-							</Transition.Child>
-						</div>
-					</div>
-				</Dialog>
-			</Transition.Root>
-			<div class="container-fluid p-0">
-				<div
-					id="header-carousel"
-					class="carousel slide"
-					data-bs-ride="carousel"
-				>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<Image style={{ height: "800px" }} src={C1} />
-							<div class="carousel-caption">
-								<div class="container">
-									<div class="row justify-content-center">
-										<div class="col-lg-10 pt-5">
-											<h1
-												style={{ fontWeight: "bold" }}
-												class="display-3 text-white mb-4  animated slideInDown"
-											>
-												ستورم اكسسوارت تظليل نوافذ السيارة دبي
-											</h1>
-											<h2
-												style={{ color: "#FFD700", fontSize: "20px" }}
-												className="mb-4"
-											>
-												طلاء سيراميك | PPF | المكتب و نافذة المنزل | فيلم عن
-												السلامة والأمان
-											</h2>
-											<p class=" mb-4 pb-2 mx-sm-5 text-white text-[18px] leading-8 ">
-												لأفلام النوافذ عالية الجودة التي تأتي في نطاق واسع من
-												الأساليب والتصميمات لتوفير الخصوصية والأمان والشمس
-												الحماية ، Storm Automotive LLC هو اسم حسن السمعة في دولة
-												الإمارات العربية المتحدة. وفقًا لحركة المرور الفيدرالية
-												لدولة الإمارات العربية المتحدة القانون ، الذي يسمح
-												بتلوين نوافذ السيارة بنسبة تصل إلى 50٪
-											</p>
-											<button
-												style={{
-													backgroundColor: "rgba(0,0,0,0.1)",
-													borderColor: "#FF7276",
-												}}
-												class="btn btn-primary py-3 px-5 animated slideInDown"
-											>
-												اتصل الان
-											</button>
-											<button
-												style={{
-													backgroundColor: "rgba(0,0,0,0.1)",
-													borderColor: "#FF7276",
-												}}
-												class="btn btn-primary py-3 px-5 animated slideInDown ml-5 gapp"
-												onClick={() => {
-													setOpen(true);
-												}}
-											>
-												احجز الآن
-											</button>
-											<Transition.Root show={open} as={Fragment}>
-												<Dialog
-													as="div"
-													className="relative z-10"
-													initialFocus={cancelButtonRef}
-													onClose={setOpen}
+			<div
+				id="carouselExampleControls"
+				class="carousel slide"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active h-[120vh]">
+						<div>
+							<div>
+								<Image style={{ height: "120vh" }} src={C1} />
+								<div class="carousel-caption">
+									<div class="container-fluid">
+										<div class="row ">
+											<div class="col-lg-6 pt-5">
+												<h1
+													style={{ fontWeight: "bold" }}
+													class="display-3 text-white mb-4  animated slideInDown text-[35px]"
 												>
-													<Transition.Child
-														as={Fragment}
-														enter="ease-out duration-300"
-														enterFrom="opacity-0"
-														enterTo="opacity-100"
-														leave="ease-in duration-200"
-														leaveFrom="opacity-100"
-														leaveTo="opacity-0"
+													ستورم اكسسوارت تظليل نوافذ السيارة الشارقة
+												</h1>
+												<h2
+													style={{ color: "#FFD700", fontSize: "20px" }}
+													className="mb-4"
+												>
+													طلاء سيراميك | PPF | المكتب و نافذة المنزل | فيلم عن
+													السلامة والأمان
+												</h2>
+												<h3 className="text-white text-[40px] mb-5 font-bold">
+													تنجيد المقاعد
+												</h3>
+												{/* <p class=" mb-4 pb-2 mx-sm-5 text-white text-[18px] leading-8 ">
+													For high-quality window films that come in a wide
+													range of styles and designs to offer privacy, safety,
+													and sun protection, Storm Automotive LLC is a
+													reputable name in the UAE. according to the UAE
+													revised federal traffic law, which permits car windows
+													to be tinted up to 50%
+												</p> */}
+												<button
+													style={{
+														backgroundColor: "rgba(0,0,0,0.1)",
+														borderColor: "#FF7276",
+													}}
+													class="btn btn-primary  animated slideInDown"
+												>
+													اتصل الان
+												</button>
+												<button
+													style={{
+														backgroundColor: "rgba(0,0,0,0.1)",
+														borderColor: "#FF7276",
+													}}
+													class="btn btn-primary animated slideInDown ml-5"
+													onClick={() => {
+														setOpen(true);
+													}}
+												>
+													احجز الآن
+												</button>
+
+												<Transition.Root show={open} as={Fragment}>
+													<Dialog
+														as="div"
+														className="relative z-10"
+														initialFocus={cancelButtonRef}
+														onClose={setOpen}
 													>
-														<div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
-													</Transition.Child>
+														<Transition.Child
+															as={Fragment}
+															enter="ease-out duration-300"
+															enterFrom="opacity-0"
+															enterTo="opacity-100"
+															leave="ease-in duration-200"
+															leaveFrom="opacity-100"
+															leaveTo="opacity-0"
+														>
+															<div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+														</Transition.Child>
 
-													<div className="fixed inset-0 z-10 overflow-y-auto">
-														<div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-															<Transition.Child
-																as={Fragment}
-																enter="ease-out duration-300"
-																enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-																enterTo="opacity-100 translate-y-0 sm:scale-100"
-																leave="ease-in duration-200"
-																leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-																leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-															>
-																<Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-dark text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-																	<form className="px-12 py-12">
-																		<p className="text-white text-center text-[18px] font-bold">
-																			احجز حجزك الآن
-																		</p>
-																		<div class="mb-6">
-																			<label
-																				for="text"
-																				class="block mb-2 text-sm font-medium text-[#FFD700]"
-																			>
-																				اسم
-																			</label>
-																			<input
-																				type="text"
-																				id="text"
-																				class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-																				placeholder="name@flowbite.com"
-																				required
-																			/>
-																		</div>
-																		<div class="mb-6">
-																			<label
-																				for="email"
-																				class="block mb-2 text-sm font-medium text-[#FFD700]"
-																			>
-																				بريد إلكتروني
-																			</label>
-																			<input
-																				type="email"
-																				id="email"
-																				class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-																				required
-																			/>
-																		</div>
-																		<div class="mb-6">
-																			<label
-																				for="service"
-																				class="block mb-2 text-sm font-medium text-[#FFD700]"
-																			>
-																				خدمات
-																			</label>
-																			<input
-																				type="text"
-																				id="service"
-																				class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-																				required
-																			/>
-																		</div>
-																		<div class="mb-6">
-																			<label
-																				for="number"
-																				class="block mb-2 text-sm font-medium text-[#FFD700]"
-																			>
-																				رقم الهاتف
-																			</label>
-																			<input
-																				type="number"
-																				id="number"
-																				class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-																				required
-																			/>
-																		</div>
-																		<div className=" px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-																			<button
-																				type="button"
-																				style={{
-																					backgroundColor: "rgba(0,0,0,0.1)",
-																					borderColor: "#FF7276",
-																				}}
-																				class="btn btn-primary py-3 px-5 animated slideInDown ml-5"
-																				onClick={() => setOpen(false)}
-																			>
-																				إرسال
-																			</button>
+														<div className="fixed inset-0 z-10 overflow-y-auto">
+															<div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+																<Transition.Child
+																	as={Fragment}
+																	enter="ease-out duration-300"
+																	enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+																	enterTo="opacity-100 translate-y-0 sm:scale-100"
+																	leave="ease-in duration-200"
+																	leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+																	leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+																>
+																	<Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-dark text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+																		<form className="px-12 py-12">
+																			<p className="text-white text-center text-[18px] font-bold">
+																				BOOK YOUR RESERVATION NOW
+																			</p>
+																			<div class="mb-6">
+																				<label
+																					for="text"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Name
+																				</label>
+																				<input
+																					type="text"
+																					id="text"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																					placeholder="name@flowbite.com"
+																					required
+																				/>
+																			</div>
+																			<div class="mb-6">
+																				<label
+																					for="email"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Email
+																				</label>
+																				<input
+																					type="email"
+																					id="email"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+																					required
+																				/>
+																			</div>
+																			<div class="mb-6">
+																				<label
+																					for="service"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Services
+																				</label>
+																				<input
+																					type="text"
+																					id="service"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																					required
+																				/>
+																			</div>
+																			<div class="mb-6">
+																				<label
+																					for="number"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Phone Number
+																				</label>
+																				<input
+																					type="number"
+																					id="number"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																					required
+																				/>
+																			</div>
+																			<div className=" px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+																				<button
+																					type="button"
+																					style={{
+																						backgroundColor: "rgba(0,0,0,0.1)",
+																						borderColor: "#FF7276",
+																					}}
+																					class="btn btn-primary py-3 px-5 animated slideInDown ml-5"
+																					onClick={() => setOpen(false)}
+																				>
+																					Send
+																				</button>
 
-																			<button
-																				type="button"
-																				className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
-																				onClick={() => setOpen(false)}
-																				ref={cancelButtonRef}
-																			>
-																				يلغي
-																			</button>
-																		</div>
-																	</form>
-																</Dialog.Panel>
-															</Transition.Child>
+																				<button
+																					type="button"
+																					className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+																					onClick={() => setOpen(false)}
+																					ref={cancelButtonRef}
+																				>
+																					Cancel
+																				</button>
+																			</div>
+																		</form>
+																	</Dialog.Panel>
+																</Transition.Child>
+															</div>
 														</div>
-													</div>
-												</Dialog>
-											</Transition.Root>
+													</Dialog>
+												</Transition.Root>
+											</div>
+											<div class="col-lg-2"></div>
+											<div class="col-lg-4 pt-5">
+												<Image
+													src={F2}
+													style={{
+														width: "70%",
+														height: "70%",
+														margin: "auto",
+													}}
+												/>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="carousel-item  h-[120vh]">
+						<div>
+							<div>
+								<Image style={{ height: "120vh" }} src={C1} />
+								<div class="carousel-caption">
+									<div class="container-fluid">
+										<div class="row ">
+											<div class="col-lg-6 pt-5">
+												<h1
+													style={{ fontWeight: "bold" }}
+													class="display-3 text-white mb-4  animated slideInDown text-[35px]"
+												>
+													ستورم اكسسوارت تظليل نوافذ السيارة الشارقة
+												</h1>
+												<h2
+													style={{ color: "#FFD700", fontSize: "20px" }}
+													className="mb-4"
+												>
+													طلاء سيراميك | PPF | المكتب و نافذة المنزل | فيلم عن
+													السلامة والأمان
+												</h2>
+												<h3 className="text-white text-[40px] mb-5 font-bold">
+													خدمات تصفيح النوافذ
+												</h3>
+												<button
+													style={{
+														backgroundColor: "rgba(0,0,0,0.1)",
+														borderColor: "#FF7276",
+													}}
+													class="btn btn-primary animated slideInDown"
+												>
+													اتصل الان
+												</button>
+												<button
+													style={{
+														backgroundColor: "rgba(0,0,0,0.1)",
+														borderColor: "#FF7276",
+													}}
+													class="btn btn-primary animated slideInDown ml-5 "
+													onClick={() => {
+														setOpen(true);
+													}}
+												>
+													احجز الآن
+												</button>
+
+												<Transition.Root show={open} as={Fragment}>
+													<Dialog
+														as="div"
+														className="relative z-10"
+														initialFocus={cancelButtonRef}
+														onClose={setOpen}
+													>
+														<Transition.Child
+															as={Fragment}
+															enter="ease-out duration-300"
+															enterFrom="opacity-0"
+															enterTo="opacity-100"
+															leave="ease-in duration-200"
+															leaveFrom="opacity-100"
+															leaveTo="opacity-0"
+														>
+															<div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+														</Transition.Child>
+
+														<div className="fixed inset-0 z-10 overflow-y-auto">
+															<div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+																<Transition.Child
+																	as={Fragment}
+																	enter="ease-out duration-300"
+																	enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+																	enterTo="opacity-100 translate-y-0 sm:scale-100"
+																	leave="ease-in duration-200"
+																	leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+																	leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+																>
+																	<Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-dark text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+																		<form className="px-12 py-12">
+																			<p className="text-white text-center text-[18px] font-bold">
+																				BOOK YOUR RESERVATION NOW
+																			</p>
+																			<div class="mb-6">
+																				<label
+																					for="text"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Name
+																				</label>
+																				<input
+																					type="text"
+																					id="text"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																					placeholder="name@flowbite.com"
+																					required
+																				/>
+																			</div>
+																			<div class="mb-6">
+																				<label
+																					for="email"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Email
+																				</label>
+																				<input
+																					type="email"
+																					id="email"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+																					required
+																				/>
+																			</div>
+																			<div class="mb-6">
+																				<label
+																					for="service"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Services
+																				</label>
+																				<input
+																					type="text"
+																					id="service"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																					required
+																				/>
+																			</div>
+																			<div class="mb-6">
+																				<label
+																					for="number"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Phone Number
+																				</label>
+																				<input
+																					type="number"
+																					id="number"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																					required
+																				/>
+																			</div>
+																			<div className=" px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+																				<button
+																					type="button"
+																					style={{
+																						backgroundColor: "rgba(0,0,0,0.1)",
+																						borderColor: "#FF7276",
+																					}}
+																					class="btn btn-primary py-3 px-5 animated slideInDown ml-5"
+																					onClick={() => setOpen(false)}
+																				>
+																					Send
+																				</button>
+
+																				<button
+																					type="button"
+																					className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+																					onClick={() => setOpen(false)}
+																					ref={cancelButtonRef}
+																				>
+																					Cancel
+																				</button>
+																			</div>
+																		</form>
+																	</Dialog.Panel>
+																</Transition.Child>
+															</div>
+														</div>
+													</Dialog>
+												</Transition.Root>
+											</div>
+											<div class="col-lg-2"></div>
+											<div class="col-lg-4 pt-5">
+												<Image
+													src={F1}
+													style={{
+														width: "70%",
+														height: "70%",
+														margin: "auto",
+													}}
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{/* <div class="carousel-item  h-[120vh]">
+						<div>
+							<div>
+								<Image style={{ height: "120vh" }} src={C1} />
+								<div class="carousel-caption">
+									<div class="container-fluid">
+										<div class="row ">
+											<div class="col-lg-6 pt-5">
+												<h1
+													style={{ fontWeight: "bold" }}
+													class="display-3 text-white mb-4  animated slideInDown"
+												>
+													Storm Accessories Car Window Tinting Dubai
+												</h1>
+												<h2
+													style={{ color: "#FFD700", fontSize: "20px" }}
+													className="mb-4"
+												>
+													CERAMIC COATING | PPF | OFFICE & HOME WINDOW TINTING |
+													SAFETY & SECURITY FILM
+												</h2>
+												<p class=" mb-4 pb-2 mx-sm-5 text-white text-[18px] leading-8 ">
+													For high-quality window films that come in a wide
+													range of styles and designs to offer privacy, safety,
+													and sun protection, Storm Automotive LLC is a
+													reputable name in the UAE. according to the UAE
+													revised federal traffic law, which permits car windows
+													to be tinted up to 50%
+												</p>
+												<div>
+													<button
+														style={{
+															backgroundColor: "rgba(0,0,0,0.1)",
+															borderColor: "#FF7276",
+														}}
+														class="btn btn-primary  animated slideInDown"
+													>
+														Call Now
+													</button>
+													<button
+														style={{
+															backgroundColor: "rgba(0,0,0,0.1)",
+															borderColor: "#FF7276",
+														}}
+														class="btn btn-primary  animated slideInDown ml-5 "
+														onClick={() => {
+															setOpen(true);
+														}}
+													>
+														Book Now
+													</button>
+												</div>
+
+												<Transition.Root show={open} as={Fragment}>
+													<Dialog
+														as="div"
+														className="relative z-10"
+														initialFocus={cancelButtonRef}
+														onClose={setOpen}
+													>
+														<Transition.Child
+															as={Fragment}
+															enter="ease-out duration-300"
+															enterFrom="opacity-0"
+															enterTo="opacity-100"
+															leave="ease-in duration-200"
+															leaveFrom="opacity-100"
+															leaveTo="opacity-0"
+														>
+															<div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+														</Transition.Child>
+
+														<div className="fixed inset-0 z-10 overflow-y-auto">
+															<div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+																<Transition.Child
+																	as={Fragment}
+																	enter="ease-out duration-300"
+																	enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+																	enterTo="opacity-100 translate-y-0 sm:scale-100"
+																	leave="ease-in duration-200"
+																	leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+																	leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+																>
+																	<Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-dark text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+																		<form className="px-12 py-12">
+																			<p className="text-white text-center text-[18px] font-bold">
+																				BOOK YOUR RESERVATION NOW
+																			</p>
+																			<div class="mb-6">
+																				<label
+																					for="text"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Name
+																				</label>
+																				<input
+																					type="text"
+																					id="text"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																					placeholder="name@flowbite.com"
+																					required
+																				/>
+																			</div>
+																			<div class="mb-6">
+																				<label
+																					for="email"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Email
+																				</label>
+																				<input
+																					type="email"
+																					id="email"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+																					required
+																				/>
+																			</div>
+																			<div class="mb-6">
+																				<label
+																					for="service"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Services
+																				</label>
+																				<input
+																					type="text"
+																					id="service"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																					required
+																				/>
+																			</div>
+																			<div class="mb-6">
+																				<label
+																					for="number"
+																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																				>
+																					Phone Number
+																				</label>
+																				<input
+																					type="number"
+																					id="number"
+																					class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																					required
+																				/>
+																			</div>
+																			<div className=" px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+																				<button
+																					type="button"
+																					style={{
+																						backgroundColor: "rgba(0,0,0,0.1)",
+																						borderColor: "#FF7276",
+																					}}
+																					class="btn btn-primary py-3 px-5 animated slideInDown ml-5"
+																					onClick={() => setOpen(false)}
+																				>
+																					Send
+																				</button>
+
+																				<button
+																					type="button"
+																					className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+																					onClick={() => setOpen(false)}
+																					ref={cancelButtonRef}
+																				>
+																					Cancel
+																				</button>
+																			</div>
+																		</form>
+																	</Dialog.Panel>
+																</Transition.Child>
+															</div>
+														</div>
+													</Dialog>
+												</Transition.Root>
+											</div>
+											<div class="col-lg-2"></div>
+											<div class="col-lg-4 pt-5">
+												<Image
+													src={F3}
+													style={{
+														width: "70%",
+														height: "70%",
+														margin: "auto",
+													}}
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> */}
 				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleControls"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleControls"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
 
 			<div class="container-fluid    py-5" data-parallax="scroll">
@@ -460,7 +833,7 @@ export default function Homearabic() {
 			<div class="container-xxl">
 				<div class="container">
 					<div
-						class="text-center mx-auto wow fadeInUp"
+						class="text-center m-auto  wow fadeInUp"
 						data-wow-delay="0.1s"
 						style={{ maxWidth: "800px" }}
 					>
@@ -477,10 +850,10 @@ export default function Homearabic() {
 							المتطورة.
 						</p>
 					</div>
-					<div class="row g-4 m-auto ">
+					<div class="row m-auto  ">
 						<div class="col-lg-4 col-md-6 wow fadeInUp " data-wow-delay="0.1s">
 							<div class="service-item ">
-								<div class="img-fluid ">
+								<div class="img-fluid res ">
 									<Image
 										style={{
 											border: "5px solid black",
@@ -489,16 +862,22 @@ export default function Homearabic() {
 										}}
 										src={S1}
 										alt="Car Tinting Service Dubai"
+										className="res"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>السيارات</a>
+									<a style={{ fontSize: "20px", color: "#FF7276" }}>السيارات</a>
 								</div>
+								<p className="text-justify w-72 pb-3">
+									تتضمن خدمات تنظيف السيارات في الشارقة تنظيفًا شاملاً وتلميع
+									الهيكل الخارجي والداخلي للسيارة. ويشمل ذلك غسل وتلميع السطح
+									الخارجي بالشمع وكذلك تنظيف وتكييف الداخل.
+								</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
 							<div class="service-item">
-								<div class="img-fluid">
+								<div class="img-fluid res">
 									<Image
 										style={{
 											border: "5px solid black",
@@ -507,58 +886,77 @@ export default function Homearabic() {
 										}}
 										src={S2}
 										alt="Car Tinting Service Dubai"
+										className="res"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>
+									<a style={{ color: "#FF7276", fontSize: "20px" }}>
 										أفلام تظليل النوافذ التجارية
 									</a>
 								</div>
+								<p className="text-justify w-72 pb-3">
+									الأشعة فوق البنفسجية الضارة التي يمكن أن تتلاشى وتدمر
+									المفروشات ، يتم حظر الأقمشة والتشطيبات الداخلية الأخرى بواسطة
+									هذه طلاءات تصل إلى 99٪. كما أنهم درعوا العمال من الآثار
+									السلبية للأشعة فوق البنفسجية.
+								</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
 							<div class="service-item">
-								<div class="img-fluid">
+								<div class="img-fluid res">
 									<Image
 										style={{
 											border: "5px solid black",
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
-											width: "70%",
-											height: "70%",
 										}}
+										className="res"
 										src={S3}
 										alt="Car Tinting Service Dubai"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>فاسارا</a>
+									<a style={{ color: "#FF7276", fontSize: "20px" }}>مقعد فوق</a>
 								</div>
+								<p className="text-justify w-72 pb-3">
+									أي ضرر يلحق بأغطية المقاعد الحالية ، مثل الدموع ، والحروق ، أو
+									البقع ، يمكن إصلاحها من خلال خدمات تصليح المقاعد في الشارقة.
+									من خلال توفير هذه الخدمات ، قد تستمر المقاعد الحالية لفترة
+									أطول و قد يتجنب العملاء الاضطرار إلى شراء أجهزة جديدة.
+								</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
 							<div class="service-item">
-								<div class="img-fluid">
+								<div class="img-fluid res">
 									<Image
 										style={{
 											border: "5px solid black",
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
-											width: "70%",
-											height: "50%",
 										}}
 										src={S4}
 										alt="Car Tinting Service Dubai"
+										className="res"
 									/>
 								</div>
 								<div>
-									<a>دي نوك</a>
+									<a style={{ color: "#FF7276", fontSize: "20px" }}>
+										الحافلات المدرسية
+									</a>
 								</div>
+								<p className="text-justify w-72 pb-3">
+									يمكن زيادة سلامة الحافلات المدرسية باستخدام حافلات الشارقة
+									خدمات تظليل النوافذ. في حالة وقوع حادث أو يمكن أن تساعد
+									النوافذ المظللة في منع الزجاج من تحطيم ، وتقليل احتمالية إصابة
+									الأطفال وسائقي الحافلات.
+								</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
 							<div class="service-item">
-								<div class="img-fluid">
+								<div class="img-fluid res">
 									<Image
 										style={{
 											border: "5px solid black",
@@ -567,16 +965,23 @@ export default function Homearabic() {
 										}}
 										src={S5}
 										alt="Car Tinting Service Dubai"
+										className="res"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>سكني</a>
+									<a style={{ color: "#FF7276", fontSize: "20px" }}>سكني</a>
 								</div>
+								<p className="text-justify w-72 pb-3">
+									يمكن أن تلبي خدمات تظليل النوافذ السكنية في الشارقة أ احتياجات
+									متنوعة للمنزل بسعر معقول. يمكن لأصحاب المنازل الاستفادة من
+									مزيد من الخصوصية والطاقة الأفضل الكفاءة ، وزيادة الراحة ،
+									وزيادة السلامة و الأمن عن طريق تركيب أفلام تظليل النوافذ.
+								</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
 							<div class="service-item">
-								<div class="img-fluid">
+								<div class="img-fluid res">
 									<Image
 										style={{
 											border: "5px solid black",
@@ -585,11 +990,21 @@ export default function Homearabic() {
 										}}
 										src={S6}
 										alt="Car Tinting Service Dubai"
+										className="res"
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px" }}>سلامة الامن</a>
+									<a style={{ color: "#FF7276", fontSize: "20px" }}>
+										سلامة الامن
+									</a>
 								</div>
+								<p className="text-justify w-72 pb-3">
+									الأمن والسلامة يمكن لخدمات تظليل النوافذ في الشارقة تلبية
+									مجموعة متنوعة من متطلبات الملكية بتكلفة معقولة. أصحاب الأملاك
+									يمكن أن تستفيد من أعلى مستويات السلامة والأمن ، وطاقة أفضل
+									الكفاءة ، وزيادة الخصوصية ، وحماية أكبر ضد الآثار الضارة
+									للأشعة فوق البنفسجية عن طريق تركيب النافذة أفلام التظليل.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -601,26 +1016,31 @@ export default function Homearabic() {
 				<section class=" container body-font">
 					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
 						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
-							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-								Automotive
-							</h1>
+							<h2 class=" text-[24px] font-bold text-[#FF7276]">
+								عازل حراري للسيارة في الشارقة
+							</h2>
+							<h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 divide-dashed > * + *">
+								السيارات
+							</h3>
+
 							<p class="mb-8 leading-relaxed text-justify">
-								Searching for the finest automobile protection options? We
-								provide a wide selection of top-notch automobile protection
-								equipment to assist you to protect your vehicle from numerous
-								exterior factors, like the sun, dust, and dirt, and weather. We
-								at storm auto accessories offer everything you need to make your
-								automobile appear like new, including detailing services, nano
-								ceramic coating, car polishing, sun control films, and detailing
-								services. We have a lot of knowledge and skill in giving your
-								automobile all-around protection since we are the authorised
-								car-care centre in Dubai. We are accountable for the safety of
-								your car.
+								هل تبحث عن أفضل خيارات حماية السيارات؟ نحن توفر مجموعة واسعة من
+								حماية السيارات من الدرجة الأولى معدات لمساعدتك على حماية سيارتك
+								من العديد العوامل الخارجية ، مثل الشمس والغبار والأوساخ والطقس.
+								نحن تقدم أكسسوارات السيارات في العاصفة كل ما تحتاجه لصنع
+								السيارات تبدو وكأنها جديدة ، بما في ذلك خدمات التفصيل ، نانو
+								طلاء السيراميك ، تلميع السيارات ، أفلام التحكم في الشمس ،
+								والتفاصيل خدمات. لدينا الكثير من المعرفة والمهارة في منحك
+								الحماية الشاملة للسيارات لأننا المرخص لهم مركز العناية بالسيارات
+								في دبي. نحن مسؤولون عن سلامة سيارتك.
 							</p>
 						</div>
 
 						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-							<div class="object-cover object-center rounded">
+							<div
+								style={{ border: "3px solid #151229", borderRadius: "20px" }}
+								class="object-cover object-center  "
+							>
 								<Image
 									alt="hero"
 									src={Automotive}
@@ -631,57 +1051,87 @@ export default function Homearabic() {
 					</div>
 					<div className="row m-auto">
 						<div className="col-md-4">
-							<div class="card" style={{ width: "18rem" }}>
-								<div class="card-img-top">
-									<Image src={Cartint} alt="..." />
+							<div
+								class="card"
+								style={{
+									width: "20rem",
+									border: "3px solid #d5d4d9",
+									borderRadius: "20px",
+									height: "25rem",
+								}}
+							>
+								<div class="card-img-top ">
+									<Image
+										style={{ borderRadius: "10px", height: "10rem" }}
+										src={Cartint}
+										alt="..."
+									/>
 								</div>
 
 								<div class="card-body">
-									<h5 class="card-title text-[18px] font-bold">
-										Car Window Tinting Dubai
+									<h5 class="text-[#FF7276] text-[18px] font-bold">
+										تظليل نوافذ السيارة دبيتظليل نوافذ السيارة دبي
 									</h5>
 									<p class="card-text text-justify font-semibold">
-										We provide an exceptional selection of storm auto
-										accessories and sun protection window films that are fitted
-										on your cars windows to make you conformable and save the
-										inside of your vehicle from being damaged by excessive heat
-										and sunshine.
+										نحن نقدم مجموعة استثنائية من سيارات العاصفة الملحقات وأغطية
+										النوافذ الواقية من الشمس التي يتم تركيبها على نوافذ سياراتك
+										لتجعلك متوافقًا وحفظ ملف داخل سيارتك من التلف بسبب الحرارة
+										الزائدة وأشعة الشمس.
 									</p>
 								</div>
 							</div>
 						</div>
 						<div className="col-md-4">
-							<div class="card" style={{ width: "18rem" }}>
+							<div
+								class="card"
+								style={{
+									width: "20rem",
+									border: "3px solid #d5d4d9",
+									borderRadius: "20px",
+									height: "25rem",
+								}}
+							>
 								<div class="card-img-top">
-									<Image src={Carmic} alt="..." />
+									<Image
+										style={{ borderRadius: "10px", height: "10rem" }}
+										src={Carmic}
+										alt="..."
+									/>
 								</div>
 								<div class="card-body">
-									<h5 class="card-title text-[18px] font-bold">
-										Ceramic Coating
-									</h5>
+									<h5 class=" text-[#FF7276] font-bold">Ceramic Coating</h5>
 									<p class="card-text text-justify font-semibold">
-										We provide the best nano ceramic coating to protect your
-										automobile from dents and other exterior damage. It is used
-										on the paint, bumpers, and plastic trim to provide
-										long-lasting general protection.
+										نحن نقدم أفضل طلاء نانو سيراميك لحمايتك السيارة من الخدوش
+										والأضرار الخارجية الأخرى. يتم استخدامها على الطلاء ،
+										والمصدات ، والزخرفة البلاستيكية لتوفيرها حماية عامة طويلة
+										الأمد.
 									</p>
 								</div>
 							</div>
 						</div>
 						<div className="col-md-4">
-							<div class="card" style={{ width: "18rem" }}>
+							<div
+								class="card"
+								style={{
+									width: "20rem",
+									border: "3px solid #d5d4d9",
+									borderRadius: "20px",
+									height: "25rem",
+								}}
+							>
 								<div class="card-img-top">
-									<Image src={Mechnic} alt="..." />
+									<Image
+										style={{ borderRadius: "10px", height: "10rem" }}
+										src={Mechnic}
+										alt="..."
+									/>
 								</div>
 								<div class="card-body">
-									<h5 class="card-title text-[18px] font-bold">
-										Mechanical Service
-									</h5>
+									<h5 class=" text-[#FF7276] font-bold">الخدمة الميكانيكية</h5>
 									<p class="card-text text-justify font-semibold">
-										Safa Automotive LLC has been in the automotive industry
-										since 2003. We are Dubais experts in luxury automobile
-										repairs. Repairing Rolls Royce, Mercedes, Porsche, Land
-										Rover, Bentley, and Audi is our area of competence.
+										كان تنجيد Storm في صناعة السيارات منذ ذلك الحين 2003. نحن
+										خبراء دبي في إصلاح السيارات الفاخرة. تصليح رولز رويس ،
+										مرسيدس ، بورش ، لاند روفر ، بنتلي ، وأودي هي مجال اختصاصنا.
 									</p>
 								</div>
 							</div>
@@ -691,7 +1141,10 @@ export default function Homearabic() {
 				<section class=" container body-font">
 					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
 						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-							<div class="object-cover object-center rounded">
+							<div
+								style={{ border: "3px solid #151229", borderRadius: "20px" }}
+								class="object-cover object-center"
+							>
 								<Image
 									alt="hero"
 									src={Automotive}
@@ -700,224 +1153,109 @@ export default function Homearabic() {
 							</div>
 						</div>
 						<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-								Commercial Window Films
-							</h1>
-							<h2 className="text-[22px] mb-3 font-semibold">
-								WINDOW FILMS INSTALLATION SERVICES IN SHARJAH - COMMERCIAL USAGE
+							<h2 class=" text-[24px] font-bold text-[#FF7276] text-left">
+								خدمات تركيب افلام WINDOW في الشارقة - الاستخدام التجاري
 							</h2>
-							<p class="mb-8 leading-relaxed text-justify">
-								In the present, commercial window films in Dubai are essential
-								for offering a high degree of privacy, heat protection, and of
-								course a pleasant working environment. It may be quite difficult
-								to work in a hot, unpleasant workplace, and if you cant provide
-								your workers appropriate working circumstances, your brand value
-								will undoubtedly suffer. Storm auto accessories has world-class
-								Storm auto accessories window film solutions for your commercial
-								spaces to help you create the perfect working environment. Storm
-								auto accessories recognises the necessity for the best-quality
-								heat protection and safety window films in the commercial
-								buildings.
-							</p>
-						</div>
-					</div>
-					<div className="row m-auto ">
-						<div className="col-md-6">
-							<div class="card" style={{ width: "18rem" }}>
-								<div class="card-img-top">
-									<Image src={Cartint} alt="..." />
-								</div>
+							<h3 class=" title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 divide-dashed">
+								أفلام تظليل النوافذ التجارية
+							</h3>
 
-								<div class="card-body">
-									<h5 class="card-title text-[18px] font-bold">
-										Building Window Tinting
-									</h5>
-									<p class="card-text text-justify font-semibold">
-										As the name implies, the primary function of these films is
-										to cover the windows of commercial buildings to block the
-										entry of sunshine and heat. The many tints of sun protection
-										films
-									</p>
-								</div>
-							</div>
-						</div>
-						<div className="col-md-6">
-							<div class="card" style={{ width: "18rem" }}>
-								<div class="card-img-top">
-									<Image src={Carmic} alt="..." />
-								</div>
-								<div class="card-body">
-									<h5 class="card-title text-[18px] font-bold">
-										Commercial Blackout Window Film
-									</h5>
-									<p class="card-text text-justify font-semibold">
-										The blackout window films are for you if you want to achieve
-										total seclusion in your business space and dont want the
-										outside elements to impact the inside of your establishment.
-									</p>
-								</div>
-							</div>
+							<p class="mb-8 leading-relaxed text-justify">
+								في الوقت الحاضر ، تعتبر أفلام النوافذ التجارية في دبي ضرورية
+								لتوفير درجة عالية من الخصوصية والحماية من الحرارة و بالطبع بيئة
+								عمل ممتعة. قد يكون من الصعب جدا للعمل في مكان عمل حار وغير سار ،
+								وإذا كنت لا تستطيع توفيره ظروف العمل المناسبة لعمالك ، قيمة
+								علامتك التجارية سيعاني بلا شك. اكسسوارات السيارات العاصفة لديها
+								مستوى عالمي ستورم أكسسوارات سيارات حلول أفلام تظليل النوافذ
+								لإعلانك التجاري مساحات لمساعدتك على خلق بيئة عمل مثالية. عاصفة
+								تدرك إكسسوارات السيارات ضرورة الحصول على أفضل جودة أفلام الحماية
+								من الحرارة والأمان للنوافذ في الإعلانات التجارية البنايات.
+							</p>
 						</div>
 					</div>
 				</section>
 				<section class=" container body-font">
 					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
 						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
-							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-								Residential
-							</h1>
-							<h2 className="text-[22px] mb-3 font-semibold">
-								RESIDENTIAL WINDOW FILM - PROVIDING COMPLETE PROTECTION
+							<h2 class=" text-[24px] font-bold text-[#FF7276]">
+								فيلم النوافذ السكنية - يوفر حماية كاملة
 							</h2>
+							<h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								سكني
+							</h3>
+
 							<p class="mb-8 leading-relaxed text-justify">
-								such things in your living quarters, adjustments need to be
-								made. Glass in windows and doors of homes let in natural light,
-								but the night also brings with it an excessive amount of heat
-								that saps energy. With the top-of-the-line window film, its time
-								to rethink your homes interior. The variety of window films
-								offered by Storm Auto Accessories will not only help you protect
-								the inside of your home but also improve the spaces
-								attractiveness and décor in a classy way.
+								مثل هذه الأشياء في مسكنك ، يجب أن تكون التعديلات صنع. يسمح
+								الزجاج في نوافذ وأبواب المنازل بدخول الضوء الطبيعي ، ولكن الليل
+								أيضًا يجلب معه قدرًا كبيرًا من الحرارة هذا يستنزف الطاقة. مع
+								فيلم النافذة العلوي ، حان الوقت لإعادة التفكير في منزلك من
+								الداخل. مجموعة متنوعة من أفلام تظليل النوافذ التي تقدمها Storm
+								Auto Accessories لن تساعدك فقط على الحماية داخل منزلك ولكن أيضًا
+								تحسين المساحات جاذبية وديكور راقى.
 							</p>
 						</div>
 
 						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-							<div class="object-cover object-center rounded">
-								<Image
-									alt="hero"
-									src={Automotive}
-									style={{ borderRadius: 20 }}
-								/>
-							</div>
-						</div>
-					</div>
-					<div className="row m-auto">
-						<div className="col-md-4">
-							<div class="card" style={{ width: "18rem" }}>
-								<div class="card-img-top">
-									<Image src={Cartint} alt="..." />
-								</div>
-
-								<div class="card-body">
-									<h5 class="card-title text-[18px] font-bold">
-										Home Window Tinting
-									</h5>
-									<p class="card-text text-justify font-semibold">
-										Sun control windows come in various colours to assist you
-										regulate the amount of heat and light that enters your home
-										via the windows and doors.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div className="col-md-4">
-							<div class="card" style={{ width: "18rem" }}>
-								<div class="card-img-top">
-									<Image src={Carmic} alt="..." />
-								</div>
-								<div class="card-body">
-									<h5 class="card-title text-[18px] font-bold">
-										Residential Blackout Window Film
-									</h5>
-									<p class="card-text text-justify font-semibold">
-										The blackout window films are without a doubt the answer if
-										you want to keep your valuables inside the home out of sight
-										and need maximum seclusion. The glass door and window are
-										opaque to light.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div className="col-md-4">
-							<div class="card" style={{ width: "18rem" }}>
-								<div class="card-img-top">
-									<Image src={Mechnic} alt="..." />
-								</div>
-								<div class="card-body">
-									<h5 class="card-title text-[18px] font-bold">
-										Residential Privacy Film
-									</h5>
-									<p class="card-text text-justify font-semibold">
-										Our aim is to assist you in obtaining a private area in your
-										home. There are areas in the home that may use a little more
-										privacy, and for such, we offer premium privacy window films
-										that are simple to apply.
-									</p>
-								</div>
+							<div
+								style={{ border: "3px solid #151229", borderRadius: "20px" }}
+								class="object-cover object-center "
+							>
+								<Image alt="hero" src={Res} style={{ borderRadius: 20 }} />
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class=" container body-font">
+				<section on class=" container body-font">
 					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
 						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-							<div class="object-cover object-center rounded">
-								<Image
-									alt="hero"
-									src={Automotive}
-									style={{ borderRadius: 20 }}
-								/>
+							<div
+								style={{ border: "3px solid #151229", borderRadius: "20px" }}
+								class="object-cover object-center "
+							>
+								<Image alt="hero" src={sec} style={{ borderRadius: 20 }} />
 							</div>
 						</div>
 						<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-								Safety & Security
-							</h1>
-							<h2 className="text-[22px] mb-3 font-semibold">
-								SAFEGUARDING COMMERCIAL & RESIDENTIAL GLASS WINDOWS
+							<h2 class=" text-[24px] font-bold text-[#FF7276] text-left">
+								حماية النوافذ الزجاجية التجارية والسكنية
 							</h2>
+							<h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+								سلامة الامن
+							</h3>
+							<h2 className="text-[22px] mb-3 font-semibold"></h2>
 							<p class="mb-8 leading-relaxed text-justify">
-								Its always crucial to take all necessary precautions to provide
-								the areas where we reside or spend the majority of our time the
-								highest degree of safety. The goal of our premium selection of
-								safety and security films is to keep your personal and business
-								environments secure. With this, we want to safeguard you against
-								unforeseen events that might seriously harm your life or
-								property. The business complexes glass windows, doors, and
-								towering glass-structured walls all have safety and security
-								films put on them to safeguard them from physical harm and other
-								environmental problems. To ensure that your style is not
-								compromised while placing safety films on the windows, the whole
-								line of commercial and residential safety windows offers unique
-								colours and patterns to coordinate with the styling and décor of
-								your area.
+								من الضروري دائمًا اتخاذ جميع الاحتياطات اللازمة لتوفيرها المناطق
+								التي نعيش فيها أو نقضي معظم وقتنا فيها أعلى درجات الأمان. الهدف
+								من اختيارنا المتميز لـ أفلام الأمن والسلامة هي للاحتفاظ بشخصيتك
+								وعملك البيئات آمنة. مع هذا ، نريد حمايتك من الأحداث غير المتوقعة
+								التي قد تضر بحياتك بشكل خطير أو ملكية. مجمعات الأعمال النوافذ
+								الزجاجية ، والأبواب ، و جميع الجدران الزجاجية الشاهقة تتمتع
+								بالسلامة والأمن الأفلام التي توضع عليها لحمايتها من الأذى الجسدي
+								وغيره مشاكل بيئية. للتأكد من أن طريقتك ليست كذلك للخطر أثناء وضع
+								أفلام الأمان على النوافذ ككل يقدم خط نوافذ الأمان التجارية
+								والسكنية فريدة من نوعها ألوان وأنماط تنسق مع تصميم وديكور
+								منطقتك.
 							</p>
 						</div>
 					</div>
-					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-							<h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-								WHY DO YOU NEED TO INSTALL SAFETY & SECURITY WINDOW FILMS IN
-								DUBAI?
-							</h1>
-							<p class="mb-8 leading-relaxed text-justify">
-								It goes without saying that you must make your household or
-								business place safe and secure. In Dubai, there are unfavourable
-								weather patterns and extreme climate changes, which have a
-								significant negative influence on the buildings and structures.
-								In certain disaster-prone places, other natural catastrophes
-								like earthquakes and fast-blow wind bursts like hurricanes are
-								also rather prevalent. Installing protective shields on glass
-								windows and doors is necessary since they are vulnerable to
-								breaking, which may result in many forms of property and life
-								harm. Additionally, there are unforeseen incidental damages
-								brought on by theft and other criminal activity, therefore you
-								should maintain tight security to prevent them. The safety and
-								security window films may provide you excellent protection in
-								this regard. These films are intended to prevent window and door
-								glass from breaking as a result of different outside pressures
-								or accidents.
-							</p>
-						</div>
-						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-							<div class="object-cover object-center rounded">
-								<Image
-									alt="hero"
-									src={Automotive}
-									style={{ borderRadius: 20 }}
-								/>
-							</div>
-						</div>
+					<div class="container m-auto">
+						<h2 class=" text-[24px] font-bold text-[#FF7276] text-center">
+							لماذا تحتاج إلى تثبيت ملفات WINDOW الأمن والسلامة في دبي؟
+						</h2>
+						<p class="mb-8 leading-relaxed text-center">
+							وغني عن القول أنه يجب عليك جعل أسرتك أو مكان العمل آمن ومأمون. في
+							دبي ، هناك أمور غير مواتية أنماط الطقس والتغيرات المناخية المتطرفة
+							، والتي لها أ تأثير سلبي كبير على المباني والمنشآت. في بعض الأماكن
+							المعرضة للكوارث ، والكوارث الطبيعية الأخرى مثل الزلازل وهبوب
+							الرياح السريعة مثل الأعاصير هي أيضًا سائدة نوعا ما. تركيب الدروع
+							الواقية على النوافذ الزجاجية والأبواب ضرورية لأنها عرضة للكسر ،
+							مما قد يؤدي إلى العديد من أشكال الإضرار بالممتلكات والأرواح.
+							بالإضافة إلى ذلك ، هناك أضرار عرضية غير متوقعة حدثت عن طريق السرقة
+							ونشاط إجرامي آخر ، لذلك يجب عليك ذلك الحفاظ على إجراءات أمنية
+							مشددة لمنعها. الأمن والأمان قد توفر لك أفلام تظليل النوافذ حماية
+							ممتازة في هذا الصدد. تهدف هذه الأفلام إلى منع زجاج النوافذ
+							والأبواب من الكسر نتيجة الضغوط الخارجية أو الحوادث.
+						</p>
 					</div>
 				</section>
 			</div>
@@ -1036,6 +1374,7 @@ export default function Homearabic() {
 												borderRadius: "15px",
 											}}
 											src={Feature}
+											unoptimized={true}
 											alt="Car Tinting Service Dubai"
 										/>
 									</div>
@@ -1677,7 +2016,16 @@ export default function Homearabic() {
 				</div>
 			</div>
 			<ContactFormAr />
-			<Floating />
+			<a href="https://api.whatsapp.com/send?phone+03469413675" class="float">
+				<AiFillPhone class="fa fa-plus my-float"></AiFillPhone>
+			</a>
+			<a href="https://api.whatsapp.com/send?phone+03469413675" class="float2">
+				<BsWhatsapp class="fa fa-plus my-float"></BsWhatsapp>
+			</a>
+			<p id="link" class="float3"></p>
+			<Link href="/">
+				<p id="link" class="float4"></p>
+			</Link>
 			<FooterAr />
 		</>
 	);

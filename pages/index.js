@@ -6,6 +6,7 @@ import Link from "next/link";
 // import Link from "next/link";
 
 import Logo from '../img/whitelogo.png'
+import Home2 from "./Home2";
 
 
 
@@ -24,63 +25,7 @@ export default function Home() {
 			</Head>
 		
 
-			<div className="bgimageMain" style={{ height: "135vh" }}>
-				<div className="container">
-					<div className=" flex  justify-center ">
-						<Image src={Logo} width={300} height={200} />
-					</div>
-					<div className="row">
-						<div className="col-md-6">
-							<h1 className="text-center text-[#FFD700] text-[44px]  mt-[20%]">
-								Storm Accessories Car Window Tinting Dubai
-							</h1>
-							<a
-								className="text-center btn btn btn-danger mt-5"
-								style={{
-									display: "flex",
-									justifyContent: "center",
-									backgroundColor: "rgb(0,0,0,0.5)",
-								}}
-							>
-								<Link
-									href="/Home2"
-									style={{
-										textAlign: "center",
-										display: "flex",
-										justifyContent: "center",
-									}}
-								>
-									English
-								</Link>
-							</a>
-						</div>
-						<div className="col-md-6">
-							<h1 className="text-center text-white text-[44px] mt-[20%]">
-								ستورم اكسسوارت تظليل نوافذ السيارة دبي
-							</h1>
-							<a
-								className="text-center btn btn btn-danger mt-5"
-								style={{
-									display: "flex",
-									justifyContent: "center",
-									backgroundColor: "rgb(0,0,0,0.5)",
-								}}
-							>
-								<Link
-									href="/Homearabic"
-									style={{
-										textAlign: "center",
-										display: "flex",
-										justifyContent: "center",
-									}}
-								>
-									عربي
-								</Link>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+		<Home2/>
 		</>
 	);
 }
