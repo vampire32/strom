@@ -1131,7 +1131,7 @@ export default function Home2() {
 								}}
 							/>
 						</div>
-						<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+						<div class="lg:flex-grow md:w-1/2 py-10 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
 							<h2 class=" text-[24px] font-bold text-[#FF7276] text-left">
 								WINDOW FILMS INSTALLATION SERVICES IN SHARJAH - COMMERCIAL USAGE
 							</h2>
@@ -1156,7 +1156,7 @@ export default function Home2() {
 					</div>
 				</section>
 				<section class=" container body-font">
-					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+					<div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
 						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
 							<h2 class=" text-[24px] font-bold text-[#FF7276]">
 								RESIDENTIAL WINDOW FILM - PROVIDING COMPLETE PROTECTION
@@ -1205,7 +1205,7 @@ export default function Home2() {
 								/>
 							
 						</div>
-						<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+						<div class="lg:flex-grow py-10 md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
 							<h2 class=" text-[24px] font-bold text-[#FF7276] text-left">
 								SAFEGUARDING COMMERCIAL & RESIDENTIAL GLASS WINDOWS
 							</h2>
