@@ -42,7 +42,7 @@ import Mechnic from "../img/mechnic.jpg";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import F1 from '../img/c1-removebg-preview.png'
+import F1 from '../img/car_tinting_experts.png'
 import F2 from "../img/c2-removebg-preview.png";
 
 

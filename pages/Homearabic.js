@@ -62,7 +62,7 @@ import TopbarAr from "@/Components/TopbarAr";
 import ContactFormAr from "@/Components/ContactFormAr";
 import FooterAr from "@/Components/FooterAr";
 import Link from "next/link";
-import F1 from "../img/c1-removebg-preview.png";
+import F1 from "../img/car_tinting_experts.png";
 import F2 from "../img/c2-removebg-preview.png";
 import F3 from "../img/c3-removebg-preview.png";
 
@@ -288,8 +288,8 @@ export default function Homearabic() {
 												<Image
 													src={F2}
 													style={{
-														width: "70%",
-														height: "70%",
+														width: "90%",
+														height: "90%",
 														margin: "auto",
 													}}
 												/>
@@ -473,8 +473,8 @@ export default function Homearabic() {
 												<Image
 													src={F1}
 													style={{
-														width: "70%",
-														height: "70%",
+														width: "90%",
+														height: "90%",
 														margin: "auto",
 													}}
 												/>
