@@ -2,10 +2,13 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-		<section className=" pt-5 contact_section layout_padding">
+		<section
+			style={{ backgroundColor: "black", padding: "100px" }}
+			className=" pt-5 contact_section layout_padding"
+		>
 			<div className="container ">
 				<div className="heading_container">
-					<div className=" text-[28px] font-bold text-[#FF7276]">
+					<div className=" text-[28px] font-bold text-[#ffae42]">
 						Place an Order
 					</div>
 				</div>
@@ -16,21 +19,31 @@ const ContactForm = () => {
 						<form>
 							<div>
 								<input
-									style={{ backgroundColor: "#fff" }}
+									className="text-[white]"
+									style={{
+										backgroundColor: "rgba(0, 0, 0, 0.24)",
+										border: "1px solid #ffae42",
+									}}
 									type="text"
 									placeholder="Name"
 								/>
 							</div>
 							<div>
 								<input
-									style={{ backgroundColor: "#fff" }}
+									style={{
+										backgroundColor: "rgba(0, 0, 0, 0.24)",
+										border: "1px solid #ffae42",
+									}}
 									type="email"
 									placeholder="Email"
 								/>
 							</div>
 							<div>
 								<input
-									style={{ backgroundColor: "#fff" }}
+									style={{
+										backgroundColor: "rgba(0, 0, 0, 0.24)",
+										border: "1px solid #ffae42",
+									}}
 									type="text"
 									placeholder="Phone"
 								/>
@@ -40,18 +53,19 @@ const ContactForm = () => {
 									type="text"
 									className="message-box"
 									placeholder="Message"
-									style={{ backgroundColor: "#fff" }}
+									style={{
+										backgroundColor: "rgba(0, 0, 0, 0.24)",
+										border: "1px solid #ffae42",
+									}}
 								/>
 							</div>
 							<div className="d-flex ">
 								<a
-								
 									style={{
-										borderColor: "#FF7276",
-										color: "black",
-									
+										borderColor: "#ffae42",
+										color: "white",
 									}}
-									class="btn btn-primary  py-3 px-5 animated slideInDown"
+									class="btn btn-warning  py-3 px-5 animated slideInDown"
 									type="submit"
 								>
 									{" "}

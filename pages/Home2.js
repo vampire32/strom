@@ -1,6 +1,6 @@
 
 import { Inter } from "@next/font/google";
-import C1 from "../img/window-tinting-2.jpg";
+import C1 from "../img/window-tinting-2.png";
 import Cartint from "../img/car-window-shield-060220210503.jpg";
 
 import {
@@ -22,7 +22,7 @@ import A1 from "../img/A1.jpg";
 import { AiFillPhone, AiOutlineSolution } from "react-icons/ai";
 import { BsFillEnvelopeFill } from "react-icons/bs";
 import Feature from "../img/mec.jpg";
-import Feature2 from "../img/mec2.gif";
+import Feature2 from "../img/mech2.png";
 import S1 from "../img/service-1.jpg";
 import S2 from "../img/service-2.jpg";
 import S3 from "../img/S1.jpeg";
@@ -31,7 +31,7 @@ import S5 from "../img/porch11.webp";
 import S6 from "../img/image3.jpg";
 import Automotive from "../img/commercial.jpg";
 import Res from "../img/res.jpg";
-import sec from "../img/seeec.webp";
+import sec from "../img/sec.webp";
 import ContactForm from "@/Components/ContactForm";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -42,7 +42,7 @@ import Mechnic from "../img/mechnic.jpg";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import F1 from '../img/car_tinting_experts.png'
+import F1 from '../img/c1-removebg-preview.png'
 import F2 from "../img/c2-removebg-preview.png";
 
 
@@ -57,12 +57,10 @@ export default function Home2() {
 	return (
 		<>
 			<Head>
-				<title>
-					Car Tinting Sharjah | 3M Car Window Tinting | 3M Auto Care - Safa
-				</title>
+				<title>Car Window Tinting Sharjah | Storm Car Accessories</title>
 				<meta
 					name="description"
-					content="Car Tinting Sharjah - Window Tinting And Paint Protection Film Offers In Sharjah, Superior Quality 3M Authorized Car Tinting In Sharjah & Window Tint Solution."
+					content="Car Tinting Sharjah - Window Tinting And Paint Protection Film Offers In Sharjah, Superior Quality Authorized Car Tinting In Sharjah & Window Tint Solution."
 				/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/whitelogo.png" sizes="32x32" />
@@ -75,24 +73,23 @@ export default function Home2() {
 				<meta property="og:type" content="website" />
 				<meta
 					property="og:description"
-					content="Car Tinting Sharjah - Window Tinting And Paint Protection Film Offers In Sharjah, Superior Quality 3M Authorized Car Tinting In Sharjah & Window Tint Solution. "
+					content="Car Tinting Sharjah - Window Tinting And Paint Protection Film Offers In Sharjah, Superior Quality Authorized Car Tinting In Sharjah & Window Tint Solution. "
 				/>
 
-				<link rel="alternate" href="https://www.safa.ae/" hreflang="en" />
-				<link rel="canonical" href="https://www.safa.ae/" />
+				<link rel="canonical" href="https://www.stormupholstery.com/" />
 			</Head>
 			<Topbar />
-
 			<div
 				id="carouselExampleControls"
 				class="carousel slide"
 				data-bs-ride="carousel"
 			>
 				<div class="carousel-inner">
-					<div class="carousel-item active h-[120vh]">
-						<div>
+					<div>
+						<div class="carousel-item active h-[100vh]">
 							<div>
-								<Image style={{ height: "120vh" }} src={C1} />
+								<Image style={{ height: "100vh", width: "100%" }} src={C1} />
+
 								<div class="carousel-caption">
 									<div class="container-fluid">
 										<div class="row ">
@@ -124,7 +121,8 @@ export default function Home2() {
 												<button
 													style={{
 														backgroundColor: "rgba(0,0,0,0.1)",
-														borderColor: "#FF7276",
+														borderColor: "#FFB400",
+														width: "20%",
 													}}
 													class="btn btn-primary  animated slideInDown"
 												>
@@ -133,7 +131,8 @@ export default function Home2() {
 												<button
 													style={{
 														backgroundColor: "rgba(0,0,0,0.1)",
-														borderColor: "#FF7276",
+														borderColor: "#FFB400",
+														width: "20%",
 													}}
 													class="btn btn-primary animated slideInDown ml-5"
 													onClick={() => {
@@ -181,7 +180,7 @@ export default function Home2() {
 																			<div class="mb-6">
 																				<label
 																					for="text"
-																					class="block mb-2 text-sm font-medium text-[#FFD700]"
+																					class="block mb-2 text-sm font-medium text-[#FFD700	]"
 																				>
 																					Name
 																				</label>
@@ -270,8 +269,8 @@ export default function Home2() {
 												<Image
 													src={F2}
 													style={{
-														width: "90%",
-														height: "90%",
+														width: "70%",
+														height: "70%",
 														margin: "auto",
 													}}
 												/>
@@ -282,10 +281,10 @@ export default function Home2() {
 							</div>
 						</div>
 					</div>
-					<div class="carousel-item  h-[120vh]">
+					<div class="carousel-item  h-[100vh]">
 						<div>
 							<div>
-								<Image style={{ height: "120vh" }} src={C1} />
+								<Image style={{ height: "100vh", width: "100%" }} src={C1} />
 								<div class="carousel-caption">
 									<div class="container-fluid">
 										<div class="row ">
@@ -297,7 +296,7 @@ export default function Home2() {
 													Storm Accessories Car Window Tinting Sharjah
 												</h1>
 												<h2
-													style={{ color: "#FFD700", fontSize: "20px" }}
+													style={{ color: "#FFB400", fontSize: "20px" }}
 													className="mb-4"
 												>
 													CERAMIC COATING | PPF | OFFICE & HOME WINDOW TINTING |
@@ -309,7 +308,7 @@ export default function Home2() {
 												<button
 													style={{
 														backgroundColor: "rgba(0,0,0,0.1)",
-														borderColor: "#FF7276",
+														borderColor: "#FFB400",
 													}}
 													class="btn btn-primary animated slideInDown"
 												>
@@ -318,7 +317,7 @@ export default function Home2() {
 												<button
 													style={{
 														backgroundColor: "rgba(0,0,0,0.1)",
-														borderColor: "#FF7276",
+														borderColor: "#FFB400",
 													}}
 													class="btn btn-primary animated slideInDown ml-5 "
 													onClick={() => {
@@ -455,8 +454,8 @@ export default function Home2() {
 												<Image
 													src={F1}
 													style={{
-														width: "90%",
-														height: "90%",
+														width: "70%",
+														height: "70%",
 														margin: "auto",
 													}}
 												/>
@@ -679,52 +678,58 @@ export default function Home2() {
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-
-			<div class="container-fluid    py-5" data-parallax="scroll">
+			<div
+				style={{ backgroundColor: "#071E22" }}
+				class="container-fluid    py-5"
+				data-parallax="scroll"
+			>
 				<div class="container  py-5">
 					<div class="row ">
 						<div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
 							<h4
-								style={{ color: "BLACK", textAlign: "center" }}
+								style={{ color: "white", textAlign: "center" }}
 								class="display-4 "
 								data-toggle="counter-up"
 							>
 								+500 Million
 							</h4>
-							<p style={{ color: "red", textAlign: "center" }}>Happy Clients</p>
+							<p style={{ color: "#ffae42", textAlign: "center" }}>
+								Happy Clients
+							</p>
 						</div>
 						<div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
 							<h4
-								style={{ color: "BLACK", textAlign: "center" }}
+								style={{ color: "white", textAlign: "center" }}
 								class="display-4 "
 								data-toggle="counter-up"
 							>
 								+200
 							</h4>
-							<p style={{ color: "red", textAlign: "center" }}>Exper Team</p>
+							<p style={{ color: "#ffae42", textAlign: "center" }}>
+								Exper Team
+							</p>
 						</div>
 						<div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
 							<h4
-								style={{ color: "BLACK", textAlign: "center" }}
+								style={{ color: "white", textAlign: "center" }}
 								class="display-4 "
 								data-toggle="counter-up"
 							>
 								+385
 							</h4>
-							<p style={{ color: "red", textAlign: "center" }}>
+							<p style={{ color: "#ffae42", textAlign: "center" }}>
 								Ongoing Project
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="pb-10" style={{ backgroundColor: "rgb(0,0,0,0.99" }}>
+			<div class="pb-10" style={{ backgroundColor: "#071E22" }}>
 				<div class="container">
 					<div class="row   align-items-center">
 						<div class="col-lg-6 wow fadeInUp mt-5" data-wow-delay="0.5s">
 							<div class="h-100">
-								<h2 style={{ color: "#FFD700" }} class="display-6 mb-5 ">
+								<h2 style={{ color: "#ffae42" }} class="display-6 mb-5 ">
 									BEST Storm Car Accessories Centre In Sharjah
 								</h2>
 
@@ -755,7 +760,7 @@ export default function Home2() {
 										<div class="col-sm-6">
 											<div class="d-flex align-items-center">
 												<div
-													style={{ backgroundColor: "#FFD700" }}
+													style={{ backgroundColor: "#ffae42" }}
 													class="btn-lg-square  rounded-circle me-3"
 												>
 													<AiFillPhone color="#fff" />
@@ -766,7 +771,7 @@ export default function Home2() {
 										<div class="col-sm-6">
 											<div class="d-flex align-items-center">
 												<div
-													style={{ backgroundColor: "#FFD700" }}
+													style={{ backgroundColor: "#ffae42" }}
 													class="btn-lg-square  rounded-circle me-3"
 												>
 													<BsFillEnvelopeFill color="#ffff" />
@@ -790,33 +795,37 @@ export default function Home2() {
 					</div>
 				</div>
 			</div>
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
-			<br></br>
-			<hr></hr>
-			<div class="container-xxl">
-				<div class="container">
-					<div
-						class="text-center m-auto  wow fadeInUp"
-						data-wow-delay="0.1s"
-						style={{ maxWidth: "800px" }}
+
+			<div
+				style={{
+					backgroundColor: "#071E22",
+					paddingTop: "50px",
+					paddingBottom: "50px",
+				}}
+				class="container-fluid"
+			>
+				<div
+					class="text-center m-auto  wow fadeInUp"
+					data-wow-delay="0.1s"
+					style={{ maxWidth: "800px" }}
+				>
+					<span
+						style={{ color: "#ffae42", fontWeight: "BOLD" }}
+						class="display-4 mb-3 "
 					>
-						<span
-							style={{ color: "#FF7276", fontWeight: "normal" }}
-							class="display-4 mb-3 "
-						>
-							OUR SERVICES
-						</span>
-						<p className=" leading-6 mb-5">
-							Storm Automotive, a business known for its array of AUTO STORM
-							auto tinting services in Sharjah, is firmly committed to
-							sustainability. We adopt a comprehensive approach to sun
-							protection, damage avoidance, and glare reduction with our
-							high-end window tinting and film services.
-						</p>
-					</div>
+						OUR SERVICES
+					</span>
+					<p className=" leading-6 mb-5 text-white">
+						Storm Automotive, a business known for its array of AUTO STORM auto
+						tinting services in Sharjah, is firmly committed to sustainability.
+						We adopt a comprehensive approach to sun protection, damage
+						avoidance, and glare reduction with our high-end window tinting and
+						film services.
+					</p>
+				</div>
+			</div>
+			<div class="bgimage4">
+				<div style={{ padding: "80px" }} class="container-fluid  ">
 					<div class="row m-auto  ">
 						<div class="col-lg-4 col-md-6 wow fadeInUp " data-wow-delay="0.1s">
 							<div class="service-item ">
@@ -830,14 +839,21 @@ export default function Home2() {
 										src={S1}
 										alt="Car Tinting Service Sharjah"
 										className="res"
+										
 									/>
 								</div>
 								<div>
-									<a style={{ fontSize: "20px", color: "#FF7276" }}>
+									<a
+										style={{
+											fontSize: "30px",
+											color: "#071E22",
+											fontWeight: "bold",
+										}}
+									>
 										Automotive
 									</a>
 								</div>
-								<p className="text-justify w-72 pb-3">
+								<p className="text-left  text-[white] font-extralight text-[18px]  pb-3">
 									Car detailing services in Sharjah involve a thorough cleaning
 									and polishing of the exterior and interior of the vehicle.
 									This includes washing, waxing, and buffing the exterior, as
@@ -860,11 +876,17 @@ export default function Home2() {
 									/>
 								</div>
 								<div>
-									<a style={{ color: "#FF7276", fontSize: "20px" }}>
+									<a
+										style={{
+											color: "#071E22",
+											fontSize: "30px",
+											fontWeight: "bold",
+										}}
+									>
 										Commercial Window Films
 									</a>
 								</div>
-								<p className="text-justify w-72 pb-3">
+								<p className="text-left text-[white]  text-[18px] font-extralight   pb-3">
 									The damaging UV rays that can fade and ruin furnishings,
 									fabrics, and other interior finishes are blocked by these
 									coatings to an extent of up to 99%. Also, they shield workers
@@ -887,11 +909,17 @@ export default function Home2() {
 									/>
 								</div>
 								<div>
-									<a style={{ color: "#FF7276", fontSize: "20px" }}>
+									<a
+										style={{
+											color: "#071E22",
+											fontSize: "30px",
+											fontWeight: "bold",
+										}}
+									>
 										Seat UpHolstery
 									</a>
 								</div>
-								<p className="text-justify w-72 pb-3">
+								<p className="text-left text-[white]  text-[18px] font-extralight  pb-3">
 									Any damage to the current seat covers, such as tears, burns,
 									or stains, can be repaired by seat repair services in Sharjah.
 									By providing these services, current seats may last longer and
@@ -899,7 +927,11 @@ export default function Home2() {
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+
+						<div
+							class="col-lg-4 col-md-6 wow fadeInUp mt-5"
+							data-wow-delay="0.1s"
+						>
 							<div class="service-item">
 								<div class="img-fluid res">
 									<Image
@@ -914,11 +946,17 @@ export default function Home2() {
 									/>
 								</div>
 								<div>
-									<a style={{ color: "#FF7276", fontSize: "20px" }}>
+									<a
+										style={{
+											color: "#071E22",
+											fontSize: "30px",
+											fontWeight: "bold",
+										}}
+									>
 										School buses
 									</a>
 								</div>
-								<p className="text-justify w-72 pb-3">
+								<p className="text-left font-extralight  text-[18px] text-[white]  pb-3">
 									The safety of school buses can be increased by using Sharjahs
 									window tinting services. In the event of an accident or
 									break-in, tinted windows can aid in preventing glass from
@@ -927,7 +965,10 @@ export default function Home2() {
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+						<div
+							class="col-lg-4 col-md-6 wow fadeInUp mt-5"
+							data-wow-delay="0.3s"
+						>
 							<div class="service-item">
 								<div class="img-fluid res">
 									<Image
@@ -942,11 +983,17 @@ export default function Home2() {
 									/>
 								</div>
 								<div>
-									<a style={{ color: "#FF7276", fontSize: "20px" }}>
+									<a
+										style={{
+											color: "#071E22",
+											fontSize: "30px",
+											fontWeight: "bold",
+										}}
+									>
 										Residential
 									</a>
 								</div>
-								<p className="text-justify w-72 pb-3">
+								<p className="text-left text-[white]  text-[18px] font-extralight  pb-3">
 									Sharjahs residential window tinting services can meet a
 									variety of needs for the home at a reasonable price.
 									Homeowners can benefit from more privacy, better energy
@@ -955,7 +1002,10 @@ export default function Home2() {
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+						<div
+							class="col-lg-4 col-md-6 wow fadeInUp mt-5"
+							data-wow-delay="0.5s"
+						>
 							<div class="service-item">
 								<div class="img-fluid res">
 									<Image
@@ -970,11 +1020,17 @@ export default function Home2() {
 									/>
 								</div>
 								<div>
-									<a style={{ color: "#FF7276", fontSize: "20px" }}>
+									<a
+										style={{
+											color: "#071E22",
+											fontSize: "30px",
+											fontWeight: "bold",
+										}}
+									>
 										Safety & Security
 									</a>
 								</div>
-								<p className="text-justify w-72 pb-3">
+								<p className="text-left font-extralight  text-[18px] text-[white]  pb-3">
 									Security and safety Sharjahs window tinting services can meet
 									a variety of property requirements affordably. Property owners
 									can benefit from higher safety and security, better energy
@@ -987,159 +1043,178 @@ export default function Home2() {
 					</div>
 				</div>
 			</div>
-			<br></br>
-			<br></br>
+
 			<div>
-				<section class=" container body-font">
+				<div class="bgimage3">
+					<section class=" container-fluid body-font pb-5">
+						<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+							<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
+								<h2 class=" text-[35px] font-bold text-[#ffae42]">
+									car window tinting Sharjah | Storm upholstery
+								</h2>
+								<h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white divide-dashed > * + *">
+									Automotive
+								</h3>
+
+								<p class="mb-8 leading-relaxed text-justify text-white">
+									Searching for the finest automobile protection options? We
+									provide a wide selection of top-notch automobile protection
+									equipment to assist you to protect your vehicle from numerous
+									exterior factors, like the sun, dust, and dirt, and weather.
+									We at storm auto accessories offer everything you need to make
+									your automobile appear like new, including detailing services,
+									nano ceramic coating, car polishing, sun control films, and
+									detailing services. We have a lot of knowledge and skill in
+									giving your automobile all-around protection since we are the
+									authorised car-care centre in Sharjah. We are accountable for
+									the safety of your car.
+								</p>
+							</div>
+
+							<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+								<div
+									style={{
+										borderLeft: "10px solid #ffae42 ",
+										borderRadius: "20px",
+									}}
+									class="object-cover object-center  "
+								>
+									<Image
+										alt="hero"
+										src={Automotive}
+										style={{  borderRadius: "20px" }}
+									/>
+								</div>
+							</div>
+						</div>
+						<div className="row m-auto">
+							<div className="col-md-4">
+								<div
+									class="card"
+									style={{
+										width: "20rem",
+										border: "2px solid #ffae42",
+										borderRadius: "10px",
+										height: "30rem",
+										backgroundColor: "#504f4d00",
+									}}
+								>
+									<div class="card-img-top ">
+										<Image
+											style={{ borderRadius: "10px", height: "15rem" }}
+											src={Cartint}
+											alt="..."
+										/>
+									</div>
+
+									<div class="card-body">
+										<h5 class="text-[#ffae42] text-[24px]">
+											Car Window Tinting Sharjah
+										</h5>
+										<p class="card-text text-justify text-white">
+											We provide an exceptional selection of storm auto
+											accessories and sun protection window films that are
+											fitted on your cars windows to make you conformable and
+											save the inside of your vehicle from being damaged by
+											excessive heat and sunshine.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div className="col-md-4">
+								<div
+									class="card"
+									style={{
+										width: "20rem",
+										border: "2px solid #ffae42",
+										borderRadius: "10px",
+										height: "30rem",
+										backgroundColor: "#Ffb400",
+									}}
+								>
+									<div class="card-img-top">
+										<Image
+											style={{ borderRadius: "10px", height: "15rem" }}
+											src={Carmic}
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h2 class=" text-[#071E22] text-[24px]">Ceramic Coating</h2>
+										<p class="card-text text-justify text-white">
+											We provide the best nano ceramic coating to protect your
+											automobile from dents and other exterior damage. It is
+											used on the paint, bumpers, and plastic trim to provide
+											long-lasting general protection.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div className="col-md-4">
+								<div
+									class="card"
+									style={{
+										width: "20rem",
+										border: "2px solid #ffae42",
+										borderRadius: "10px",
+										height: "30rem",
+										backgroundColor: "#504f4d00",
+									}}
+								>
+									<div class="card-img-top">
+										<Image
+											style={{ borderRadius: "10px", height: "15rem" }}
+											src={Mechnic}
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h5 class=" text-[#ffae42] text-[24px]">
+											Mechanical Service
+										</h5>
+										<p class="card-text text-justify text-white">
+											Storm upholstery has been in the automotive industry since
+											2003. We are Sharjahs experts in luxury automobile
+											repairs. Repairing Rolls Royce, Mercedes, Porsche, Land
+											Rover, Bentley, and Audi is our area of competence.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<section
+					style={{ backgroundColor: "#071E22" }}
+					class=" container-fluid body-font"
+				>
 					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
-							<h2 class=" text-[24px] font-bold text-[#FF7276]">
-								Best Storm upholstery car tinting Sharjah
-							</h2>
-							<h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 divide-dashed > * + *">
-								Automotive
-							</h3>
-
-							<p class="mb-8 leading-relaxed text-justify">
-								Searching for the finest automobile protection options? We
-								provide a wide selection of top-notch automobile protection
-								equipment to assist you to protect your vehicle from numerous
-								exterior factors, like the sun, dust, and dirt, and weather. We
-								at storm auto accessories offer everything you need to make your
-								automobile appear like new, including detailing services, nano
-								ceramic coating, car polishing, sun control films, and detailing
-								services. We have a lot of knowledge and skill in giving your
-								automobile all-around protection since we are the authorised
-								car-care centre in Sharjah. We are accountable for the safety of
-								your car.
-							</p>
-						</div>
-
-						<div class="col-md-6 ">
-							<Image
-								alt="hero"
-								src={Automotive}
-								style={{
-									borderRadius: 20,
-									border: "3px solid #151229",
-									borderRadius: "20px",
-								}}
-							/>
-						</div>
-					</div>
-					<div className="row m-auto">
-						<div className="col-md-4">
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
 							<div
-								class="card"
 								style={{
-									width: "20rem",
-									border: "3px solid #d5d4d9",
 									borderRadius: "20px",
-									height: "25rem",
+									borderRight: "10px solid #ffae42 ",
+									borderRadius: "20px",
 								}}
+								class="object-cover object-center"
 							>
-								<div class="card-img-top ">
-									<Image
-										style={{ borderRadius: "10px", height: "10rem" }}
-										src={Cartint}
-										alt="..."
-									/>
-								</div>
-
-								<div class="card-body">
-									<h5 class="text-[#FF7276] text-[18px] font-bold">
-										Car Window Tinting Sharjah
-									</h5>
-									<p class="card-text text-justify font-semibold">
-										We provide an exceptional selection of storm auto
-										accessories and sun protection window films that are fitted
-										on your cars windows to make you conformable and save the
-										inside of your vehicle from being damaged by excessive heat
-										and sunshine.
-									</p>
-								</div>
+								<Image
+									alt="hero"
+									src={Automotive}
+									style={{ borderRadius: "20px",  }}
+								/>
 							</div>
 						</div>
-						<div className="col-md-4">
-							<div
-								class="card"
-								style={{
-									width: "20rem",
-									border: "3px solid #d5d4d9",
-									borderRadius: "20px",
-									height: "25rem",
-								}}
-							>
-								<div class="card-img-top">
-									<Image
-										style={{ borderRadius: "10px", height: "10rem" }}
-										src={Carmic}
-										alt="..."
-									/>
-								</div>
-								<div class="card-body">
-									<h5 class=" text-[#FF7276] font-bold">Ceramic Coating</h5>
-									<p class="card-text text-justify font-semibold">
-										We provide the best nano ceramic coating to protect your
-										automobile from dents and other exterior damage. It is used
-										on the paint, bumpers, and plastic trim to provide
-										long-lasting general protection.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div className="col-md-4">
-							<div
-								class="card"
-								style={{
-									width: "20rem",
-									border: "3px solid #d5d4d9",
-									borderRadius: "20px",
-									height: "25rem",
-								}}
-							>
-								<div class="card-img-top">
-									<Image
-										style={{ borderRadius: "10px", height: "10rem" }}
-										src={Mechnic}
-										alt="..."
-									/>
-								</div>
-								<div class="card-body">
-									<h5 class=" text-[#FF7276] font-bold">Mechanical Service</h5>
-									<p class="card-text text-justify font-semibold">
-										Storm upholstery has been in the automotive industry since
-										2003. We are Sharjahs experts in luxury automobile repairs.
-										Repairing Rolls Royce, Mercedes, Porsche, Land Rover,
-										Bentley, and Audi is our area of competence.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class=" container body-font">
-					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-						<div class="col-md-6">
-							<Image
-								alt="hero"
-								src={Automotive}
-								style={{
-									borderRadius: 20,
-									border: "3px solid #151229",
-									borderRadius: "20px",
-								}}
-							/>
-						</div>
-						<div class="lg:flex-grow md:w-1/2 py-10 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-							<h2 class=" text-[24px] font-bold text-[#FF7276] text-left">
+						<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+							<h2 class=" text-[30px] font-bold text-[#ffae42] text-left">
 								WINDOW FILMS INSTALLATION SERVICES IN SHARJAH - COMMERCIAL USAGE
 							</h2>
-							<h3 class=" title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 divide-dashed">
+							<h3 class=" title-font sm:text-4xl text-3xl mb-4 font-medium text-white divide-dashed">
 								Commercial Window Films
 							</h3>
 
-							<p class="mb-8 leading-relaxed text-justify">
+							<p class="mb-8 leading-relaxed text-justify text-white">
 								In the present, commercial window films in Sharjah are essential
 								for offering a high degree of privacy, heat protection, and of
 								course a pleasant working environment. It may be quite difficult
@@ -1155,65 +1230,78 @@ export default function Home2() {
 						</div>
 					</div>
 				</section>
-				<section class=" container body-font">
-					<div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
-						<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
-							<h2 class=" text-[24px] font-bold text-[#FF7276]">
-								RESIDENTIAL WINDOW FILM - PROVIDING COMPLETE PROTECTION
-							</h2>
-							<h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-								Residential
-							</h3>
+				<div class="bgimage3">
+					<section class=" container-fluid body-font">
+						<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+							<div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
+								<h2 class=" text-[30px] font-bold text-[#ffae42]">
+									RESIDENTIAL WINDOW FILM - PROVIDING COMPLETE PROTECTION
+								</h2>
+								<h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+									Residential
+								</h3>
 
-							<p class="mb-8 leading-relaxed text-justify">
-								such things in your living quarters, adjustments need to be
-								made. Glass in windows and doors of homes let in natural light,
-								but the night also brings with it an excessive amount of heat
-								that saps energy. With the top-of-the-line window film, its time
-								to rethink your homes interior. The variety of window films
-								offered by Storm Auto Accessories will not only help you protect
-								the inside of your home but also improve the spaces
-								attractiveness and décor in a classy way.
-							</p>
+								<p class="mb-8 leading-relaxed text-justify text-white">
+									such things in your living quarters, adjustments need to be
+									made. Glass in windows and doors of homes let in natural
+									light, but the night also brings with it an excessive amount
+									of heat that saps energy. With the top-of-the-line window
+									film, its time to rethink your homes interior. The variety of
+									window films offered by Storm Auto Accessories will not only
+									help you protect the inside of your home but also improve the
+									spaces attractiveness and décor in a classy way.
+								</p>
+							</div>
+
+							<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+								<div
+									style={{
+										borderRadius: "20px",
+										borderLeft: "10px solid #ffae42 ",
+									}}
+									class="object-cover object-center "
+								>
+									<Image
+										alt="hero"
+										src={Res}
+										style={{ borderRadius: "20",  }}
+									/>
+								</div>
+							</div>
 						</div>
-
-						<div class="col-md-6">
-							<Image
-								alt="hero"
-								src={Res}
+					</section>
+				</div>
+				<section
+					style={{ backgroundColor: "#071E22" }}
+					on
+					class=" container-fluid body-font"
+				>
+					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+						<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+							<div
 								style={{
-									borderRadius: 20,
-									border: "3px solid #151229",
+									borderRadius: "20px",
+									borderRight: "10px solid #ffae42 ",
 									borderRadius: "20px",
 								}}
-							/>
-						</div>
-					</div>
-				</section>
-				<section on class=" container body-font">
-					<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-						<div class="col-md-6">
-							
+								class="object-cover object-center "
+							>
 								<Image
 									alt="hero"
 									src={sec}
-									style={{
-										borderRadius: 20,
-										border: "3px solid #151229",
-										borderRadius: "20px",
-									}}
+									style={{ borderRadius: 20,}}
 								/>
-							
+							</div>
 						</div>
-						<div class="lg:flex-grow py-10 md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-							<h2 class=" text-[24px] font-bold text-[#FF7276] text-left">
+						<div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+							<h2 class=" text-[30px] font-bold text-[#ffae42] text-left">
 								SAFEGUARDING COMMERCIAL & RESIDENTIAL GLASS WINDOWS
 							</h2>
-							<h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+							<h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
 								Safety & Security
 							</h3>
 							<h2 className="text-[22px] mb-3 font-semibold"></h2>
-							<p class="mb-8 leading-relaxed text-justify">
+							<p class="mb-8 leading-relaxed text-justify text-white">
 								Its always crucial to take all necessary precautions to provide
 								the areas where we reside or spend the majority of our time the
 								highest degree of safety. The goal of our premium selection of
@@ -1229,30 +1317,45 @@ export default function Home2() {
 								colours and patterns to coordinate with the styling and décor of
 								your area.
 							</p>
+							<button
+								style={{
+									backgroundColor: "rgba(0,0,0,0.1)",
+									borderColor: "#ffae42",
+									backgroundColor: "#F3961a",
+									width: "150px",
+									height: "50px",
+								}}
+								class="btn btn-primary"
+							>
+								Call Now
+							</button>
 						</div>
 					</div>
-					<div class="container m-auto">
-						<h2 class=" text-[24px] font-bold text-[#FF7276] text-center">
-							WHY DO YOU NEED TO INSTALL SAFETY & SECURITY WINDOW FILMS IN
-							Sharjah?
-						</h2>
-						<p class="mb-8 leading-relaxed text-center">
-							It goes without saying that you must make your household or
-							business place safe and secure. In Sharjah, there are unfavourable
-							weather patterns and extreme climate changes, which have a
-							significant negative influence on the buildings and structures. In
-							certain disaster-prone places, other natural catastrophes like
-							earthquakes and fast-blow wind bursts like hurricanes are also
-							rather prevalent. Installing protective shields on glass windows
-							and doors is necessary since they are vulnerable to breaking,
-							which may result in many forms of property and life harm.
-							Additionally, there are unforeseen incidental damages brought on
-							by theft and other criminal activity, therefore you should
-							maintain tight security to prevent them. The safety and security
-							window films may provide you excellent protection in this regard.
-							These films are intended to prevent window and door glass from
-							breaking as a result of different outside pressures or accidents.
-						</p>
+					<div class="bgimage3">
+						<div class="container w-[60%] pb-5 pt-5">
+							<h2 class=" text-[30px] font-bold text-[#ffae42] text-center">
+								WHY DO YOU NEED TO INSTALL SAFETY & SECURITY WINDOW FILMS IN
+								Sharjah?
+							</h2>
+							<p class=" leading-7 pt-2 text-justify text-white">
+								It goes without saying that you must make your household or
+								business place safe and secure. In Sharjah, there are
+								unfavourable weather patterns and extreme climate changes, which
+								have a significant negative influence on the buildings and
+								structures. In certain disaster-prone places, other natural
+								catastrophes like earthquakes and fast-blow wind bursts like
+								hurricanes are also rather prevalent. Installing protective
+								shields on glass windows and doors is necessary since they are
+								vulnerable to breaking, which may result in many forms of
+								property and life harm. Additionally, there are unforeseen
+								incidental damages brought on by theft and other criminal
+								activity, therefore you should maintain tight security to
+								prevent them. The safety and security window films may provide
+								you excellent protection in this regard. These films are
+								intended to prevent window and door glass from breaking as a
+								result of different outside pressures or accidents.
+							</p>
+						</div>
 					</div>
 				</section>
 			</div>
@@ -1267,18 +1370,18 @@ export default function Home2() {
 									style={{ maxWidth: "900px" }}
 								>
 									<h2
-										style={{ color: "#FF7276", fontWeight: "normal" }}
+										style={{ color: "#071E22", fontWeight: "bold" }}
 										class="display-4 mb-3 "
 									>
 										Why To Choose Storm AUTOMOTIVE ?
 									</h2>
 									<h3
-										style={{ color: "#FFD700", fontWeight: "normal" }}
+										style={{ color: "#071E22", fontWeight: "normal" }}
 										className="font-bold text-[24px]"
 									>
 										CAR TINTING IN Sharjah
 									</h3>
-									<p class="mt-3 text-center text-white ">
+									<p class="mt-3 text-center text-white  ">
 										With its excellent quality auto storm car tinting in
 										Sharjah, window film, Storm Automotive LLC has improved and
 										transformed many vehicles and structures since its founding
@@ -1300,7 +1403,7 @@ export default function Home2() {
 												style={{
 													width: "90px",
 													height: "90px",
-													background: "#FF7276",
+													background: "#071E22",
 												}}
 											>
 												<div class="img-fluid">
@@ -1309,7 +1412,7 @@ export default function Home2() {
 											</div>
 											<div class="ms-4">
 												<h5
-													style={{ color: "#FFD700", fontWeight: "normal" }}
+													style={{ color: "#071E22", fontWeight: "normal" }}
 													class="mb-3 "
 												>
 													World-class products
@@ -1339,7 +1442,7 @@ export default function Home2() {
 												style={{
 													width: "90px",
 													height: "90px",
-													background: "#FF7276",
+													background: "#071E22",
 												}}
 											>
 												<div class="img-fluid">
@@ -1348,7 +1451,7 @@ export default function Home2() {
 											</div>
 											<div class="ms-4">
 												<h5
-													style={{ color: "#FFD700", fontWeight: "normal" }}
+													style={{ color: "#071E22", fontWeight: "normal" }}
 													class="mb-3 "
 												>
 													Extensive Industry Experience
@@ -1387,7 +1490,7 @@ export default function Home2() {
 												style={{
 													width: "90px",
 													height: "90px",
-													background: "#FF7276",
+													background: "#071E22",
 												}}
 											>
 												<div class="img-fluid">
@@ -1396,7 +1499,7 @@ export default function Home2() {
 											</div>
 											<div class="ms-4">
 												<h5
-													style={{ color: "#FFD700", fontWeight: "normal" }}
+													style={{ color: "#071E22", fontWeight: "normal" }}
 													class="mb-3"
 												>
 													Authorization
@@ -1423,7 +1526,7 @@ export default function Home2() {
 												style={{
 													width: "90px",
 													height: "90px",
-													background: "#FF7276",
+													background: "#071E22",
 												}}
 											>
 												<div class="img-fluid">
@@ -1432,7 +1535,7 @@ export default function Home2() {
 											</div>
 											<div class="ms-4">
 												<h5
-													style={{ color: "#FFD700", fontWeight: "normal" }}
+													style={{ color: "#071E22", fontWeight: "normal" }}
 													class="mb-3 "
 												>
 													Scientifically-approved window films
@@ -1468,7 +1571,7 @@ export default function Home2() {
 												style={{
 													width: "90px",
 													height: "90px",
-													background: "#FF7276",
+													background: "#071E22",
 												}}
 											>
 												<div class="img-fluid">
@@ -1477,7 +1580,7 @@ export default function Home2() {
 											</div>
 											<div class="ms-4">
 												<h5
-													style={{ color: "#FFD700", fontWeight: "normal" }}
+													style={{ color: "#071E22", fontWeight: "normal" }}
 													class="mb-3 "
 												>
 													Budget-friendly
@@ -1504,7 +1607,7 @@ export default function Home2() {
 												style={{
 													width: "90px",
 													height: "90px",
-													background: "#FF7276",
+													background: "#071E22",
 												}}
 											>
 												<div class="img-fluid">
@@ -1513,7 +1616,7 @@ export default function Home2() {
 											</div>
 											<div class="ms-4">
 												<h5
-													style={{ color: "#FFD700", fontWeight: "normal" }}
+													style={{ color: "#071E22", fontWeight: "normal" }}
 													class="mb-"
 												>
 													100% Satisfaction
@@ -1539,35 +1642,134 @@ export default function Home2() {
 					</div>
 				</div>
 			</div>
-
-			<div
-				style={{ height: "350px" }}
-				className="container-fluid bg-storm mt-1"
-			>
+			<div style={{ height: "300px" }} className="container-fluid bg-storm">
 				<div
-					style={{ color: "#FF7276", fontWeight: "bold", textAlign: "center" }}
-					className="text-center text-[44px] pt-5 "
+					style={{ color: "#ffae42", fontWeight: "bold", textAlign: "center" }}
+					className=" text-[44px] pt-3 "
 				>
 					GUARANTEES
 				</div>
-				<h2
-					style={{ color: "#FFD700" }}
-					className="text-center  m-auto text-[20px] mb-2 w-50"
-				>
+
+				<p className="text-LEFT  m-auto text-white text-[18px] mt-1 ">
 					In the UAE, storm Automotive is a reliable source of tint and provides
-					some of the best warranties available.
-				</h2>
-				<br></br>
-				<p className="text-center w-50 m-auto text-white text-[18px] mt-5 ">
-					Protection against colour fading We guarantee that all of our window
-					films wont fade for years, and that both intense wind and direct
-					sunlight wont dull their glossy sheen.
+					some of the best warranties available.Protection against colour fading
+					We guarantee that all of our window films wont fade for years, and
+					that both intense wind and direct sunlight wont dull their glossy
+					sheen.
 				</p>
 			</div>
-			<div className="container mt-5">
+			<div
+				style={{ backgroundColor: "#071E22", }}
+				className="container-fluid "
+			>
+				<p
+					style={{ color: "#Ffb400" }}
+					className="text-center  m-auto pb-5 text-[40px] "
+				>
+					The following warranties are provided to our clients.
+				</p>
+				<div className="row mt-10 m-auto gop mb-[200px]">
+					<div className="col-md-4 gbbb">
+						<div
+							class="card"
+							style={{
+								width: "18rem",
+								backgroundColor: "#071E22",
+								border: "2px solid #Eaeaac",
+							}}
+						>
+							<div class="card-img-top  mt-5">
+								<BsShieldCheck
+									size={50}
+									style={{ marginLeft: "40%", color: "#Ffb400" }}
+								/>
+							</div>
+
+							<div class="card-body">
+								<h5
+									style={{ color: "#Ffb400" }}
+									class="card-title text-center text-[20px] "
+								>
+									Warranty for UV ray blockage
+								</h5>
+								<p class="card-text text-[14px] text-white text-justify">
+									The window/car tints from Storm Automotive offer some UV and
+									infrared radiation protection. They will therefore let you to
+									enjoy natural sunshine without having to deal with its
+									negative consequences.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="col-md-4 gbbb">
+						<div
+							class="card"
+							style={{
+								width: "18rem",
+								backgroundColor: "#071E22",
+								border: "2px solid #Eaeaac",
+							}}
+						>
+							<div class="card-img-top  mt-5">
+								<GiFactory
+									size={50}
+									style={{ marginLeft: "45%", color: "#Ffb400" }}
+								/>
+							</div>
+
+							<div class="card-body">
+								<h5
+									style={{ color: "#Ffb400" }}
+									class="card-title text-[20px] "
+								>
+									Industry’s leading warranties
+								</h5>
+								<p class="card-text text-white text-[14px] text-justify">
+									Our contemporary window films offer all the advantages
+									outlined by industry standards. Additionally, they come with a
+									warranty against delamination, peeling, blistering, and
+									bubbling. They are non-metallic, so they dont affect how
+									mobile devices and satellite communications normally operate.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="col-md-4 gbbb">
+						<div
+							class="card"
+							style={{
+								width: "18rem",
+								backgroundColor: "#071E22",
+								border: "2px solid #Eaeaac",
+							}}
+						>
+							<div class="card-img-top mt-5">
+								<GiMetalDisc
+									size={50}
+									style={{ marginLeft: "45%", color: "#Ffb400" }}
+								/>
+							</div>
+
+							<div class="card-body">
+								<h5
+									style={{ color: "#FFD700" }}
+									class="card-title text-[20px] "
+								>
+									Warranty for non-metallic window films
+								</h5>
+								<p class="card-text text-white text-[14px] text-justify">
+									Our contemporary automobile window films do not include any
+									metallic components, in contrast to their conventional
+									equivalents. As a result, they dont prevent mobile devices and
+									satellite signals from operating normally.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				<ul
 					style={{ listStyle: "circle" }}
-					className=" text-justify m-4 text-[18px]"
+					className=" text-justify m-4 text-[18px] mt-5 text-[white]"
 				>
 					<li>
 						In addition to adhering to the many quality standards established by
@@ -1590,131 +1792,26 @@ export default function Home2() {
 						automobile or window tint you have selected.
 					</li>
 				</ul>
-				<p
-					style={{ color: "#FF7276" }}
-					className="text-center  m-auto text-[20px] mb-2 w-50"
-				>
-					The following warranties are provided to our clients.
-				</p>
-				<div className="row mt-10 m-auto gop mb-[200px]">
-					<div className="col-md-4 gbbb">
-						<div
-							class="card"
-							style={{
-								width: "18rem",
-								backgroundColor: "#0c143b",
-								border: "7px solid #0005",
-							}}
-						>
-							<div class="card-img-top  mt-5">
-								<BsShieldCheck
-									size={50}
-									style={{ marginLeft: "40%", color: "#FF7276" }}
-								/>
-							</div>
-
-							<div class="card-body">
-								<h5
-									style={{ color: "#FFD700" }}
-									class="card-title text-center text-[20px] "
-								>
-									Warranty for UV ray blockage
-								</h5>
-								<p class="card-text text-[14px] text-white text-justify">
-									The window/car tints from Storm Automotive offer some UV and
-									infrared radiation protection. They will therefore let you to
-									enjoy natural sunshine without having to deal with its
-									negative consequences.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div className="col-md-4 gbbb">
-						<div
-							class="card"
-							style={{
-								width: "18rem",
-								backgroundColor: "#FF7276",
-								border: "2px solid #0005",
-							}}
-						>
-							<div class="card-img-top  mt-5">
-								<GiFactory
-									size={50}
-									style={{ marginLeft: "45%", color: "white" }}
-								/>
-							</div>
-
-							<div class="card-body">
-								<h5
-									style={{ color: "#FFD700" }}
-									class="card-title text-[20px] "
-								>
-									Industry’s leading warranties
-								</h5>
-								<p class="card-text text-white text-[14px] text-justify">
-									Our contemporary window films offer all the advantages
-									outlined by industry standards. Additionally, they come with a
-									warranty against delamination, peeling, blistering, and
-									bubbling. They are non-metallic, so they dont affect how
-									mobile devices and satellite communications normally operate.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div className="col-md-4 gbbb">
-						<div
-							class="card"
-							style={{
-								width: "18rem",
-								backgroundColor: "#0c143b",
-								border: "7px solid #0005",
-							}}
-						>
-							<div class="card-img-top mt-5">
-								<GiMetalDisc
-									size={50}
-									style={{ marginLeft: "45%", color: "#FF7276" }}
-								/>
-							</div>
-
-							<div class="card-body">
-								<h5
-									style={{ color: "#FFD700" }}
-									class="card-title text-[20px] "
-								>
-									Warranty for non-metallic window films
-								</h5>
-								<p class="card-text text-white text-[14px] text-justify">
-									Our contemporary automobile window films do not include any
-									metallic components, in contrast to their conventional
-									equivalents. As a result, they dont prevent mobile devices and
-									satellite signals from operating normally.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
-			<br></br>
+
 			<div className=" bgimage">
-				<div className="text-center pt-5 text-[#FF7276] text-[32px] font-bold  ">
+				<div className="text-center pt-5 text-[#Ffb400] text-[32px] font-bold  ">
 					HOW IT WORKS
 				</div>
-				<div className="row container py-20  m-auto">
+				<div className="row container py-4  m-auto">
 					<div className="col-lg-3 col-md-5 gbbb">
 						<div
 							class="card"
 							style={{
 								width: "18rem",
 
-								backgroundColor: "rgba(0,0,0,0.1)",
+								backgroundColor: "#Ffb400",
 							}}
 						>
 							<div class="card-img-top   mt-5">
 								<BsPeople
 									size={100}
-									style={{ marginLeft: "35%", color: "#FFD700" }}
+									style={{ marginLeft: "35%", color: "white" }}
 								/>
 							</div>
 
@@ -1730,13 +1827,13 @@ export default function Home2() {
 							class="card"
 							style={{
 								width: "18rem",
-								backgroundColor: "rgba(0,0,0,0.1)",
+								backgroundColor: "#Ffb400",
 							}}
 						>
 							<div class="card-img-top  mt-5">
 								<AiOutlineSolution
 									size={100}
-									style={{ marginLeft: "35%", color: "#FFD700" }}
+									style={{ marginLeft: "35%", color: "white" }}
 								/>
 							</div>
 
@@ -1752,13 +1849,13 @@ export default function Home2() {
 							class="card"
 							style={{
 								width: "18rem",
-								backgroundColor: "rgba(0,0,0,0.1)",
+								backgroundColor: "#Ffb400",
 							}}
 						>
 							<div class="card-img-top  mt-5">
 								<GrUnorderedList
 									size={100}
-									style={{ marginLeft: "35%", color: "#FFD700" }}
+									style={{ marginLeft: "35%", color: "white" }}
 								/>
 							</div>
 
@@ -1774,13 +1871,13 @@ export default function Home2() {
 							class="card"
 							style={{
 								width: "18rem",
-								backgroundColor: "rgba(0,0,0,0.1)",
+								backgroundColor: "#Ffb400",
 							}}
 						>
 							<div class="card-img-top  mt-5">
 								<TbTruckDelivery
 									size={100}
-									style={{ marginLeft: "35%", color: "#FFD700" }}
+									style={{ marginLeft: "35%", color: "white" }}
 								/>
 							</div>
 
@@ -1794,16 +1891,19 @@ export default function Home2() {
 				</div>
 			</div>
 			<div className="bgimage ">
-				<div style={{ height: "530px" }} className="container m-auto">
+				<div
+					style={{ height: "530px", paddingTop: "100px" }}
+					className="container  m-auto"
+				>
 					<div class="accordion" id="accordionExample">
 						<div class="accordion-item">
 							<h2
-								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								style={{ backgroundColor: "#071E22" }}
 								class="accordion-header"
 								id="headingzero"
 							>
 								<button
-									style={{ color: "#FF7276" }}
+									style={{ color: "#ffae42" }}
 									class="accordion-button collapsed"
 									type="button"
 									data-bs-toggle="collapse"
@@ -1821,7 +1921,7 @@ export default function Home2() {
 								data-bs-parent="#accordionExample"
 							>
 								<p
-									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									style={{ backgroundColor: "#071E22" }}
 									class="accordion-body text-[15px] text-white text-justify"
 								>
 									Window tinting can offer long-lasting practical advantages,
@@ -1839,12 +1939,12 @@ export default function Home2() {
 
 						<div class="accordion-item">
 							<h2
-								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								style={{ backgroundColor: "#071E22" }}
 								class="accordion-header"
 								id="headingTwo"
 							>
 								<button
-									style={{ color: "#FF7276" }}
+									style={{ color: "#ffae42" }}
 									class="accordion-button"
 									type="button"
 									data-bs-toggle="collapse"
@@ -1862,7 +1962,7 @@ export default function Home2() {
 								data-bs-parent="#accordionExample"
 							>
 								<p
-									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									style={{ backgroundColor: "#071E22" }}
 									class="accordion text-[15px] text-white text-justify"
 								>
 									Window films are an excellent investment since they offer
@@ -1886,12 +1986,12 @@ export default function Home2() {
 						</div>
 						<div class="accordion-item">
 							<h2
-								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								style={{ backgroundColor: "#071E22" }}
 								class="accordion-header"
 								id="headingThree"
 							>
 								<button
-									style={{ color: "#FF7276" }}
+									style={{ color: "#ffae42" }}
 									class="accordion-button collapsed"
 									type="button"
 									data-bs-toggle="collapse"
@@ -1910,7 +2010,7 @@ export default function Home2() {
 								data-bs-parent="#accordionExample"
 							>
 								<p
-									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									style={{ backgroundColor: "#071E22" }}
 									class="accordion-body text-[15px] text-white text-justify"
 								>
 									We try to satisfy the various demands of automobile owners in
@@ -1926,12 +2026,12 @@ export default function Home2() {
 						</div>
 						<div class="accordion-item">
 							<h2
-								style={{ backgroundColor: "rgb(0,0,0,1)" }}
+								style={{ backgroundColor: "#071E22" }}
 								class="accordion-header"
 								id="headingFour"
 							>
 								<button
-									style={{ color: "#FF7276" }}
+									style={{ color: "#ffae42" }}
 									class="accordion-button collapsed"
 									type="button"
 									data-bs-toggle="collapse"
@@ -1949,7 +2049,7 @@ export default function Home2() {
 								data-bs-parent="#accordionExample"
 							>
 								<p
-									style={{ backgroundColor: "rgb(0,0,0,1)" }}
+									style={{ backgroundColor: "#071E22" }}
 									class="accordion-body text-white text-[15px]"
 								>
 									Storm automotive, a window tinting company with years of
@@ -1996,7 +2096,6 @@ export default function Home2() {
 					</div>
 				</div>
 			</div>
-
 			<div className="bgimage2 py-5 ">
 				<div className="row container">
 					<div className="col-md-10">
@@ -2016,7 +2115,7 @@ export default function Home2() {
 							href=""
 							style={{
 								backgroundColor: "rgba(0,0,0,0.1)",
-								borderColor: "#FF7276",
+								borderColor: "#ffae42",
 							}}
 							class="btn btn-primary py-2 px-5 mt-4 animated slideInDown"
 						>
@@ -2033,7 +2132,6 @@ export default function Home2() {
 			<a href="https://api.whatsapp.com/send?phone+03469413675" class="float2">
 				<BsWhatsapp class="fa fa-plus my-float"></BsWhatsapp>
 			</a>
-
 			<Link
 				style={{ textAlign: "center", marginTop: "50%" }}
 				href="/Homearabic"
