@@ -641,6 +641,7 @@ export default function Home2() {
 											border: "5px solid black",
 											borderRadius: "15px",
 											borderColor: "rgba(0,0,0,0.3)",
+											height:"230px",
 										}}
 										src={S1}
 										alt="خدمة تظليل السيارات بالشارقة"
