@@ -57,7 +57,7 @@ export default function Home2() {
 	return (
 		<>
 			<Head>
-				<title>Car Window Tinting Sharjah | Storm Car Accessories</title>
+				<title>Ca Window Tinting Sharjah | Storm Car Accessories</title>
 				<meta
 					name="description"
 					content="Car Tinting Sharjah - Window Tinting And Paint Protection Film Offers In Sharjah, Superior Quality Authorized Car Tinting In Sharjah & Window Tint Solution."
