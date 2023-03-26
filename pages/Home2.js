@@ -22,7 +22,7 @@ import A1 from "../img/A1.jpg";
 import { AiFillPhone, AiOutlineSolution } from "react-icons/ai";
 import { BsFillEnvelopeFill } from "react-icons/bs";
 import Feature from "../img/mec.jpg";
-import Feature2 from "../img/mech2.png";
+import Feature2 from "../img/mech2.jpg";
 import S1 from "../img/service-1.jpg";
 import S2 from "../img/service-2.jpg";
 import S3 from "../img/S1.jpeg";
@@ -57,7 +57,7 @@ export default function Home2() {
 	return (
 		<>
 			<Head>
-				<title>Ca Window Tinting Sharjah | Storm Car Accessories</title>
+				<title>car Window Tinting Sharjah | Storm Car Accessories</title>
 				<meta
 					name="description"
 					content="Car Tinting Sharjah - Window Tinting And Paint Protection Film Offers In Sharjah, Superior Quality Authorized Car Tinting In Sharjah & Window Tint Solution."

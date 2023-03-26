@@ -21,7 +21,7 @@ import A1 from "../img/A1.jpg";
 import { AiFillPhone, AiOutlineSolution } from "react-icons/ai";
 import { BsFillEnvelopeFill } from "react-icons/bs";
 import Feature from "../img/mec.jpg";
-import Feature2 from "../img/mech2.png";
+import Feature2 from "../img/mech2.jpg";
 import S1 from "../img/service-1.jpg";
 import S2 from "../img/service-2.jpg";
 import S3 from "../img/S1.jpeg";
