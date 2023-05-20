@@ -284,7 +284,7 @@ export default function Home2() {
 					<div class="carousel-item  h-[100vh]">
 						<div>
 							<div>
-								<Image style={{ height: "100vh", width: "100%" }} src={C1} />
+								<Image style={{ height: "100vh", width: "100%" }} src={A1} />
 								<div class="carousel-caption">
 									<div class="container-fluid">
 										<div class="row ">
@@ -664,7 +664,9 @@ export default function Home2() {
 					type="button"
 					data-bs-target="#carouselExampleControls"
 					data-bs-slide="prev"
+
 				>
+					
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
