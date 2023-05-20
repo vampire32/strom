@@ -156,7 +156,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(0deg,#071e22,#071e22);
+    background-color:#071e22;
     z-index: 1;
 }
 
