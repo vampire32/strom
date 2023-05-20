@@ -86,7 +86,7 @@ export default function Home2() {
 			>
 				<div class="carousel-inner">
 					<div>
-						<div class="carousel-item active h-[100vh]">
+						<div class="carousel-item h-[100vh]">
 							<div>
 								<Image style={{ height: "100vh", width: "100%" }} src={A1} />
 
@@ -98,7 +98,7 @@ export default function Home2() {
 													style={{ fontWeight: "bold" }}
 													class="display-3 text-white mb-4  animated slideInDown text-[35px]"
 												>
-													Stormm Accessories Car Window Tinting Sharjah
+													Storm Accessories Car Window Tinting Sharjah
 												</h1>
 												<h2
 													style={{ color: "#FFD700", fontSize: "20px" }}
