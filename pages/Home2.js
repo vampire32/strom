@@ -88,7 +88,7 @@ export default function Home2() {
 					<div>
 						<div class="carousel-item active h-[100vh]">
 							<div>
-								<Image style={{ height: "100vh", width: "100%" }} src={C1} />
+								<Image style={{ height: "100vh", width: "100%" }} src={A1} />
 
 								<div class="carousel-caption">
 									<div class="container-fluid">
