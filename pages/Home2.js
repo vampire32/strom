@@ -98,7 +98,7 @@ export default function Home2() {
 													style={{ fontWeight: "bold" }}
 													class="display-3 text-white mb-4  animated slideInDown text-[35px]"
 												>
-													Storm Accessories Car Window Tinting Sharjah
+													Stormm Accessories Car Window Tinting Sharjah
 												</h1>
 												<h2
 													style={{ color: "#FFD700", fontSize: "20px" }}
