@@ -86,7 +86,7 @@ export default function Home2() {
 			>
 				<div class="carousel-inner">
 					<div>
-						<div class="carousel-item h-[100vh]">
+						<div class="carousel-item active h-[100vh]">
 							<div>
 								<Image style={{ height: "100vh", width: "100%" }} src={A1} />
 
